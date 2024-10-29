@@ -1,0 +1,51 @@
+<!-- admin_add_student.html -->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>新增学生账户 - 考试管理系统</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/admin_add_student.css') }}">
+</head>
+<body>
+    <header>
+        <h1>考试管理系统</h1>
+    </header>
+    <div class="container">
+        <div class="top-nav">
+            <a href="/admin/manage_students" class="back-btn">返回学生账户管理</a>
+            <a href="/admin/logout" class="logout-btn">注销</a>
+        </div>
+        <h2>新增学生账户</h2>
+        <form action="/admin/add_student" method="POST">
+            <div class="input-group">
+                <label for="student_id">学号:</label>
+                <input type="text" name="student_id" required>
+            </div>
+            <div class="input-group">
+                <label for="name">姓名:</label>
+                <input type="text" name="name" required>
+            </div>
+            <div class="input-group">
+                <label for="gender">性别:</label>
+                <select name="gender">
+                    <option value="男">男</option>
+                    <option value="女">女</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="phone_number">手机号:</label>
+                <input type="text" name="phone_number" required>
+            </div>
+            <div class="input-group">
+                <label for="password">密码:</label>
+                <input type="password" name="password" required>
+            </div>
+            <input type="submit" value="新增学生账户" class="btn">
+        </form>
+    </div>
+    <footer>
+        <p>&copy; 2024 考试管理系统</p>
+    </footer>
+</body>
+</html>
+

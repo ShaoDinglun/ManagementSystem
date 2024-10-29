@@ -1,0 +1,1370 @@
+2024-10-27 10:15:13,093 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-27 10:15:13,093 INFO: [33mPress CTRL+C to quit[0m
+2024-10-27 10:15:13,095 INFO:  * Restarting with stat
+2024-10-27 10:15:14,560 WARNING:  * Debugger is active!
+2024-10-27 10:15:14,563 INFO:  * Debugger PIN: 669-458-967
+2024-10-27 10:15:18,811 INFO: 127.0.0.1 - - [27/Oct/2024 10:15:18] "GET / HTTP/1.1" 200 -
+2024-10-27 10:15:22,446 INFO: 127.0.0.1 - - [27/Oct/2024 10:15:22] "GET /admin/login HTTP/1.1" 200 -
+2024-10-27 10:15:37,662 INFO: Admin admin001 logged in successfully
+2024-10-27 10:15:37,663 INFO: 127.0.0.1 - - [27/Oct/2024 10:15:37] "[32mPOST /admin/login HTTP/1.1[0m" 302 -
+2024-10-27 10:15:37,678 INFO: 127.0.0.1 - - [27/Oct/2024 10:15:37] "GET /admin/dashboard HTTP/1.1" 200 -
+2024-10-27 10:15:40,616 INFO: 127.0.0.1 - - [27/Oct/2024 10:15:40] "GET /admin/manage_students HTTP/1.1" 200 -
+2024-10-27 10:15:44,226 INFO: 127.0.0.1 - - [27/Oct/2024 10:15:44] "POST /admin/search_student HTTP/1.1" 200 -
+2024-10-27 10:15:59,024 INFO: Student 20249102 updated successfully
+2024-10-27 10:15:59,024 INFO: 127.0.0.1 - - [27/Oct/2024 10:15:59] "POST /admin/update_student/20249102 HTTP/1.1" 200 -
+2024-10-27 10:16:00,869 INFO: 127.0.0.1 - - [27/Oct/2024 10:16:00] "POST /admin/search_student HTTP/1.1" 200 -
+2024-10-27 10:16:10,283 INFO: 127.0.0.1 - - [27/Oct/2024 10:16:10] "GET /admin/add_student_page HTTP/1.1" 200 -
+2024-10-27 10:16:17,490 INFO: 127.0.0.1 - - [27/Oct/2024 10:16:17] "GET /admin/manage_teachers HTTP/1.1" 200 -
+2024-10-27 10:16:21,409 INFO: 127.0.0.1 - - [27/Oct/2024 10:16:21] "POST /admin/search_teacher HTTP/1.1" 200 -
+2024-10-27 10:16:27,991 INFO: 127.0.0.1 - - [27/Oct/2024 10:16:27] "GET /admin/view_logs HTTP/1.1" 200 -
+2024-10-27 10:16:37,893 INFO: Admin logged out
+2024-10-27 10:16:37,902 INFO: 127.0.0.1 - - [27/Oct/2024 10:16:37] "GET /admin/logout HTTP/1.1" 200 -
+2024-10-27 10:16:41,283 INFO: 127.0.0.1 - - [27/Oct/2024 10:16:41] "GET /admin/login HTTP/1.1" 200 -
+2024-10-27 10:18:00,451 INFO:  * Detected change in 'd:\\CodeProject\\Local\\BS\\api.py', reloading
+2024-10-27 10:18:00,599 INFO:  * Restarting with stat
+2024-10-27 10:18:01,923 WARNING:  * Debugger is active!
+2024-10-27 10:18:01,924 INFO:  * Debugger PIN: 669-458-967
+2024-10-27 10:18:12,356 INFO:  * Detected change in 'd:\\CodeProject\\Local\\BS\\api.py', reloading
+2024-10-27 10:18:12,522 INFO:  * Restarting with stat
+2024-10-27 10:18:13,818 WARNING:  * Debugger is active!
+2024-10-27 10:18:13,819 INFO:  * Debugger PIN: 669-458-967
+2024-10-27 10:18:23,251 INFO:  * Detected change in 'd:\\CodeProject\\Local\\BS\\api.py', reloading
+2024-10-27 10:18:23,415 INFO:  * Restarting with stat
+2024-10-27 10:18:24,741 WARNING:  * Debugger is active!
+2024-10-27 10:18:24,742 INFO:  * Debugger PIN: 669-458-967
+2024-10-27 10:18:29,815 INFO: 127.0.0.1 - - [27/Oct/2024 10:18:29] "GET / HTTP/1.1" 200 -
+2024-10-27 10:18:31,278 INFO: 127.0.0.1 - - [27/Oct/2024 10:18:31] "GET /student/login HTTP/1.1" 200 -
+2024-10-27 10:18:36,009 INFO: Student 20249102 logged in successfully
+2024-10-27 10:18:36,011 INFO: 127.0.0.1 - - [27/Oct/2024 10:18:36] "[32mPOST /student/login HTTP/1.1[0m" 302 -
+2024-10-27 10:18:36,028 INFO: 127.0.0.1 - - [27/Oct/2024 10:18:36] "GET /student/exam_list HTTP/1.1" 200 -
+2024-10-27 10:18:39,664 INFO: 127.0.0.1 - - [27/Oct/2024 10:18:39] "GET /student/login HTTP/1.1" 200 -
+2024-10-27 10:18:45,938 INFO: 127.0.0.1 - - [27/Oct/2024 10:18:45] "GET /teacher/login HTTP/1.1" 200 -
+2024-10-27 10:18:49,308 INFO: 127.0.0.1 - - [27/Oct/2024 10:18:49] "GET /admin/login HTTP/1.1" 200 -
+2024-10-27 10:18:51,896 INFO: 127.0.0.1 - - [27/Oct/2024 10:18:51] "GET /teacher/login HTTP/1.1" 200 -
+2024-10-27 10:18:54,171 INFO: Teacher 20121241 logged in successfully
+2024-10-27 10:18:54,172 INFO: 127.0.0.1 - - [27/Oct/2024 10:18:54] "[32mPOST /teacher/login HTTP/1.1[0m" 302 -
+2024-10-27 10:18:54,183 INFO: 127.0.0.1 - - [27/Oct/2024 10:18:54] "GET /teacher/dashboard HTTP/1.1" 200 -
+2024-10-27 10:18:55,620 INFO: Teacher logged out
+2024-10-27 10:18:55,621 INFO: 127.0.0.1 - - [27/Oct/2024 10:18:55] "GET /teacher/logout HTTP/1.1" 200 -
+2024-10-27 10:18:57,324 INFO: 127.0.0.1 - - [27/Oct/2024 10:18:57] "GET /admin/login HTTP/1.1" 200 -
+2024-10-27 10:19:01,432 INFO: Admin admin001 logged in successfully
+2024-10-27 10:19:01,433 INFO: 127.0.0.1 - - [27/Oct/2024 10:19:01] "[32mPOST /admin/login HTTP/1.1[0m" 302 -
+2024-10-27 10:19:01,442 INFO: 127.0.0.1 - - [27/Oct/2024 10:19:01] "GET /admin/dashboard HTTP/1.1" 200 -
+2024-10-27 10:19:02,661 INFO: Admin logged out
+2024-10-27 10:19:02,661 INFO: 127.0.0.1 - - [27/Oct/2024 10:19:02] "GET /admin/logout HTTP/1.1" 200 -
+2024-10-27 10:19:09,948 INFO: Admin logged out
+2024-10-27 10:19:09,949 INFO: 127.0.0.1 - - [27/Oct/2024 10:19:09] "GET /admin/logout HTTP/1.1" 200 -
+2024-10-27 10:23:01,194 INFO: Admin logged out
+2024-10-27 10:23:01,194 INFO: 127.0.0.1 - - [27/Oct/2024 10:23:01] "GET /admin/logout HTTP/1.1" 200 -
+2024-10-27 13:14:36,777 INFO: Admin logged out
+2024-10-27 13:14:36,797 INFO: 127.0.0.1 - - [27/Oct/2024 13:14:36] "GET /admin/logout HTTP/1.1" 200 -
+2024-10-27 13:14:36,821 INFO: 127.0.0.1 - - [27/Oct/2024 13:14:36] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:14:39,025 INFO: Admin logged out
+2024-10-27 13:14:39,025 INFO: 127.0.0.1 - - [27/Oct/2024 13:14:39] "GET /admin/logout HTTP/1.1" 200 -
+2024-10-27 13:14:39,052 INFO: 127.0.0.1 - - [27/Oct/2024 13:14:39] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:14:46,131 INFO: 127.0.0.1 - - [27/Oct/2024 13:14:46] "GET /student/login HTTP/1.1" 200 -
+2024-10-27 13:14:46,152 INFO: 127.0.0.1 - - [27/Oct/2024 13:14:46] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:14:51,103 INFO: 127.0.0.1 - - [27/Oct/2024 13:14:51] "GET /teacher/login HTTP/1.1" 200 -
+2024-10-27 13:14:51,124 INFO: 127.0.0.1 - - [27/Oct/2024 13:14:51] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:14:54,182 INFO: 127.0.0.1 - - [27/Oct/2024 13:14:54] "GET /admin/login HTTP/1.1" 200 -
+2024-10-27 13:14:54,204 INFO: 127.0.0.1 - - [27/Oct/2024 13:14:54] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:14:55,437 INFO: 127.0.0.1 - - [27/Oct/2024 13:14:55] "GET / HTTP/1.1" 200 -
+2024-10-27 13:14:55,461 INFO: 127.0.0.1 - - [27/Oct/2024 13:14:55] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:14:56,717 INFO: 127.0.0.1 - - [27/Oct/2024 13:14:56] "GET /teacher/login HTTP/1.1" 200 -
+2024-10-27 13:14:56,743 INFO: 127.0.0.1 - - [27/Oct/2024 13:14:56] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:14:57,421 INFO: 127.0.0.1 - - [27/Oct/2024 13:14:57] "GET / HTTP/1.1" 200 -
+2024-10-27 13:14:57,454 INFO: 127.0.0.1 - - [27/Oct/2024 13:14:57] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:14:58,114 INFO: 127.0.0.1 - - [27/Oct/2024 13:14:58] "GET /student/login HTTP/1.1" 200 -
+2024-10-27 13:14:58,132 INFO: 127.0.0.1 - - [27/Oct/2024 13:14:58] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:14:58,850 INFO: 127.0.0.1 - - [27/Oct/2024 13:14:58] "GET / HTTP/1.1" 200 -
+2024-10-27 13:14:58,871 INFO: 127.0.0.1 - - [27/Oct/2024 13:14:58] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:14:59,797 INFO: 127.0.0.1 - - [27/Oct/2024 13:14:59] "GET /student/login HTTP/1.1" 200 -
+2024-10-27 13:14:59,823 INFO: 127.0.0.1 - - [27/Oct/2024 13:14:59] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:15:04,699 INFO: Student 20249102 logged in successfully
+2024-10-27 13:15:04,703 INFO: 127.0.0.1 - - [27/Oct/2024 13:15:04] "[32mPOST /student/login HTTP/1.1[0m" 302 -
+2024-10-27 13:15:04,752 INFO: 127.0.0.1 - - [27/Oct/2024 13:15:04] "GET /student/exam_list HTTP/1.1" 200 -
+2024-10-27 13:15:04,776 INFO: 127.0.0.1 - - [27/Oct/2024 13:15:04] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:15:08,377 INFO: Student logged out
+2024-10-27 13:15:08,377 INFO: 127.0.0.1 - - [27/Oct/2024 13:15:08] "GET /student/logout HTTP/1.1" 200 -
+2024-10-27 13:15:08,402 INFO: 127.0.0.1 - - [27/Oct/2024 13:15:08] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:15:10,346 INFO: 127.0.0.1 - - [27/Oct/2024 13:15:10] "GET /teacher/login HTTP/1.1" 200 -
+2024-10-27 13:15:10,365 INFO: 127.0.0.1 - - [27/Oct/2024 13:15:10] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:15:12,822 INFO: Teacher 20121241 logged in successfully
+2024-10-27 13:15:12,823 INFO: 127.0.0.1 - - [27/Oct/2024 13:15:12] "[32mPOST /teacher/login HTTP/1.1[0m" 302 -
+2024-10-27 13:15:12,853 INFO: 127.0.0.1 - - [27/Oct/2024 13:15:12] "GET /teacher/dashboard HTTP/1.1" 200 -
+2024-10-27 13:15:12,876 INFO: 127.0.0.1 - - [27/Oct/2024 13:15:12] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:15:18,314 INFO: 127.0.0.1 - - [27/Oct/2024 13:15:18] "GET /teacher/manage_question_banks HTTP/1.1" 200 -
+2024-10-27 13:15:18,333 INFO: 127.0.0.1 - - [27/Oct/2024 13:15:18] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:15:21,271 INFO: 127.0.0.1 - - [27/Oct/2024 13:15:21] "GET /teacher/dashboard HTTP/1.1" 200 -
+2024-10-27 13:15:21,297 INFO: 127.0.0.1 - - [27/Oct/2024 13:15:21] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:15:22,325 INFO: 127.0.0.1 - - [27/Oct/2024 13:15:22] "GET /teacher/manage_exams HTTP/1.1" 200 -
+2024-10-27 13:15:22,353 INFO: 127.0.0.1 - - [27/Oct/2024 13:15:22] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:15:24,345 INFO: 127.0.0.1 - - [27/Oct/2024 13:15:24] "GET /teacher/dashboard HTTP/1.1" 200 -
+2024-10-27 13:15:24,372 INFO: 127.0.0.1 - - [27/Oct/2024 13:15:24] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:15:29,265 INFO: 127.0.0.1 - - [27/Oct/2024 13:15:29] "GET /teacher/dashboard HTTP/1.1" 200 -
+2024-10-27 13:15:29,294 INFO: 127.0.0.1 - - [27/Oct/2024 13:15:29] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:15:30,660 INFO: Teacher logged out
+2024-10-27 13:15:30,660 INFO: 127.0.0.1 - - [27/Oct/2024 13:15:30] "GET /teacher/logout HTTP/1.1" 200 -
+2024-10-27 13:15:30,703 INFO: 127.0.0.1 - - [27/Oct/2024 13:15:30] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:15:31,853 INFO: 127.0.0.1 - - [27/Oct/2024 13:15:31] "GET /admin/login HTTP/1.1" 200 -
+2024-10-27 13:15:31,883 INFO: 127.0.0.1 - - [27/Oct/2024 13:15:31] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:15:38,072 INFO: Admin admin001 logged in successfully
+2024-10-27 13:15:38,073 INFO: 127.0.0.1 - - [27/Oct/2024 13:15:38] "[32mPOST /admin/login HTTP/1.1[0m" 302 -
+2024-10-27 13:15:38,089 INFO: 127.0.0.1 - - [27/Oct/2024 13:15:38] "GET /admin/dashboard HTTP/1.1" 200 -
+2024-10-27 13:15:38,127 INFO: 127.0.0.1 - - [27/Oct/2024 13:15:38] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:15:39,880 INFO: 127.0.0.1 - - [27/Oct/2024 13:15:39] "GET /admin/manage_teachers HTTP/1.1" 200 -
+2024-10-27 13:15:39,905 INFO: 127.0.0.1 - - [27/Oct/2024 13:15:39] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:15:45,501 INFO: 127.0.0.1 - - [27/Oct/2024 13:15:45] "GET /admin/manage_teachers?teacher_id=&name= HTTP/1.1" 200 -
+2024-10-27 13:15:45,527 INFO: 127.0.0.1 - - [27/Oct/2024 13:15:45] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:15:46,957 INFO: 127.0.0.1 - - [27/Oct/2024 13:15:46] "GET /admin/manage_teachers?teacher_id=&name= HTTP/1.1" 200 -
+2024-10-27 13:15:46,980 INFO: 127.0.0.1 - - [27/Oct/2024 13:15:46] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:15:55,820 INFO: 127.0.0.1 - - [27/Oct/2024 13:15:55] "GET /admin/dashboard HTTP/1.1" 200 -
+2024-10-27 13:15:55,841 INFO: 127.0.0.1 - - [27/Oct/2024 13:15:55] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:15:57,261 INFO: 127.0.0.1 - - [27/Oct/2024 13:15:57] "GET /admin/manage_students HTTP/1.1" 200 -
+2024-10-27 13:15:57,287 INFO: 127.0.0.1 - - [27/Oct/2024 13:15:57] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:15:58,094 INFO: 127.0.0.1 - - [27/Oct/2024 13:15:58] "GET /admin/manage_students?student_id=&name= HTTP/1.1" 200 -
+2024-10-27 13:15:58,121 INFO: 127.0.0.1 - - [27/Oct/2024 13:15:58] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:15:59,429 INFO: 127.0.0.1 - - [27/Oct/2024 13:15:59] "GET /admin/dashboard HTTP/1.1" 200 -
+2024-10-27 13:15:59,454 INFO: 127.0.0.1 - - [27/Oct/2024 13:15:59] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:16:00,415 INFO: 127.0.0.1 - - [27/Oct/2024 13:16:00] "GET /admin/view_logs HTTP/1.1" 200 -
+2024-10-27 13:16:00,437 INFO: 127.0.0.1 - - [27/Oct/2024 13:16:00] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:16:06,428 INFO: 127.0.0.1 - - [27/Oct/2024 13:16:06] "GET /admin/dashboard HTTP/1.1" 200 -
+2024-10-27 13:16:06,455 INFO: 127.0.0.1 - - [27/Oct/2024 13:16:06] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:16:09,193 INFO: 127.0.0.1 - - [27/Oct/2024 13:16:09] "GET /admin/manage_teachers HTTP/1.1" 200 -
+2024-10-27 13:16:09,214 INFO: 127.0.0.1 - - [27/Oct/2024 13:16:09] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:16:11,228 INFO: 127.0.0.1 - - [27/Oct/2024 13:16:11] "GET /admin/dashboard HTTP/1.1" 200 -
+2024-10-27 13:16:11,251 INFO: 127.0.0.1 - - [27/Oct/2024 13:16:11] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:16:12,151 INFO: 127.0.0.1 - - [27/Oct/2024 13:16:12] "GET /admin/manage_students HTTP/1.1" 200 -
+2024-10-27 13:16:12,174 INFO: 127.0.0.1 - - [27/Oct/2024 13:16:12] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:16:13,347 INFO: 127.0.0.1 - - [27/Oct/2024 13:16:13] "GET /admin/dashboard HTTP/1.1" 200 -
+2024-10-27 13:16:13,364 INFO: 127.0.0.1 - - [27/Oct/2024 13:16:13] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:16:14,810 INFO: Admin logged out
+2024-10-27 13:16:14,811 INFO: 127.0.0.1 - - [27/Oct/2024 13:16:14] "GET /admin/logout HTTP/1.1" 200 -
+2024-10-27 13:16:14,832 INFO: 127.0.0.1 - - [27/Oct/2024 13:16:14] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:16:24,619 INFO: 127.0.0.1 - - [27/Oct/2024 13:16:24] "GET /admin/login HTTP/1.1" 200 -
+2024-10-27 13:16:24,643 INFO: 127.0.0.1 - - [27/Oct/2024 13:16:24] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:16:27,775 INFO: Admin admin001 logged in successfully
+2024-10-27 13:16:27,775 INFO: 127.0.0.1 - - [27/Oct/2024 13:16:27] "[32mPOST /admin/login HTTP/1.1[0m" 302 -
+2024-10-27 13:16:27,783 INFO: 127.0.0.1 - - [27/Oct/2024 13:16:27] "GET /admin/dashboard HTTP/1.1" 200 -
+2024-10-27 13:16:27,806 INFO: 127.0.0.1 - - [27/Oct/2024 13:16:27] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:16:29,426 INFO: 127.0.0.1 - - [27/Oct/2024 13:16:29] "GET /admin/manage_teachers HTTP/1.1" 200 -
+2024-10-27 13:16:29,457 INFO: 127.0.0.1 - - [27/Oct/2024 13:16:29] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:16:30,735 INFO: 127.0.0.1 - - [27/Oct/2024 13:16:30] "[31m[1mGET /admin/add_teacher HTTP/1.1[0m" 405 -
+2024-10-27 13:19:44,131 INFO: 127.0.0.1 - - [27/Oct/2024 13:19:44] "GET /admin/dashboard HTTP/1.1" 200 -
+2024-10-27 13:19:44,155 INFO: 127.0.0.1 - - [27/Oct/2024 13:19:44] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:19:45,060 INFO: 127.0.0.1 - - [27/Oct/2024 13:19:45] "GET /admin/manage_teachers HTTP/1.1" 200 -
+2024-10-27 13:19:45,083 INFO: 127.0.0.1 - - [27/Oct/2024 13:19:45] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:19:46,695 INFO: 127.0.0.1 - - [27/Oct/2024 13:19:46] "GET /admin/manage_teachers?teacher_id=&name= HTTP/1.1" 200 -
+2024-10-27 13:19:46,721 INFO: 127.0.0.1 - - [27/Oct/2024 13:19:46] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:19:51,153 INFO: 127.0.0.1 - - [27/Oct/2024 13:19:51] "GET /admin/manage_students HTTP/1.1" 200 -
+2024-10-27 13:19:51,179 INFO: 127.0.0.1 - - [27/Oct/2024 13:19:51] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:19:51,897 INFO: 127.0.0.1 - - [27/Oct/2024 13:19:51] "GET /admin/manage_students?student_id=&name= HTTP/1.1" 200 -
+2024-10-27 13:19:51,925 INFO: 127.0.0.1 - - [27/Oct/2024 13:19:51] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:19:52,620 INFO: 127.0.0.1 - - [27/Oct/2024 13:19:52] "GET /admin/manage_students?student_id=&name= HTTP/1.1" 200 -
+2024-10-27 13:19:52,646 INFO: 127.0.0.1 - - [27/Oct/2024 13:19:52] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:19:53,285 INFO: 127.0.0.1 - - [27/Oct/2024 13:19:53] "[31m[1mGET /admin/add_student HTTP/1.1[0m" 405 -
+2024-10-27 13:20:30,967 INFO: 127.0.0.1 - - [27/Oct/2024 13:20:30] "GET /admin/manage_students HTTP/1.1" 200 -
+2024-10-27 13:20:30,999 INFO: 127.0.0.1 - - [27/Oct/2024 13:20:30] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:20:32,184 INFO: 127.0.0.1 - - [27/Oct/2024 13:20:32] "[33mGET /admin/admin_add_student HTTP/1.1[0m" 404 -
+2024-10-27 13:20:35,494 INFO: 127.0.0.1 - - [27/Oct/2024 13:20:35] "GET /admin/manage_teachers HTTP/1.1" 200 -
+2024-10-27 13:20:35,519 INFO: 127.0.0.1 - - [27/Oct/2024 13:20:35] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:20:38,055 INFO: 127.0.0.1 - - [27/Oct/2024 13:20:38] "[33mGET /admin/admin_add_teacher HTTP/1.1[0m" 404 -
+2024-10-27 13:21:19,568 INFO:  * Detected change in 'd:\\CodeProject\\Local\\BS\\api.py', reloading
+2024-10-27 13:21:19,813 INFO:  * Restarting with stat
+2024-10-27 13:21:24,245 WARNING:  * Debugger is active!
+2024-10-27 13:21:24,247 INFO:  * Debugger PIN: 669-458-967
+2024-10-27 13:21:32,602 INFO:  * Detected change in 'd:\\CodeProject\\Local\\BS\\api.py', reloading
+2024-10-27 13:21:32,759 INFO:  * Restarting with stat
+2024-10-27 13:21:34,895 WARNING:  * Debugger is active!
+2024-10-27 13:21:34,899 INFO:  * Debugger PIN: 669-458-967
+2024-10-27 13:21:34,949 INFO: 127.0.0.1 - - [27/Oct/2024 13:21:34] "GET /admin/manage_teachers HTTP/1.1" 200 -
+2024-10-27 13:21:34,978 INFO: 127.0.0.1 - - [27/Oct/2024 13:21:34] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:21:36,144 INFO: 127.0.0.1 - - [27/Oct/2024 13:21:36] "GET /admin/dashboard HTTP/1.1" 200 -
+2024-10-27 13:21:36,169 INFO: 127.0.0.1 - - [27/Oct/2024 13:21:36] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:21:37,005 INFO: 127.0.0.1 - - [27/Oct/2024 13:21:37] "GET /admin/manage_teachers HTTP/1.1" 200 -
+2024-10-27 13:21:37,033 INFO: 127.0.0.1 - - [27/Oct/2024 13:21:37] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:21:37,817 INFO: 127.0.0.1 - - [27/Oct/2024 13:21:37] "GET /admin/admin_add_teacher HTTP/1.1" 200 -
+2024-10-27 13:21:37,837 INFO: 127.0.0.1 - - [27/Oct/2024 13:21:37] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:21:43,821 INFO: 127.0.0.1 - - [27/Oct/2024 13:21:43] "[33mGET /admin/teacher_accounts HTTP/1.1[0m" 404 -
+2024-10-27 13:21:53,688 INFO: 127.0.0.1 - - [27/Oct/2024 13:21:53] "GET /admin/dashboard HTTP/1.1" 200 -
+2024-10-27 13:21:53,708 INFO: 127.0.0.1 - - [27/Oct/2024 13:21:53] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:21:54,752 INFO: 127.0.0.1 - - [27/Oct/2024 13:21:54] "GET /admin/manage_students HTTP/1.1" 200 -
+2024-10-27 13:21:54,775 INFO: 127.0.0.1 - - [27/Oct/2024 13:21:54] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:21:58,459 INFO: 127.0.0.1 - - [27/Oct/2024 13:21:58] "GET /admin/admin_add_student HTTP/1.1" 200 -
+2024-10-27 13:21:58,485 INFO: 127.0.0.1 - - [27/Oct/2024 13:21:58] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:22:00,829 INFO: 127.0.0.1 - - [27/Oct/2024 13:22:00] "[33mGET /admin/student_accounts HTTP/1.1[0m" 404 -
+2024-10-27 13:23:12,068 INFO: 127.0.0.1 - - [27/Oct/2024 13:23:12] "GET /admin/manage_students HTTP/1.1" 200 -
+2024-10-27 13:23:12,112 INFO: 127.0.0.1 - - [27/Oct/2024 13:23:12] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:23:13,243 INFO: 127.0.0.1 - - [27/Oct/2024 13:23:13] "GET /admin/dashboard HTTP/1.1" 200 -
+2024-10-27 13:23:13,267 INFO: 127.0.0.1 - - [27/Oct/2024 13:23:13] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:23:14,275 INFO: 127.0.0.1 - - [27/Oct/2024 13:23:14] "GET /admin/manage_teachers HTTP/1.1" 200 -
+2024-10-27 13:23:14,298 INFO: 127.0.0.1 - - [27/Oct/2024 13:23:14] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:23:14,335 INFO: 127.0.0.1 - - [27/Oct/2024 13:23:14] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:23:15,453 INFO: 127.0.0.1 - - [27/Oct/2024 13:23:15] "GET /admin/manage_teachers HTTP/1.1" 200 -
+2024-10-27 13:23:15,475 INFO: 127.0.0.1 - - [27/Oct/2024 13:23:15] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:23:16,614 INFO: 127.0.0.1 - - [27/Oct/2024 13:23:16] "GET /admin/admin_add_teacher HTTP/1.1" 200 -
+2024-10-27 13:23:16,638 INFO: 127.0.0.1 - - [27/Oct/2024 13:23:16] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:23:17,709 INFO: 127.0.0.1 - - [27/Oct/2024 13:23:17] "GET /admin/manage_teachers HTTP/1.1" 200 -
+2024-10-27 13:23:17,733 INFO: 127.0.0.1 - - [27/Oct/2024 13:23:17] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:23:19,020 INFO: 127.0.0.1 - - [27/Oct/2024 13:23:19] "GET /admin/dashboard HTTP/1.1" 200 -
+2024-10-27 13:23:19,043 INFO: 127.0.0.1 - - [27/Oct/2024 13:23:19] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:23:19,790 INFO: 127.0.0.1 - - [27/Oct/2024 13:23:19] "GET /admin/manage_students HTTP/1.1" 200 -
+2024-10-27 13:23:19,814 INFO: 127.0.0.1 - - [27/Oct/2024 13:23:19] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:23:20,951 INFO: 127.0.0.1 - - [27/Oct/2024 13:23:20] "GET /admin/admin_add_student HTTP/1.1" 200 -
+2024-10-27 13:23:20,972 INFO: 127.0.0.1 - - [27/Oct/2024 13:23:20] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:23:23,432 INFO: 127.0.0.1 - - [27/Oct/2024 13:23:23] "GET /admin/manage_students HTTP/1.1" 200 -
+2024-10-27 13:23:23,453 INFO: 127.0.0.1 - - [27/Oct/2024 13:23:23] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:23:24,054 INFO: 127.0.0.1 - - [27/Oct/2024 13:23:24] "GET /admin/dashboard HTTP/1.1" 200 -
+2024-10-27 13:23:24,081 INFO: 127.0.0.1 - - [27/Oct/2024 13:23:24] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:23:25,500 INFO: 127.0.0.1 - - [27/Oct/2024 13:23:25] "GET /admin/view_logs HTTP/1.1" 200 -
+2024-10-27 13:23:25,519 INFO: 127.0.0.1 - - [27/Oct/2024 13:23:25] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:23:26,611 INFO: 127.0.0.1 - - [27/Oct/2024 13:23:26] "GET /admin/dashboard HTTP/1.1" 200 -
+2024-10-27 13:23:26,633 INFO: 127.0.0.1 - - [27/Oct/2024 13:23:26] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:23:27,555 INFO: 127.0.0.1 - - [27/Oct/2024 13:23:27] "GET /admin/manage_teachers HTTP/1.1" 200 -
+2024-10-27 13:23:27,576 INFO: 127.0.0.1 - - [27/Oct/2024 13:23:27] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:23:28,589 INFO: 127.0.0.1 - - [27/Oct/2024 13:23:28] "GET /admin/dashboard HTTP/1.1" 200 -
+2024-10-27 13:23:28,615 INFO: 127.0.0.1 - - [27/Oct/2024 13:23:28] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:23:29,399 INFO: 127.0.0.1 - - [27/Oct/2024 13:23:29] "GET /admin/manage_students HTTP/1.1" 200 -
+2024-10-27 13:23:29,432 INFO: 127.0.0.1 - - [27/Oct/2024 13:23:29] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:23:30,243 INFO: 127.0.0.1 - - [27/Oct/2024 13:23:30] "GET /admin/dashboard HTTP/1.1" 200 -
+2024-10-27 13:23:30,268 INFO: 127.0.0.1 - - [27/Oct/2024 13:23:30] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:23:31,174 INFO: 127.0.0.1 - - [27/Oct/2024 13:23:31] "GET /admin/view_logs HTTP/1.1" 200 -
+2024-10-27 13:23:31,195 INFO: 127.0.0.1 - - [27/Oct/2024 13:23:31] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:23:32,205 INFO: 127.0.0.1 - - [27/Oct/2024 13:23:32] "GET /admin/dashboard HTTP/1.1" 200 -
+2024-10-27 13:23:32,228 INFO: 127.0.0.1 - - [27/Oct/2024 13:23:32] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:23:33,020 INFO: 127.0.0.1 - - [27/Oct/2024 13:23:33] "GET /admin/manage_teachers HTTP/1.1" 200 -
+2024-10-27 13:23:33,045 INFO: 127.0.0.1 - - [27/Oct/2024 13:23:33] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:23:34,106 INFO: 127.0.0.1 - - [27/Oct/2024 13:23:34] "GET /admin/manage_teachers?teacher_id=&name= HTTP/1.1" 200 -
+2024-10-27 13:23:34,126 INFO: 127.0.0.1 - - [27/Oct/2024 13:23:34] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:23:36,432 INFO: 127.0.0.1 - - [27/Oct/2024 13:23:36] "GET /admin/dashboard HTTP/1.1" 200 -
+2024-10-27 13:23:36,455 INFO: 127.0.0.1 - - [27/Oct/2024 13:23:36] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:23:37,748 INFO: Admin logged out
+2024-10-27 13:23:37,750 INFO: 127.0.0.1 - - [27/Oct/2024 13:23:37] "GET /admin/logout HTTP/1.1" 200 -
+2024-10-27 13:23:37,773 INFO: 127.0.0.1 - - [27/Oct/2024 13:23:37] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:23:38,745 INFO: 127.0.0.1 - - [27/Oct/2024 13:23:38] "GET /teacher/login HTTP/1.1" 200 -
+2024-10-27 13:23:38,769 INFO: 127.0.0.1 - - [27/Oct/2024 13:23:38] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:23:42,525 INFO: Teacher 20121241 logged in successfully
+2024-10-27 13:23:42,526 INFO: 127.0.0.1 - - [27/Oct/2024 13:23:42] "[32mPOST /teacher/login HTTP/1.1[0m" 302 -
+2024-10-27 13:23:42,534 INFO: 127.0.0.1 - - [27/Oct/2024 13:23:42] "GET /teacher/dashboard HTTP/1.1" 200 -
+2024-10-27 13:23:42,549 INFO: 127.0.0.1 - - [27/Oct/2024 13:23:42] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:23:43,634 INFO: 127.0.0.1 - - [27/Oct/2024 13:23:43] "GET /teacher/manage_question_banks HTTP/1.1" 200 -
+2024-10-27 13:23:43,657 INFO: 127.0.0.1 - - [27/Oct/2024 13:23:43] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:23:46,869 INFO: 127.0.0.1 - - [27/Oct/2024 13:23:46] "GET /teacher/question_bank/2 HTTP/1.1" 200 -
+2024-10-27 13:23:46,888 INFO: 127.0.0.1 - - [27/Oct/2024 13:23:46] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:23:59,843 INFO: 127.0.0.1 - - [27/Oct/2024 13:23:59] "GET /teacher/manage_question_banks HTTP/1.1" 200 -
+2024-10-27 13:23:59,863 INFO: 127.0.0.1 - - [27/Oct/2024 13:23:59] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:24:08,427 INFO: 127.0.0.1 - - [27/Oct/2024 13:24:08] "[32mPOST /teacher/manage_question_banks HTTP/1.1[0m" 302 -
+2024-10-27 13:24:08,455 INFO: 127.0.0.1 - - [27/Oct/2024 13:24:08] "GET /teacher/manage_question_banks HTTP/1.1" 200 -
+2024-10-27 13:24:08,475 INFO: 127.0.0.1 - - [27/Oct/2024 13:24:08] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:24:10,653 INFO: 127.0.0.1 - - [27/Oct/2024 13:24:10] "GET /teacher/question_bank/4 HTTP/1.1" 200 -
+2024-10-27 13:24:10,675 INFO: 127.0.0.1 - - [27/Oct/2024 13:24:10] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:24:12,782 INFO: 127.0.0.1 - - [27/Oct/2024 13:24:12] "GET /teacher/manage_question_banks HTTP/1.1" 200 -
+2024-10-27 13:24:12,802 INFO: 127.0.0.1 - - [27/Oct/2024 13:24:12] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:24:13,364 INFO: 127.0.0.1 - - [27/Oct/2024 13:24:13] "GET /teacher/dashboard HTTP/1.1" 200 -
+2024-10-27 13:24:13,382 INFO: 127.0.0.1 - - [27/Oct/2024 13:24:13] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:24:14,465 INFO: 127.0.0.1 - - [27/Oct/2024 13:24:14] "GET /teacher/manage_exams HTTP/1.1" 200 -
+2024-10-27 13:24:14,488 INFO: 127.0.0.1 - - [27/Oct/2024 13:24:14] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:24:16,845 INFO: 127.0.0.1 - - [27/Oct/2024 13:24:16] "GET /teacher/create_exam HTTP/1.1" 200 -
+2024-10-27 13:24:16,872 INFO: 127.0.0.1 - - [27/Oct/2024 13:24:16] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:24:44,815 INFO: Exam 'test22' created successfully
+2024-10-27 13:24:44,815 INFO: 127.0.0.1 - - [27/Oct/2024 13:24:44] "[32mPOST /teacher/create_exam HTTP/1.1[0m" 302 -
+2024-10-27 13:24:44,862 INFO: 127.0.0.1 - - [27/Oct/2024 13:24:44] "GET /teacher/edit_exam/9 HTTP/1.1" 200 -
+2024-10-27 13:24:44,898 INFO: 127.0.0.1 - - [27/Oct/2024 13:24:44] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:24:59,862 INFO: Questions assigned to exam ID '9' successfully
+2024-10-27 13:24:59,862 INFO: 127.0.0.1 - - [27/Oct/2024 13:24:59] "[32mPOST /teacher/edit_exam/9 HTTP/1.1[0m" 302 -
+2024-10-27 13:24:59,897 INFO: 127.0.0.1 - - [27/Oct/2024 13:24:59] "GET /teacher/manage_exams HTTP/1.1" 200 -
+2024-10-27 13:24:59,922 INFO: 127.0.0.1 - - [27/Oct/2024 13:24:59] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:25:03,709 INFO: 127.0.0.1 - - [27/Oct/2024 13:25:03] "GET /teacher/dashboard HTTP/1.1" 200 -
+2024-10-27 13:25:03,739 INFO: 127.0.0.1 - - [27/Oct/2024 13:25:03] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:25:04,796 INFO: 127.0.0.1 - - [27/Oct/2024 13:25:04] "GET /teacher/manage_exams HTTP/1.1" 200 -
+2024-10-27 13:25:04,820 INFO: 127.0.0.1 - - [27/Oct/2024 13:25:04] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:25:05,777 INFO: 127.0.0.1 - - [27/Oct/2024 13:25:05] "GET /teacher/dashboard HTTP/1.1" 200 -
+2024-10-27 13:25:05,805 INFO: 127.0.0.1 - - [27/Oct/2024 13:25:05] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:25:06,483 INFO: Teacher logged out
+2024-10-27 13:25:06,484 INFO: 127.0.0.1 - - [27/Oct/2024 13:25:06] "GET /teacher/logout HTTP/1.1" 200 -
+2024-10-27 13:25:06,513 INFO: 127.0.0.1 - - [27/Oct/2024 13:25:06] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:25:07,891 INFO: 127.0.0.1 - - [27/Oct/2024 13:25:07] "GET /student/login HTTP/1.1" 200 -
+2024-10-27 13:25:07,917 INFO: 127.0.0.1 - - [27/Oct/2024 13:25:07] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:25:12,599 INFO: Student 20249102 logged in successfully
+2024-10-27 13:25:12,601 INFO: 127.0.0.1 - - [27/Oct/2024 13:25:12] "[32mPOST /student/login HTTP/1.1[0m" 302 -
+2024-10-27 13:25:12,613 INFO: 127.0.0.1 - - [27/Oct/2024 13:25:12] "GET /student/exam_list HTTP/1.1" 200 -
+2024-10-27 13:25:12,635 INFO: 127.0.0.1 - - [27/Oct/2024 13:25:12] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:25:14,352 INFO: 127.0.0.1 - - [27/Oct/2024 13:25:14] "GET /student/exam/9 HTTP/1.1" 200 -
+2024-10-27 13:25:14,369 INFO: 127.0.0.1 - - [27/Oct/2024 13:25:14] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:25:23,900 INFO: 127.0.0.1 - - [27/Oct/2024 13:25:23] "[35m[1mPOST /student/exam/9 HTTP/1.1[0m" 500 -
+2024-10-27 13:25:23,999 INFO: 127.0.0.1 - - [27/Oct/2024 13:25:23] "GET /student/exam/9?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2024-10-27 13:25:24,014 INFO: 127.0.0.1 - - [27/Oct/2024 13:25:24] "GET /student/exam/9?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2024-10-27 13:25:24,025 INFO: 127.0.0.1 - - [27/Oct/2024 13:25:24] "GET /student/exam/9?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2024-10-27 13:25:24,028 INFO: 127.0.0.1 - - [27/Oct/2024 13:25:24] "GET /student/exam/9?__debugger__=yes&cmd=resource&f=console.png&s=oNKDYSqNgT7LQ1Dz4LQb HTTP/1.1" 200 -
+2024-10-27 13:25:30,882 INFO: 127.0.0.1 - - [27/Oct/2024 13:25:30] "GET /student/exam/9 HTTP/1.1" 200 -
+2024-10-27 13:25:39,474 INFO: 127.0.0.1 - - [27/Oct/2024 13:25:39] "[35m[1mPOST /student/exam/9 HTTP/1.1[0m" 500 -
+2024-10-27 13:25:39,506 INFO: 127.0.0.1 - - [27/Oct/2024 13:25:39] "[36mGET /student/exam/9?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-10-27 13:25:39,507 INFO: 127.0.0.1 - - [27/Oct/2024 13:25:39] "[36mGET /student/exam/9?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-10-27 13:25:39,522 INFO: 127.0.0.1 - - [27/Oct/2024 13:25:39] "[36mGET /student/exam/9?__debugger__=yes&cmd=resource&f=console.png&s=oNKDYSqNgT7LQ1Dz4LQb HTTP/1.1[0m" 304 -
+2024-10-27 13:25:53,272 INFO: 127.0.0.1 - - [27/Oct/2024 13:25:53] "GET /student/exam/9 HTTP/1.1" 200 -
+2024-10-27 13:26:00,806 INFO: 127.0.0.1 - - [27/Oct/2024 13:26:00] "[35m[1mPOST /student/exam/9 HTTP/1.1[0m" 500 -
+2024-10-27 13:26:00,830 INFO: 127.0.0.1 - - [27/Oct/2024 13:26:00] "[36mGET /student/exam/9?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-10-27 13:26:00,832 INFO: 127.0.0.1 - - [27/Oct/2024 13:26:00] "[36mGET /student/exam/9?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-10-27 13:26:00,854 INFO: 127.0.0.1 - - [27/Oct/2024 13:26:00] "[36mGET /student/exam/9?__debugger__=yes&cmd=resource&f=console.png&s=oNKDYSqNgT7LQ1Dz4LQb HTTP/1.1[0m" 304 -
+2024-10-27 13:26:47,938 INFO: 127.0.0.1 - - [27/Oct/2024 13:26:47] "GET /student/exam/9 HTTP/1.1" 200 -
+2024-10-27 13:26:48,769 INFO: 127.0.0.1 - - [27/Oct/2024 13:26:48] "GET /student/exam/9 HTTP/1.1" 200 -
+2024-10-27 13:26:50,842 INFO: 127.0.0.1 - - [27/Oct/2024 13:26:50] "[32mPOST /student/exam/9 HTTP/1.1[0m" 302 -
+2024-10-27 13:26:50,867 INFO: 127.0.0.1 - - [27/Oct/2024 13:26:50] "GET /student/exam_list HTTP/1.1" 200 -
+2024-10-27 13:26:50,892 INFO: 127.0.0.1 - - [27/Oct/2024 13:26:50] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:30:52,991 INFO: 127.0.0.1 - - [27/Oct/2024 13:30:52] "[32mGET /admin/dashboard HTTP/1.1[0m" 302 -
+2024-10-27 13:30:53,001 INFO: 127.0.0.1 - - [27/Oct/2024 13:30:53] "GET /admin/login HTTP/1.1" 200 -
+2024-10-27 13:30:53,045 INFO: 127.0.0.1 - - [27/Oct/2024 13:30:53] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:30:57,523 INFO: Admin admin001 logged in successfully
+2024-10-27 13:30:57,524 INFO: 127.0.0.1 - - [27/Oct/2024 13:30:57] "[32mPOST /admin/login HTTP/1.1[0m" 302 -
+2024-10-27 13:30:57,530 INFO: 127.0.0.1 - - [27/Oct/2024 13:30:57] "GET /admin/dashboard HTTP/1.1" 200 -
+2024-10-27 13:30:57,552 INFO: 127.0.0.1 - - [27/Oct/2024 13:30:57] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:30:58,514 INFO: 127.0.0.1 - - [27/Oct/2024 13:30:58] "GET /admin/manage_teachers HTTP/1.1" 200 -
+2024-10-27 13:30:58,540 INFO: 127.0.0.1 - - [27/Oct/2024 13:30:58] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:31:02,319 INFO: 127.0.0.1 - - [27/Oct/2024 13:31:02] "POST /admin/search_teacher HTTP/1.1" 200 -
+2024-10-27 13:31:02,340 INFO: 127.0.0.1 - - [27/Oct/2024 13:31:02] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:31:07,475 INFO: 127.0.0.1 - - [27/Oct/2024 13:31:07] "GET /admin/admin_add_teacher HTTP/1.1" 200 -
+2024-10-27 13:31:07,502 INFO: 127.0.0.1 - - [27/Oct/2024 13:31:07] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:31:27,318 INFO: Teacher 202409101 added successfully
+2024-10-27 13:31:27,318 INFO: 127.0.0.1 - - [27/Oct/2024 13:31:27] "POST /admin/add_teacher HTTP/1.1" 200 -
+2024-10-27 13:31:27,367 INFO: 127.0.0.1 - - [27/Oct/2024 13:31:27] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:31:34,918 INFO: 127.0.0.1 - - [27/Oct/2024 13:31:34] "POST /admin/search_teacher HTTP/1.1" 200 -
+2024-10-27 13:31:34,937 INFO: 127.0.0.1 - - [27/Oct/2024 13:31:34] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:31:37,826 INFO: 127.0.0.1 - - [27/Oct/2024 13:31:37] "GET /admin/dashboard HTTP/1.1" 200 -
+2024-10-27 13:31:37,850 INFO: 127.0.0.1 - - [27/Oct/2024 13:31:37] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:31:38,738 INFO: 127.0.0.1 - - [27/Oct/2024 13:31:38] "GET /admin/manage_students HTTP/1.1" 200 -
+2024-10-27 13:31:38,765 INFO: 127.0.0.1 - - [27/Oct/2024 13:31:38] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:31:39,982 INFO: 127.0.0.1 - - [27/Oct/2024 13:31:39] "GET /admin/admin_add_student HTTP/1.1" 200 -
+2024-10-27 13:31:40,004 INFO: 127.0.0.1 - - [27/Oct/2024 13:31:40] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:31:42,281 INFO: 127.0.0.1 - - [27/Oct/2024 13:31:42] "GET /admin/manage_students HTTP/1.1" 200 -
+2024-10-27 13:31:42,311 INFO: 127.0.0.1 - - [27/Oct/2024 13:31:42] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:31:43,531 INFO: 127.0.0.1 - - [27/Oct/2024 13:31:43] "POST /admin/search_student HTTP/1.1" 200 -
+2024-10-27 13:31:43,556 INFO: 127.0.0.1 - - [27/Oct/2024 13:31:43] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:31:46,302 INFO: 127.0.0.1 - - [27/Oct/2024 13:31:46] "GET /admin/admin_add_student HTTP/1.1" 200 -
+2024-10-27 13:31:46,327 INFO: 127.0.0.1 - - [27/Oct/2024 13:31:46] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:32:02,138 INFO: Student 202409101 added successfully
+2024-10-27 13:32:02,139 INFO: 127.0.0.1 - - [27/Oct/2024 13:32:02] "POST /admin/add_student HTTP/1.1" 200 -
+2024-10-27 13:32:02,187 INFO: 127.0.0.1 - - [27/Oct/2024 13:32:02] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:32:05,502 INFO: 127.0.0.1 - - [27/Oct/2024 13:32:05] "POST /admin/search_student HTTP/1.1" 200 -
+2024-10-27 13:32:05,527 INFO: 127.0.0.1 - - [27/Oct/2024 13:32:05] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:32:08,202 INFO: 127.0.0.1 - - [27/Oct/2024 13:32:08] "GET /admin/dashboard HTTP/1.1" 200 -
+2024-10-27 13:32:08,227 INFO: 127.0.0.1 - - [27/Oct/2024 13:32:08] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:32:10,030 INFO: 127.0.0.1 - - [27/Oct/2024 13:32:10] "GET /admin/view_logs HTTP/1.1" 200 -
+2024-10-27 13:32:10,055 INFO: 127.0.0.1 - - [27/Oct/2024 13:32:10] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:32:11,424 INFO: 127.0.0.1 - - [27/Oct/2024 13:32:11] "GET /admin/dashboard HTTP/1.1" 200 -
+2024-10-27 13:32:11,445 INFO: 127.0.0.1 - - [27/Oct/2024 13:32:11] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:32:12,727 INFO: Admin logged out
+2024-10-27 13:32:12,729 INFO: 127.0.0.1 - - [27/Oct/2024 13:32:12] "GET /admin/logout HTTP/1.1" 200 -
+2024-10-27 13:32:12,752 INFO: 127.0.0.1 - - [27/Oct/2024 13:32:12] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:32:13,707 INFO: 127.0.0.1 - - [27/Oct/2024 13:32:13] "GET /teacher/login HTTP/1.1" 200 -
+2024-10-27 13:32:13,732 INFO: 127.0.0.1 - - [27/Oct/2024 13:32:13] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:32:16,895 INFO: Teacher 20121241 logged in successfully
+2024-10-27 13:32:16,896 INFO: 127.0.0.1 - - [27/Oct/2024 13:32:16] "[32mPOST /teacher/login HTTP/1.1[0m" 302 -
+2024-10-27 13:32:16,902 INFO: 127.0.0.1 - - [27/Oct/2024 13:32:16] "GET /teacher/dashboard HTTP/1.1" 200 -
+2024-10-27 13:32:16,919 INFO: 127.0.0.1 - - [27/Oct/2024 13:32:16] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:32:18,474 INFO: 127.0.0.1 - - [27/Oct/2024 13:32:18] "GET /teacher/manage_question_banks HTTP/1.1" 200 -
+2024-10-27 13:32:18,497 INFO: 127.0.0.1 - - [27/Oct/2024 13:32:18] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:32:21,836 INFO: 127.0.0.1 - - [27/Oct/2024 13:32:21] "GET /teacher/dashboard HTTP/1.1" 200 -
+2024-10-27 13:32:21,865 INFO: 127.0.0.1 - - [27/Oct/2024 13:32:21] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:32:22,713 INFO: 127.0.0.1 - - [27/Oct/2024 13:32:22] "GET /teacher/manage_exams HTTP/1.1" 200 -
+2024-10-27 13:32:22,733 INFO: 127.0.0.1 - - [27/Oct/2024 13:32:22] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:32:23,564 INFO: 127.0.0.1 - - [27/Oct/2024 13:32:23] "GET /teacher/dashboard HTTP/1.1" 200 -
+2024-10-27 13:32:23,587 INFO: 127.0.0.1 - - [27/Oct/2024 13:32:23] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:32:24,310 INFO: Teacher logged out
+2024-10-27 13:32:24,311 INFO: 127.0.0.1 - - [27/Oct/2024 13:32:24] "GET /teacher/logout HTTP/1.1" 200 -
+2024-10-27 13:32:24,332 INFO: 127.0.0.1 - - [27/Oct/2024 13:32:24] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:32:25,188 INFO: 127.0.0.1 - - [27/Oct/2024 13:32:25] "GET /student/login HTTP/1.1" 200 -
+2024-10-27 13:32:25,215 INFO: 127.0.0.1 - - [27/Oct/2024 13:32:25] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:32:28,477 INFO: Student 20249102 logged in successfully
+2024-10-27 13:32:28,479 INFO: 127.0.0.1 - - [27/Oct/2024 13:32:28] "[32mPOST /student/login HTTP/1.1[0m" 302 -
+2024-10-27 13:32:28,500 INFO: 127.0.0.1 - - [27/Oct/2024 13:32:28] "GET /student/exam_list HTTP/1.1" 200 -
+2024-10-27 13:32:28,516 INFO: 127.0.0.1 - - [27/Oct/2024 13:32:28] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:32:31,792 INFO: Student logged out
+2024-10-27 13:32:31,793 INFO: 127.0.0.1 - - [27/Oct/2024 13:32:31] "GET /student/logout HTTP/1.1" 200 -
+2024-10-27 13:32:31,809 INFO: 127.0.0.1 - - [27/Oct/2024 13:32:31] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:32:31,848 INFO: 127.0.0.1 - - [27/Oct/2024 13:32:31] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:32:33,880 INFO: 127.0.0.1 - - [27/Oct/2024 13:32:33] "[32mGET /student/exam/9 HTTP/1.1[0m" 302 -
+2024-10-27 13:32:33,889 INFO: 127.0.0.1 - - [27/Oct/2024 13:32:33] "GET /student/login HTTP/1.1" 200 -
+2024-10-27 13:32:33,915 INFO: 127.0.0.1 - - [27/Oct/2024 13:32:33] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:32:39,124 INFO: Student 202409103 logged in successfully
+2024-10-27 13:32:39,125 INFO: 127.0.0.1 - - [27/Oct/2024 13:32:39] "[32mPOST /student/login HTTP/1.1[0m" 302 -
+2024-10-27 13:32:39,155 INFO: 127.0.0.1 - - [27/Oct/2024 13:32:39] "GET /student/exam_list HTTP/1.1" 200 -
+2024-10-27 13:32:39,179 INFO: 127.0.0.1 - - [27/Oct/2024 13:32:39] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:32:40,203 INFO: 127.0.0.1 - - [27/Oct/2024 13:32:40] "GET /student/exam/9 HTTP/1.1" 200 -
+2024-10-27 13:32:49,827 INFO: 127.0.0.1 - - [27/Oct/2024 13:32:49] "[32mPOST /student/exam/9 HTTP/1.1[0m" 302 -
+2024-10-27 13:32:49,856 INFO: 127.0.0.1 - - [27/Oct/2024 13:32:49] "GET /student/exam_list HTTP/1.1" 200 -
+2024-10-27 13:32:49,880 INFO: 127.0.0.1 - - [27/Oct/2024 13:32:49] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:32:54,515 INFO: Student logged out
+2024-10-27 13:32:54,516 INFO: 127.0.0.1 - - [27/Oct/2024 13:32:54] "GET /student/logout HTTP/1.1" 200 -
+2024-10-27 13:32:54,539 INFO: 127.0.0.1 - - [27/Oct/2024 13:32:54] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:32:55,447 INFO: 127.0.0.1 - - [27/Oct/2024 13:32:55] "GET /teacher/login HTTP/1.1" 200 -
+2024-10-27 13:32:55,473 INFO: 127.0.0.1 - - [27/Oct/2024 13:32:55] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:32:58,503 INFO: Teacher 20121241 logged in successfully
+2024-10-27 13:32:58,504 INFO: 127.0.0.1 - - [27/Oct/2024 13:32:58] "[32mPOST /teacher/login HTTP/1.1[0m" 302 -
+2024-10-27 13:32:58,510 INFO: 127.0.0.1 - - [27/Oct/2024 13:32:58] "GET /teacher/dashboard HTTP/1.1" 200 -
+2024-10-27 13:32:58,547 INFO: 127.0.0.1 - - [27/Oct/2024 13:32:58] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:33:00,142 INFO: 127.0.0.1 - - [27/Oct/2024 13:33:00] "GET /teacher/manage_exams HTTP/1.1" 200 -
+2024-10-27 13:33:00,164 INFO: 127.0.0.1 - - [27/Oct/2024 13:33:00] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:33:04,850 INFO: Exam ID '9' auto graded successfully
+2024-10-27 13:33:04,850 INFO: 127.0.0.1 - - [27/Oct/2024 13:33:04] "[32mPOST /teacher/auto_grade_exam/9 HTTP/1.1[0m" 302 -
+2024-10-27 13:33:04,887 INFO: 127.0.0.1 - - [27/Oct/2024 13:33:04] "GET /teacher/manage_exams HTTP/1.1" 200 -
+2024-10-27 13:33:04,911 INFO: 127.0.0.1 - - [27/Oct/2024 13:33:04] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:33:09,078 INFO: Grades retrieved for exam ID '9'
+2024-10-27 13:33:09,120 INFO: 127.0.0.1 - - [27/Oct/2024 13:33:09] "[35m[1mGET /teacher/view_grades/9 HTTP/1.1[0m" 500 -
+2024-10-27 13:33:09,148 INFO: 127.0.0.1 - - [27/Oct/2024 13:33:09] "GET /teacher/view_grades/9?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2024-10-27 13:33:09,149 INFO: 127.0.0.1 - - [27/Oct/2024 13:33:09] "GET /teacher/view_grades/9?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2024-10-27 13:33:09,171 INFO: 127.0.0.1 - - [27/Oct/2024 13:33:09] "GET /teacher/view_grades/9?__debugger__=yes&cmd=resource&f=console.png&s=oNKDYSqNgT7LQ1Dz4LQb HTTP/1.1" 200 -
+2024-10-27 13:33:09,176 INFO: 127.0.0.1 - - [27/Oct/2024 13:33:09] "GET /teacher/view_grades/9?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2024-10-27 13:34:40,461 INFO: Grades retrieved for exam ID '8'
+2024-10-27 13:34:40,465 INFO: 127.0.0.1 - - [27/Oct/2024 13:34:40] "[35m[1mGET /teacher/view_grades/8 HTTP/1.1[0m" 500 -
+2024-10-27 13:34:40,490 INFO: 127.0.0.1 - - [27/Oct/2024 13:34:40] "GET /teacher/view_grades/8?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2024-10-27 13:34:40,491 INFO: 127.0.0.1 - - [27/Oct/2024 13:34:40] "GET /teacher/view_grades/8?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2024-10-27 13:34:40,509 INFO: 127.0.0.1 - - [27/Oct/2024 13:34:40] "GET /teacher/view_grades/8?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2024-10-27 13:34:40,511 INFO: 127.0.0.1 - - [27/Oct/2024 13:34:40] "GET /teacher/view_grades/8?__debugger__=yes&cmd=resource&f=console.png&s=oNKDYSqNgT7LQ1Dz4LQb HTTP/1.1" 200 -
+2024-10-27 13:34:44,671 INFO: Exam report generated for exam ID '9'
+2024-10-27 13:34:44,693 INFO: 127.0.0.1 - - [27/Oct/2024 13:34:44] "[35m[1mGET /teacher/exam_report/9 HTTP/1.1[0m" 500 -
+2024-10-27 13:34:44,720 INFO: 127.0.0.1 - - [27/Oct/2024 13:34:44] "GET /teacher/exam_report/9?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2024-10-27 13:34:44,721 INFO: 127.0.0.1 - - [27/Oct/2024 13:34:44] "GET /teacher/exam_report/9?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2024-10-27 13:34:44,744 INFO: 127.0.0.1 - - [27/Oct/2024 13:34:44] "GET /teacher/exam_report/9?__debugger__=yes&cmd=resource&f=console.png&s=oNKDYSqNgT7LQ1Dz4LQb HTTP/1.1" 200 -
+2024-10-27 13:34:44,747 INFO: 127.0.0.1 - - [27/Oct/2024 13:34:44] "GET /teacher/exam_report/9?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2024-10-27 13:34:47,642 INFO: Exam report generated for exam ID '8'
+2024-10-27 13:34:47,648 INFO: 127.0.0.1 - - [27/Oct/2024 13:34:47] "[35m[1mGET /teacher/exam_report/8 HTTP/1.1[0m" 500 -
+2024-10-27 13:34:47,672 INFO: 127.0.0.1 - - [27/Oct/2024 13:34:47] "GET /teacher/exam_report/8?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2024-10-27 13:34:47,673 INFO: 127.0.0.1 - - [27/Oct/2024 13:34:47] "GET /teacher/exam_report/8?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2024-10-27 13:34:47,704 INFO: 127.0.0.1 - - [27/Oct/2024 13:34:47] "GET /teacher/exam_report/8?__debugger__=yes&cmd=resource&f=console.png&s=oNKDYSqNgT7LQ1Dz4LQb HTTP/1.1" 200 -
+2024-10-27 13:34:47,706 INFO: 127.0.0.1 - - [27/Oct/2024 13:34:47] "GET /teacher/exam_report/8?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2024-10-27 13:35:26,989 INFO: Exam report generated for exam ID '8'
+2024-10-27 13:35:26,992 INFO: 127.0.0.1 - - [27/Oct/2024 13:35:26] "[35m[1mGET /teacher/exam_report/8 HTTP/1.1[0m" 500 -
+2024-10-27 13:35:27,013 INFO: 127.0.0.1 - - [27/Oct/2024 13:35:27] "[36mGET /teacher/exam_report/8?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-10-27 13:35:27,013 INFO: 127.0.0.1 - - [27/Oct/2024 13:35:27] "[36mGET /teacher/exam_report/8?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-10-27 13:35:27,047 INFO: 127.0.0.1 - - [27/Oct/2024 13:35:27] "[36mGET /teacher/exam_report/8?__debugger__=yes&cmd=resource&f=console.png&s=oNKDYSqNgT7LQ1Dz4LQb HTTP/1.1[0m" 304 -
+2024-10-27 13:35:27,052 INFO: 127.0.0.1 - - [27/Oct/2024 13:35:27] "GET /teacher/exam_report/8?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2024-10-27 13:35:29,560 INFO: Grades retrieved for exam ID '8'
+2024-10-27 13:35:29,571 INFO: 127.0.0.1 - - [27/Oct/2024 13:35:29] "GET /teacher/view_grades/8 HTTP/1.1" 200 -
+2024-10-27 13:35:34,054 INFO: Grades retrieved for exam ID '9'
+2024-10-27 13:35:34,055 INFO: 127.0.0.1 - - [27/Oct/2024 13:35:34] "GET /teacher/view_grades/9 HTTP/1.1" 200 -
+2024-10-27 13:35:54,448 INFO: 127.0.0.1 - - [27/Oct/2024 13:35:54] "GET /teacher/grade_exam/8 HTTP/1.1" 200 -
+2024-10-27 13:35:54,468 INFO: 127.0.0.1 - - [27/Oct/2024 13:35:54] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:35:57,111 INFO: 127.0.0.1 - - [27/Oct/2024 13:35:57] "GET /teacher/grade_exam/8?student_id=6 HTTP/1.1" 200 -
+2024-10-27 13:35:57,135 INFO: 127.0.0.1 - - [27/Oct/2024 13:35:57] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:36:00,471 INFO: 127.0.0.1 - - [27/Oct/2024 13:36:00] "GET /teacher/manage_exams HTTP/1.1" 200 -
+2024-10-27 13:36:00,491 INFO: 127.0.0.1 - - [27/Oct/2024 13:36:00] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:36:03,822 INFO: 127.0.0.1 - - [27/Oct/2024 13:36:03] "GET /teacher/grade_exam/9 HTTP/1.1" 200 -
+2024-10-27 13:36:03,856 INFO: 127.0.0.1 - - [27/Oct/2024 13:36:03] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:36:08,459 INFO: 127.0.0.1 - - [27/Oct/2024 13:36:08] "GET /teacher/manage_exams HTTP/1.1" 200 -
+2024-10-27 13:36:08,480 INFO: 127.0.0.1 - - [27/Oct/2024 13:36:08] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:36:11,773 INFO: Exam report generated for exam ID '8'
+2024-10-27 13:36:11,777 INFO: 127.0.0.1 - - [27/Oct/2024 13:36:11] "[35m[1mGET /teacher/exam_report/8 HTTP/1.1[0m" 500 -
+2024-10-27 13:36:11,798 INFO: 127.0.0.1 - - [27/Oct/2024 13:36:11] "GET /teacher/exam_report/8?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2024-10-27 13:36:11,798 INFO: 127.0.0.1 - - [27/Oct/2024 13:36:11] "[36mGET /teacher/exam_report/8?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-10-27 13:36:11,827 INFO: 127.0.0.1 - - [27/Oct/2024 13:36:11] "[36mGET /teacher/exam_report/8?__debugger__=yes&cmd=resource&f=console.png&s=oNKDYSqNgT7LQ1Dz4LQb HTTP/1.1[0m" 304 -
+2024-10-27 13:36:31,356 INFO: Exam report generated for exam ID '9'
+2024-10-27 13:36:31,365 INFO: 127.0.0.1 - - [27/Oct/2024 13:36:31] "GET /teacher/exam_report/9 HTTP/1.1" 200 -
+2024-10-27 13:36:33,782 INFO: Exam report generated for exam ID '8'
+2024-10-27 13:36:33,783 INFO: 127.0.0.1 - - [27/Oct/2024 13:36:33] "GET /teacher/exam_report/8 HTTP/1.1" 200 -
+2024-10-27 13:36:36,474 INFO: Grades retrieved for exam ID '8'
+2024-10-27 13:36:36,474 INFO: 127.0.0.1 - - [27/Oct/2024 13:36:36] "GET /teacher/view_grades/8 HTTP/1.1" 200 -
+2024-10-27 13:36:38,640 INFO: Grades retrieved for exam ID '9'
+2024-10-27 13:36:38,642 INFO: 127.0.0.1 - - [27/Oct/2024 13:36:38] "GET /teacher/view_grades/9 HTTP/1.1" 200 -
+2024-10-27 13:36:39,690 INFO: 127.0.0.1 - - [27/Oct/2024 13:36:39] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:36:42,637 INFO: 127.0.0.1 - - [27/Oct/2024 13:36:42] "GET /teacher/dashboard HTTP/1.1" 200 -
+2024-10-27 13:36:42,657 INFO: 127.0.0.1 - - [27/Oct/2024 13:36:42] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:36:44,003 INFO: 127.0.0.1 - - [27/Oct/2024 13:36:44] "GET /teacher/manage_question_banks HTTP/1.1" 200 -
+2024-10-27 13:36:44,031 INFO: 127.0.0.1 - - [27/Oct/2024 13:36:44] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:36:45,365 INFO: 127.0.0.1 - - [27/Oct/2024 13:36:45] "GET /teacher/question_bank/2 HTTP/1.1" 200 -
+2024-10-27 13:36:45,388 INFO: 127.0.0.1 - - [27/Oct/2024 13:36:45] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:36:53,727 INFO: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2024-10-27 13:36:58,280 INFO: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2024-10-27 13:37:01,182 INFO: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2024-10-27 13:37:06,292 INFO: Questions imported successfully into question bank 2
+2024-10-27 13:37:06,293 INFO: 127.0.0.1 - - [27/Oct/2024 13:37:06] "[32mPOST /teacher/question_bank/2 HTTP/1.1[0m" 302 -
+2024-10-27 13:37:06,322 INFO: 127.0.0.1 - - [27/Oct/2024 13:37:06] "GET /teacher/question_bank/2 HTTP/1.1" 200 -
+2024-10-27 13:37:06,342 INFO: 127.0.0.1 - - [27/Oct/2024 13:37:06] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:38:06,738 INFO: 127.0.0.1 - - [27/Oct/2024 13:38:06] "[32mPOST /teacher/question_bank/2 HTTP/1.1[0m" 302 -
+2024-10-27 13:38:06,766 INFO: 127.0.0.1 - - [27/Oct/2024 13:38:06] "GET /teacher/question_bank/2 HTTP/1.1" 200 -
+2024-10-27 13:38:06,801 INFO: 127.0.0.1 - - [27/Oct/2024 13:38:06] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:38:13,173 INFO: 127.0.0.1 - - [27/Oct/2024 13:38:13] "[35m[1mPOST /teacher/question_bank/2 HTTP/1.1[0m" 500 -
+2024-10-27 13:38:13,195 INFO: 127.0.0.1 - - [27/Oct/2024 13:38:13] "[36mGET /teacher/question_bank/2?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-10-27 13:38:13,196 INFO: 127.0.0.1 - - [27/Oct/2024 13:38:13] "[36mGET /teacher/question_bank/2?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-10-27 13:38:13,217 INFO: 127.0.0.1 - - [27/Oct/2024 13:38:13] "GET /teacher/question_bank/2?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2024-10-27 13:38:13,218 INFO: 127.0.0.1 - - [27/Oct/2024 13:38:13] "GET /teacher/question_bank/2?__debugger__=yes&cmd=resource&f=console.png&s=oNKDYSqNgT7LQ1Dz4LQb HTTP/1.1" 200 -
+2024-10-27 13:38:20,547 INFO: 127.0.0.1 - - [27/Oct/2024 13:38:20] "GET /teacher/question_bank/2 HTTP/1.1" 200 -
+2024-10-27 13:38:48,620 INFO: 127.0.0.1 - - [27/Oct/2024 13:38:48] "[32mPOST /teacher/question_bank/2 HTTP/1.1[0m" 302 -
+2024-10-27 13:38:48,633 INFO: 127.0.0.1 - - [27/Oct/2024 13:38:48] "GET /teacher/question_bank/2 HTTP/1.1" 200 -
+2024-10-27 13:38:48,651 INFO: 127.0.0.1 - - [27/Oct/2024 13:38:48] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:40:32,295 INFO: 127.0.0.1 - - [27/Oct/2024 13:40:32] "GET /teacher/manage_question_banks HTTP/1.1" 200 -
+2024-10-27 13:40:32,339 INFO: 127.0.0.1 - - [27/Oct/2024 13:40:32] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:40:33,927 INFO: 127.0.0.1 - - [27/Oct/2024 13:40:33] "GET /teacher/dashboard HTTP/1.1" 200 -
+2024-10-27 13:40:33,955 INFO: 127.0.0.1 - - [27/Oct/2024 13:40:33] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:40:34,863 INFO: 127.0.0.1 - - [27/Oct/2024 13:40:34] "GET /teacher/manage_exams HTTP/1.1" 200 -
+2024-10-27 13:40:34,896 INFO: 127.0.0.1 - - [27/Oct/2024 13:40:34] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:40:36,104 INFO: Exam report generated for exam ID '8'
+2024-10-27 13:40:36,105 INFO: 127.0.0.1 - - [27/Oct/2024 13:40:36] "GET /teacher/exam_report/8 HTTP/1.1" 200 -
+2024-10-27 13:40:41,027 INFO: Grades retrieved for exam ID '8'
+2024-10-27 13:40:41,058 INFO: 127.0.0.1 - - [27/Oct/2024 13:40:41] "[35m[1mGET /teacher/view_grades/8 HTTP/1.1[0m" 500 -
+2024-10-27 13:40:41,085 INFO: 127.0.0.1 - - [27/Oct/2024 13:40:41] "GET /teacher/view_grades/8?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2024-10-27 13:40:41,085 INFO: 127.0.0.1 - - [27/Oct/2024 13:40:41] "GET /teacher/view_grades/8?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2024-10-27 13:40:41,112 INFO: 127.0.0.1 - - [27/Oct/2024 13:40:41] "GET /teacher/view_grades/8?__debugger__=yes&cmd=resource&f=console.png&s=oNKDYSqNgT7LQ1Dz4LQb HTTP/1.1" 200 -
+2024-10-27 13:42:12,169 INFO: Grades retrieved for exam ID '8'
+2024-10-27 13:42:12,184 INFO: 127.0.0.1 - - [27/Oct/2024 13:42:12] "GET /teacher/view_grades/8 HTTP/1.1" 200 -
+2024-10-27 13:42:12,211 INFO: 127.0.0.1 - - [27/Oct/2024 13:42:12] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:42:15,355 INFO: Grades retrieved for exam ID '9'
+2024-10-27 13:42:15,356 INFO: 127.0.0.1 - - [27/Oct/2024 13:42:15] "GET /teacher/view_grades/9 HTTP/1.1" 200 -
+2024-10-27 13:42:15,383 INFO: 127.0.0.1 - - [27/Oct/2024 13:42:15] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:42:20,992 INFO: Exam report generated for exam ID '8'
+2024-10-27 13:42:20,993 INFO: 127.0.0.1 - - [27/Oct/2024 13:42:20] "GET /teacher/exam_report/8 HTTP/1.1" 200 -
+2024-10-27 13:43:52,005 INFO: Exam report generated for exam ID '8'
+2024-10-27 13:43:52,006 INFO: 127.0.0.1 - - [27/Oct/2024 13:43:52] "GET /teacher/exam_report/8 HTTP/1.1" 200 -
+2024-10-27 13:43:55,306 INFO: 127.0.0.1 - - [27/Oct/2024 13:43:55] "GET /teacher/dashboard HTTP/1.1" 200 -
+2024-10-27 13:43:55,331 INFO: 127.0.0.1 - - [27/Oct/2024 13:43:55] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:43:56,253 INFO: 127.0.0.1 - - [27/Oct/2024 13:43:56] "GET /teacher/manage_exams HTTP/1.1" 200 -
+2024-10-27 13:43:56,274 INFO: 127.0.0.1 - - [27/Oct/2024 13:43:56] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:43:57,217 INFO: Exam report generated for exam ID '8'
+2024-10-27 13:43:57,217 INFO: 127.0.0.1 - - [27/Oct/2024 13:43:57] "GET /teacher/exam_report/8 HTTP/1.1" 200 -
+2024-10-27 13:44:30,295 INFO: Exam report generated for exam ID '8'
+2024-10-27 13:44:30,298 INFO: 127.0.0.1 - - [27/Oct/2024 13:44:30] "GET /teacher/exam_report/8 HTTP/1.1" 200 -
+2024-10-27 13:44:30,311 INFO: 127.0.0.1 - - [27/Oct/2024 13:44:30] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:44:31,634 INFO: 127.0.0.1 - - [27/Oct/2024 13:44:31] "GET /teacher/manage_exams HTTP/1.1" 200 -
+2024-10-27 13:44:31,661 INFO: 127.0.0.1 - - [27/Oct/2024 13:44:31] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:44:33,269 INFO: Grades retrieved for exam ID '8'
+2024-10-27 13:44:33,275 INFO: 127.0.0.1 - - [27/Oct/2024 13:44:33] "GET /teacher/view_grades/8 HTTP/1.1" 200 -
+2024-10-27 13:44:33,297 INFO: 127.0.0.1 - - [27/Oct/2024 13:44:33] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:44:35,065 INFO: 127.0.0.1 - - [27/Oct/2024 13:44:35] "GET /teacher/manage_exams HTTP/1.1" 200 -
+2024-10-27 13:44:35,085 INFO: 127.0.0.1 - - [27/Oct/2024 13:44:35] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:44:36,169 INFO: Exam report generated for exam ID '8'
+2024-10-27 13:44:36,169 INFO: 127.0.0.1 - - [27/Oct/2024 13:44:36] "GET /teacher/exam_report/8 HTTP/1.1" 200 -
+2024-10-27 13:44:36,191 INFO: 127.0.0.1 - - [27/Oct/2024 13:44:36] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:44:37,780 INFO: 127.0.0.1 - - [27/Oct/2024 13:44:37] "GET /teacher/manage_exams HTTP/1.1" 200 -
+2024-10-27 13:44:37,800 INFO: 127.0.0.1 - - [27/Oct/2024 13:44:37] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:44:39,401 INFO: Exam ID '8' auto graded successfully
+2024-10-27 13:44:39,401 INFO: 127.0.0.1 - - [27/Oct/2024 13:44:39] "[32mPOST /teacher/auto_grade_exam/8 HTTP/1.1[0m" 302 -
+2024-10-27 13:44:39,436 INFO: 127.0.0.1 - - [27/Oct/2024 13:44:39] "GET /teacher/manage_exams HTTP/1.1" 200 -
+2024-10-27 13:44:39,463 INFO: 127.0.0.1 - - [27/Oct/2024 13:44:39] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:44:40,907 INFO: 127.0.0.1 - - [27/Oct/2024 13:44:40] "GET /teacher/grade_exam/8 HTTP/1.1" 200 -
+2024-10-27 13:44:40,931 INFO: 127.0.0.1 - - [27/Oct/2024 13:44:40] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:44:43,281 INFO: 127.0.0.1 - - [27/Oct/2024 13:44:43] "GET /teacher/grade_exam/8?student_id=6 HTTP/1.1" 200 -
+2024-10-27 13:44:43,303 INFO: 127.0.0.1 - - [27/Oct/2024 13:44:43] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:44:44,977 INFO: 127.0.0.1 - - [27/Oct/2024 13:44:44] "GET /teacher/grade_exam/8?student_id=7 HTTP/1.1" 200 -
+2024-10-27 13:44:45,000 INFO: 127.0.0.1 - - [27/Oct/2024 13:44:45] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:44:46,444 INFO: 127.0.0.1 - - [27/Oct/2024 13:44:46] "GET /teacher/grade_exam/8?student_id=6 HTTP/1.1" 200 -
+2024-10-27 13:44:46,465 INFO: 127.0.0.1 - - [27/Oct/2024 13:44:46] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:44:48,511 INFO: 127.0.0.1 - - [27/Oct/2024 13:44:48] "GET /teacher/grade_exam/8?student_id=7 HTTP/1.1" 200 -
+2024-10-27 13:44:48,531 INFO: 127.0.0.1 - - [27/Oct/2024 13:44:48] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:44:49,266 INFO: 127.0.0.1 - - [27/Oct/2024 13:44:49] "GET /teacher/manage_exams HTTP/1.1" 200 -
+2024-10-27 13:44:49,289 INFO: 127.0.0.1 - - [27/Oct/2024 13:44:49] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:45:04,845 INFO: 127.0.0.1 - - [27/Oct/2024 13:45:04] "GET /teacher/dashboard HTTP/1.1" 200 -
+2024-10-27 13:45:04,865 INFO: 127.0.0.1 - - [27/Oct/2024 13:45:04] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:45:05,531 INFO: Teacher logged out
+2024-10-27 13:45:05,532 INFO: 127.0.0.1 - - [27/Oct/2024 13:45:05] "GET /teacher/logout HTTP/1.1" 200 -
+2024-10-27 13:45:05,557 INFO: 127.0.0.1 - - [27/Oct/2024 13:45:05] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:45:06,372 INFO: 127.0.0.1 - - [27/Oct/2024 13:45:06] "GET /student/login HTTP/1.1" 200 -
+2024-10-27 13:45:06,395 INFO: 127.0.0.1 - - [27/Oct/2024 13:45:06] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:45:07,586 INFO: 127.0.0.1 - - [27/Oct/2024 13:45:07] "GET / HTTP/1.1" 200 -
+2024-10-27 13:45:07,607 INFO: 127.0.0.1 - - [27/Oct/2024 13:45:07] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:45:08,330 INFO: 127.0.0.1 - - [27/Oct/2024 13:45:08] "GET /teacher/login HTTP/1.1" 200 -
+2024-10-27 13:45:08,352 INFO: 127.0.0.1 - - [27/Oct/2024 13:45:08] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:45:09,064 INFO: 127.0.0.1 - - [27/Oct/2024 13:45:09] "GET / HTTP/1.1" 200 -
+2024-10-27 13:45:09,087 INFO: 127.0.0.1 - - [27/Oct/2024 13:45:09] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:45:09,704 INFO: 127.0.0.1 - - [27/Oct/2024 13:45:09] "GET /teacher/register HTTP/1.1" 200 -
+2024-10-27 13:45:09,730 INFO: 127.0.0.1 - - [27/Oct/2024 13:45:09] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:45:11,925 INFO: 127.0.0.1 - - [27/Oct/2024 13:45:11] "GET / HTTP/1.1" 200 -
+2024-10-27 13:45:11,945 INFO: 127.0.0.1 - - [27/Oct/2024 13:45:11] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:45:12,647 INFO: 127.0.0.1 - - [27/Oct/2024 13:45:12] "GET /student/register HTTP/1.1" 200 -
+2024-10-27 13:45:12,670 INFO: 127.0.0.1 - - [27/Oct/2024 13:45:12] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:45:14,014 INFO: 127.0.0.1 - - [27/Oct/2024 13:45:14] "GET / HTTP/1.1" 200 -
+2024-10-27 13:45:14,038 INFO: 127.0.0.1 - - [27/Oct/2024 13:45:14] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:45:16,188 INFO: 127.0.0.1 - - [27/Oct/2024 13:45:16] "GET /admin/login HTTP/1.1" 200 -
+2024-10-27 13:45:16,210 INFO: 127.0.0.1 - - [27/Oct/2024 13:45:16] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:45:17,412 INFO: 127.0.0.1 - - [27/Oct/2024 13:45:17] "GET / HTTP/1.1" 200 -
+2024-10-27 13:45:17,436 INFO: 127.0.0.1 - - [27/Oct/2024 13:45:17] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:55:09,283 INFO: 127.0.0.1 - - [27/Oct/2024 13:55:09] "GET / HTTP/1.1" 200 -
+2024-10-27 13:55:09,317 INFO: 127.0.0.1 - - [27/Oct/2024 13:55:09] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:57:40,950 INFO: 127.0.0.1 - - [27/Oct/2024 13:57:40] "GET / HTTP/1.1" 200 -
+2024-10-27 13:57:40,981 INFO: 127.0.0.1 - - [27/Oct/2024 13:57:40] "[33mGET /css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 13:57:44,009 INFO: 127.0.0.1 - - [27/Oct/2024 13:57:44] "GET / HTTP/1.1" 200 -
+2024-10-27 13:57:44,038 INFO: 127.0.0.1 - - [27/Oct/2024 13:57:44] "[33mGET /css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 14:02:14,367 INFO: 127.0.0.1 - - [27/Oct/2024 14:02:14] "GET / HTTP/1.1" 200 -
+2024-10-27 14:02:14,404 INFO: 127.0.0.1 - - [27/Oct/2024 14:02:14] "[33mGET /css/index.css HTTP/1.1[0m" 404 -
+2024-10-27 14:02:14,405 INFO: 127.0.0.1 - - [27/Oct/2024 14:02:14] "[33mGET /js/index.js HTTP/1.1[0m" 404 -
+2024-10-27 14:02:14,406 INFO: 127.0.0.1 - - [27/Oct/2024 14:02:14] "[33mGET /css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 14:02:14,409 INFO: 127.0.0.1 - - [27/Oct/2024 14:02:14] "[33mGET /images/student.png HTTP/1.1[0m" 404 -
+2024-10-27 14:02:14,410 INFO: 127.0.0.1 - - [27/Oct/2024 14:02:14] "[33mGET /images/teacher.png HTTP/1.1[0m" 404 -
+2024-10-27 14:02:14,411 INFO: 127.0.0.1 - - [27/Oct/2024 14:02:14] "[33mGET /images/admin.png HTTP/1.1[0m" 404 -
+2024-10-27 14:05:09,637 INFO: 127.0.0.1 - - [27/Oct/2024 14:05:09] "GET / HTTP/1.1" 200 -
+2024-10-27 14:05:09,653 INFO: 127.0.0.1 - - [27/Oct/2024 14:05:09] "[33mGET /css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 14:05:20,630 INFO: 127.0.0.1 - - [27/Oct/2024 14:05:20] "GET / HTTP/1.1" 200 -
+2024-10-27 14:05:20,650 INFO: 127.0.0.1 - - [27/Oct/2024 14:05:20] "[33mGET /css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 14:07:41,815 INFO: 127.0.0.1 - - [27/Oct/2024 14:07:41] "GET / HTTP/1.1" 200 -
+2024-10-27 14:07:41,835 INFO: 127.0.0.1 - - [27/Oct/2024 14:07:41] "[33mGET /css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 14:07:57,437 INFO: 127.0.0.1 - - [27/Oct/2024 14:07:57] "GET / HTTP/1.1" 200 -
+2024-10-27 14:07:57,469 INFO: 127.0.0.1 - - [27/Oct/2024 14:07:57] "[33mGET /css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 14:08:09,359 INFO: 127.0.0.1 - - [27/Oct/2024 14:08:09] "GET / HTTP/1.1" 200 -
+2024-10-27 14:08:09,373 INFO: 127.0.0.1 - - [27/Oct/2024 14:08:09] "[33mGET /css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 14:08:09,853 INFO: 127.0.0.1 - - [27/Oct/2024 14:08:09] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-10-27 14:11:27,714 INFO: 127.0.0.1 - - [27/Oct/2024 14:11:27] "GET / HTTP/1.1" 200 -
+2024-10-27 14:11:27,748 INFO: 127.0.0.1 - - [27/Oct/2024 14:11:27] "[33mGET /js/main.js HTTP/1.1[0m" 404 -
+2024-10-27 14:11:27,750 INFO: 127.0.0.1 - - [27/Oct/2024 14:11:27] "[33mGET /css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 14:11:28,797 INFO: 127.0.0.1 - - [27/Oct/2024 14:11:28] "GET / HTTP/1.1" 200 -
+2024-10-27 14:11:28,822 INFO: 127.0.0.1 - - [27/Oct/2024 14:11:28] "[33mGET /js/main.js HTTP/1.1[0m" 404 -
+2024-10-27 14:11:28,823 INFO: 127.0.0.1 - - [27/Oct/2024 14:11:28] "[33mGET /css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 14:12:20,069 INFO: 127.0.0.1 - - [27/Oct/2024 14:12:20] "GET / HTTP/1.1" 200 -
+2024-10-27 14:12:20,103 INFO: 127.0.0.1 - - [27/Oct/2024 14:12:20] "[33mGET /js/main.js HTTP/1.1[0m" 404 -
+2024-10-27 14:12:20,104 INFO: 127.0.0.1 - - [27/Oct/2024 14:12:20] "[33mGET /css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 14:19:12,474 INFO: 127.0.0.1 - - [27/Oct/2024 14:19:12] "GET / HTTP/1.1" 200 -
+2024-10-27 14:19:12,519 INFO: 127.0.0.1 - - [27/Oct/2024 14:19:12] "[33mGET /css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 14:19:12,519 INFO: 127.0.0.1 - - [27/Oct/2024 14:19:12] "[33mGET /js/main.js HTTP/1.1[0m" 404 -
+2024-10-27 14:19:16,901 INFO: 127.0.0.1 - - [27/Oct/2024 14:19:16] "GET / HTTP/1.1" 200 -
+2024-10-27 14:19:16,938 INFO: 127.0.0.1 - - [27/Oct/2024 14:19:16] "[33mGET /css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 14:19:16,939 INFO: 127.0.0.1 - - [27/Oct/2024 14:19:16] "[33mGET /js/main.js HTTP/1.1[0m" 404 -
+2024-10-27 14:22:32,669 INFO: 127.0.0.1 - - [27/Oct/2024 14:22:32] "GET / HTTP/1.1" 200 -
+2024-10-27 14:22:32,690 INFO: 127.0.0.1 - - [27/Oct/2024 14:22:32] "[33mGET /css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 14:34:06,570 INFO: 127.0.0.1 - - [27/Oct/2024 14:34:06] "GET / HTTP/1.1" 200 -
+2024-10-27 14:34:06,603 INFO: 127.0.0.1 - - [27/Oct/2024 14:34:06] "[33mGET /js/script.js HTTP/1.1[0m" 404 -
+2024-10-27 14:34:06,604 INFO: 127.0.0.1 - - [27/Oct/2024 14:34:06] "[33mGET /css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 14:34:45,289 INFO: 127.0.0.1 - - [27/Oct/2024 14:34:45] "GET / HTTP/1.1" 200 -
+2024-10-27 14:34:45,311 INFO: 127.0.0.1 - - [27/Oct/2024 14:34:45] "[33mGET /css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 14:34:45,312 INFO: 127.0.0.1 - - [27/Oct/2024 14:34:45] "[33mGET /js/script.js HTTP/1.1[0m" 404 -
+2024-10-27 14:34:57,258 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-27 14:34:57,258 INFO: [33mPress CTRL+C to quit[0m
+2024-10-27 14:34:57,259 INFO:  * Restarting with stat
+2024-10-27 14:34:59,590 WARNING:  * Debugger is active!
+2024-10-27 14:34:59,591 INFO:  * Debugger PIN: 669-458-967
+2024-10-27 14:35:00,841 INFO: 127.0.0.1 - - [27/Oct/2024 14:35:00] "GET / HTTP/1.1" 200 -
+2024-10-27 14:35:00,876 INFO: 127.0.0.1 - - [27/Oct/2024 14:35:00] "[33mGET /js/script.js HTTP/1.1[0m" 404 -
+2024-10-27 14:35:00,877 INFO: 127.0.0.1 - - [27/Oct/2024 14:35:00] "[33mGET /css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 14:35:02,372 INFO: 127.0.0.1 - - [27/Oct/2024 14:35:02] "GET / HTTP/1.1" 200 -
+2024-10-27 14:35:02,391 INFO: 127.0.0.1 - - [27/Oct/2024 14:35:02] "[33mGET /js/script.js HTTP/1.1[0m" 404 -
+2024-10-27 14:35:02,392 INFO: 127.0.0.1 - - [27/Oct/2024 14:35:02] "[33mGET /css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 14:37:19,822 INFO: 127.0.0.1 - - [27/Oct/2024 14:37:19] "GET / HTTP/1.1" 200 -
+2024-10-27 14:37:19,842 INFO: 127.0.0.1 - - [27/Oct/2024 14:37:19] "[33mGET /css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 14:37:32,452 INFO: 127.0.0.1 - - [27/Oct/2024 14:37:32] "GET / HTTP/1.1" 200 -
+2024-10-27 14:37:32,472 INFO: 127.0.0.1 - - [27/Oct/2024 14:37:32] "[33mGET /css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 14:43:17,712 INFO: 127.0.0.1 - - [27/Oct/2024 14:43:17] "GET / HTTP/1.1" 200 -
+2024-10-27 14:43:17,747 INFO: 127.0.0.1 - - [27/Oct/2024 14:43:17] "[33mGET /css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 14:43:21,335 INFO: 127.0.0.1 - - [27/Oct/2024 14:43:21] "GET /student/login HTTP/1.1" 200 -
+2024-10-27 14:43:21,358 INFO: 127.0.0.1 - - [27/Oct/2024 14:43:21] "[33mGET /css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 14:43:23,812 INFO: 127.0.0.1 - - [27/Oct/2024 14:43:23] "GET /teacher/login HTTP/1.1" 200 -
+2024-10-27 14:43:23,834 INFO: 127.0.0.1 - - [27/Oct/2024 14:43:23] "[33mGET /css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 14:43:25,615 INFO: 127.0.0.1 - - [27/Oct/2024 14:43:25] "GET /admin/login HTTP/1.1" 200 -
+2024-10-27 14:43:25,644 INFO: 127.0.0.1 - - [27/Oct/2024 14:43:25] "[33mGET /css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 14:47:14,985 INFO: 127.0.0.1 - - [27/Oct/2024 14:47:14] "GET / HTTP/1.1" 200 -
+2024-10-27 14:47:15,019 INFO: 127.0.0.1 - - [27/Oct/2024 14:47:15] "[33mGET /css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 14:47:15,021 INFO: 127.0.0.1 - - [27/Oct/2024 14:47:15] "[33mGET /js/index.js HTTP/1.1[0m" 404 -
+2024-10-27 14:47:15,022 INFO: 127.0.0.1 - - [27/Oct/2024 14:47:15] "[33mGET /css/index.css HTTP/1.1[0m" 404 -
+2024-10-27 14:47:19,657 INFO: 127.0.0.1 - - [27/Oct/2024 14:47:19] "GET /student/login HTTP/1.1" 200 -
+2024-10-27 14:47:19,686 INFO: 127.0.0.1 - - [27/Oct/2024 14:47:19] "[33mGET /css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 14:47:21,913 INFO: 127.0.0.1 - - [27/Oct/2024 14:47:21] "GET /teacher/login HTTP/1.1" 200 -
+2024-10-27 14:47:21,953 INFO: 127.0.0.1 - - [27/Oct/2024 14:47:21] "[33mGET /css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 14:47:26,031 INFO: 127.0.0.1 - - [27/Oct/2024 14:47:26] "GET / HTTP/1.1" 200 -
+2024-10-27 14:47:26,057 INFO: 127.0.0.1 - - [27/Oct/2024 14:47:26] "[33mGET /css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 14:47:26,058 INFO: 127.0.0.1 - - [27/Oct/2024 14:47:26] "[33mGET /js/index.js HTTP/1.1[0m" 404 -
+2024-10-27 14:47:26,059 INFO: 127.0.0.1 - - [27/Oct/2024 14:47:26] "[33mGET /css/index.css HTTP/1.1[0m" 404 -
+2024-10-27 14:49:56,948 INFO: 127.0.0.1 - - [27/Oct/2024 14:49:56] "GET / HTTP/1.1" 200 -
+2024-10-27 14:49:56,969 INFO: 127.0.0.1 - - [27/Oct/2024 14:49:56] "[33mGET /css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 14:49:56,970 INFO: 127.0.0.1 - - [27/Oct/2024 14:49:56] "[33mGET /css/index.css HTTP/1.1[0m" 404 -
+2024-10-27 14:50:58,047 INFO: 127.0.0.1 - - [27/Oct/2024 14:50:58] "GET / HTTP/1.1" 200 -
+2024-10-27 14:50:58,077 INFO: 127.0.0.1 - - [27/Oct/2024 14:50:58] "[33mGET /css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 14:50:58,079 INFO: 127.0.0.1 - - [27/Oct/2024 14:50:58] "[33mGET /css/index.css HTTP/1.1[0m" 404 -
+2024-10-27 14:51:08,158 INFO: 127.0.0.1 - - [27/Oct/2024 14:51:08] "GET / HTTP/1.1" 200 -
+2024-10-27 14:51:08,175 INFO: 127.0.0.1 - - [27/Oct/2024 14:51:08] "[33mGET /css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 14:51:08,176 INFO: 127.0.0.1 - - [27/Oct/2024 14:51:08] "[33mGET /css/index.css HTTP/1.1[0m" 404 -
+2024-10-27 14:51:21,870 INFO: 127.0.0.1 - - [27/Oct/2024 14:51:21] "GET / HTTP/1.1" 200 -
+2024-10-27 14:51:21,887 INFO: 127.0.0.1 - - [27/Oct/2024 14:51:21] "[33mGET /css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 14:51:21,889 INFO: 127.0.0.1 - - [27/Oct/2024 14:51:21] "[33mGET /css/index.css HTTP/1.1[0m" 404 -
+2024-10-27 14:53:52,036 INFO: 127.0.0.1 - - [27/Oct/2024 14:53:52] "GET / HTTP/1.1" 200 -
+2024-10-27 14:53:52,057 INFO: 127.0.0.1 - - [27/Oct/2024 14:53:52] "[33mGET /css/index.css HTTP/1.1[0m" 404 -
+2024-10-27 14:55:55,609 INFO: 127.0.0.1 - - [27/Oct/2024 14:55:55] "GET / HTTP/1.1" 200 -
+2024-10-27 14:55:55,630 INFO: 127.0.0.1 - - [27/Oct/2024 14:55:55] "[33mGET /css/index.css HTTP/1.1[0m" 404 -
+2024-10-27 14:56:32,872 INFO: 127.0.0.1 - - [27/Oct/2024 14:56:32] "GET / HTTP/1.1" 200 -
+2024-10-27 14:56:32,942 INFO: 127.0.0.1 - - [27/Oct/2024 14:56:32] "GET /static/css/index.css HTTP/1.1" 200 -
+2024-10-27 15:02:00,129 INFO: 127.0.0.1 - - [27/Oct/2024 15:02:00] "GET /student/login HTTP/1.1" 200 -
+2024-10-27 15:02:00,172 INFO: 127.0.0.1 - - [27/Oct/2024 15:02:00] "GET /static/css/student_login.css HTTP/1.1" 200 -
+2024-10-27 15:02:00,197 INFO: 127.0.0.1 - - [27/Oct/2024 15:02:00] "[33mGET /images/student_background.jpg HTTP/1.1[0m" 404 -
+2024-10-27 15:02:04,468 INFO: 127.0.0.1 - - [27/Oct/2024 15:02:04] "GET /student/register HTTP/1.1" 200 -
+2024-10-27 15:02:04,506 INFO: 127.0.0.1 - - [27/Oct/2024 15:02:04] "GET /static/css/student_register.css HTTP/1.1" 200 -
+2024-10-27 15:02:04,522 INFO: 127.0.0.1 - - [27/Oct/2024 15:02:04] "[33mGET /images/student_background.jpg HTTP/1.1[0m" 404 -
+2024-10-27 15:02:08,594 INFO: 127.0.0.1 - - [27/Oct/2024 15:02:08] "GET /student/register HTTP/1.1" 200 -
+2024-10-27 15:02:08,621 INFO: 127.0.0.1 - - [27/Oct/2024 15:02:08] "[36mGET /static/css/student_register.css HTTP/1.1[0m" 304 -
+2024-10-27 15:02:08,647 INFO: 127.0.0.1 - - [27/Oct/2024 15:02:08] "[33mGET /images/student_background.jpg HTTP/1.1[0m" 404 -
+2024-10-27 15:02:11,923 INFO: 127.0.0.1 - - [27/Oct/2024 15:02:11] "GET / HTTP/1.1" 200 -
+2024-10-27 15:02:11,947 INFO: 127.0.0.1 - - [27/Oct/2024 15:02:11] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+2024-10-27 15:02:12,768 INFO: 127.0.0.1 - - [27/Oct/2024 15:02:12] "GET /teacher/login HTTP/1.1" 200 -
+2024-10-27 15:02:12,808 INFO: 127.0.0.1 - - [27/Oct/2024 15:02:12] "GET /static/css/teacher_login.css HTTP/1.1" 200 -
+2024-10-27 15:02:12,820 INFO: 127.0.0.1 - - [27/Oct/2024 15:02:12] "[33mGET /images/teacher_background.jpg HTTP/1.1[0m" 404 -
+2024-10-27 15:02:14,821 INFO: 127.0.0.1 - - [27/Oct/2024 15:02:14] "GET / HTTP/1.1" 200 -
+2024-10-27 15:02:14,850 INFO: 127.0.0.1 - - [27/Oct/2024 15:02:14] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+2024-10-27 15:02:15,793 INFO: 127.0.0.1 - - [27/Oct/2024 15:02:15] "GET /teacher/register HTTP/1.1" 200 -
+2024-10-27 15:02:15,834 INFO: 127.0.0.1 - - [27/Oct/2024 15:02:15] "GET /static/css/teacher_register.css HTTP/1.1" 200 -
+2024-10-27 15:02:15,853 INFO: 127.0.0.1 - - [27/Oct/2024 15:02:15] "[33mGET /images/teacher_background.jpg HTTP/1.1[0m" 404 -
+2024-10-27 15:02:16,892 INFO: 127.0.0.1 - - [27/Oct/2024 15:02:16] "GET / HTTP/1.1" 200 -
+2024-10-27 15:02:16,919 INFO: 127.0.0.1 - - [27/Oct/2024 15:02:16] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+2024-10-27 15:02:17,906 INFO: 127.0.0.1 - - [27/Oct/2024 15:02:17] "GET /admin/login HTTP/1.1" 200 -
+2024-10-27 15:02:17,944 INFO: 127.0.0.1 - - [27/Oct/2024 15:02:17] "GET /static/css/admin_login.css HTTP/1.1" 200 -
+2024-10-27 15:02:17,973 INFO: 127.0.0.1 - - [27/Oct/2024 15:02:17] "[33mGET /images/admin_background.jpg HTTP/1.1[0m" 404 -
+2024-10-27 15:02:20,118 INFO: 127.0.0.1 - - [27/Oct/2024 15:02:20] "GET / HTTP/1.1" 200 -
+2024-10-27 15:02:20,145 INFO: 127.0.0.1 - - [27/Oct/2024 15:02:20] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+2024-10-27 15:02:22,130 INFO: 127.0.0.1 - - [27/Oct/2024 15:02:22] "GET /student/login HTTP/1.1" 200 -
+2024-10-27 15:02:22,156 INFO: 127.0.0.1 - - [27/Oct/2024 15:02:22] "[36mGET /static/css/student_login.css HTTP/1.1[0m" 304 -
+2024-10-27 15:02:22,181 INFO: 127.0.0.1 - - [27/Oct/2024 15:02:22] "[33mGET /images/student_background.jpg HTTP/1.1[0m" 404 -
+2024-10-27 15:02:23,160 INFO: 127.0.0.1 - - [27/Oct/2024 15:02:23] "GET / HTTP/1.1" 200 -
+2024-10-27 15:02:23,189 INFO: 127.0.0.1 - - [27/Oct/2024 15:02:23] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+2024-10-27 15:02:24,181 INFO: 127.0.0.1 - - [27/Oct/2024 15:02:24] "GET /student/register HTTP/1.1" 200 -
+2024-10-27 15:02:24,209 INFO: 127.0.0.1 - - [27/Oct/2024 15:02:24] "[36mGET /static/css/student_register.css HTTP/1.1[0m" 304 -
+2024-10-27 15:02:24,231 INFO: 127.0.0.1 - - [27/Oct/2024 15:02:24] "[33mGET /images/student_background.jpg HTTP/1.1[0m" 404 -
+2024-10-27 15:02:25,255 INFO: 127.0.0.1 - - [27/Oct/2024 15:02:25] "GET / HTTP/1.1" 200 -
+2024-10-27 15:02:25,275 INFO: 127.0.0.1 - - [27/Oct/2024 15:02:25] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+2024-10-27 15:02:26,059 INFO: 127.0.0.1 - - [27/Oct/2024 15:02:26] "GET /teacher/login HTTP/1.1" 200 -
+2024-10-27 15:02:26,089 INFO: 127.0.0.1 - - [27/Oct/2024 15:02:26] "[36mGET /static/css/teacher_login.css HTTP/1.1[0m" 304 -
+2024-10-27 15:02:26,123 INFO: 127.0.0.1 - - [27/Oct/2024 15:02:26] "[33mGET /images/teacher_background.jpg HTTP/1.1[0m" 404 -
+2024-10-27 15:02:26,843 INFO: 127.0.0.1 - - [27/Oct/2024 15:02:26] "GET / HTTP/1.1" 200 -
+2024-10-27 15:02:26,865 INFO: 127.0.0.1 - - [27/Oct/2024 15:02:26] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+2024-10-27 15:02:27,884 INFO: 127.0.0.1 - - [27/Oct/2024 15:02:27] "GET /teacher/register HTTP/1.1" 200 -
+2024-10-27 15:02:27,911 INFO: 127.0.0.1 - - [27/Oct/2024 15:02:27] "[36mGET /static/css/teacher_register.css HTTP/1.1[0m" 304 -
+2024-10-27 15:02:27,938 INFO: 127.0.0.1 - - [27/Oct/2024 15:02:27] "[33mGET /images/teacher_background.jpg HTTP/1.1[0m" 404 -
+2024-10-27 15:02:29,239 INFO: 127.0.0.1 - - [27/Oct/2024 15:02:29] "GET / HTTP/1.1" 200 -
+2024-10-27 15:02:29,260 INFO: 127.0.0.1 - - [27/Oct/2024 15:02:29] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+2024-10-27 15:02:30,452 INFO: 127.0.0.1 - - [27/Oct/2024 15:02:30] "GET /admin/login HTTP/1.1" 200 -
+2024-10-27 15:02:30,475 INFO: 127.0.0.1 - - [27/Oct/2024 15:02:30] "[36mGET /static/css/admin_login.css HTTP/1.1[0m" 304 -
+2024-10-27 15:02:30,502 INFO: 127.0.0.1 - - [27/Oct/2024 15:02:30] "[33mGET /images/admin_background.jpg HTTP/1.1[0m" 404 -
+2024-10-27 15:02:31,482 INFO: 127.0.0.1 - - [27/Oct/2024 15:02:31] "GET / HTTP/1.1" 200 -
+2024-10-27 15:02:31,505 INFO: 127.0.0.1 - - [27/Oct/2024 15:02:31] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+2024-10-27 15:02:37,075 INFO: 127.0.0.1 - - [27/Oct/2024 15:02:37] "GET /student/login HTTP/1.1" 200 -
+2024-10-27 15:02:37,104 INFO: 127.0.0.1 - - [27/Oct/2024 15:02:37] "GET /static/css/student_login.css HTTP/1.1" 200 -
+2024-10-27 15:02:37,134 INFO: 127.0.0.1 - - [27/Oct/2024 15:02:37] "[33mGET /images/student_background.jpg HTTP/1.1[0m" 404 -
+2024-10-27 15:02:38,066 INFO: 127.0.0.1 - - [27/Oct/2024 15:02:38] "GET / HTTP/1.1" 200 -
+2024-10-27 15:02:38,088 INFO: 127.0.0.1 - - [27/Oct/2024 15:02:38] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+2024-10-27 15:04:07,367 INFO: 127.0.0.1 - - [27/Oct/2024 15:04:07] "GET / HTTP/1.1" 200 -
+2024-10-27 15:04:07,408 INFO: 127.0.0.1 - - [27/Oct/2024 15:04:07] "GET /static/css/index.css HTTP/1.1" 200 -
+2024-10-27 15:04:10,864 INFO: 127.0.0.1 - - [27/Oct/2024 15:04:10] "GET /student/login HTTP/1.1" 200 -
+2024-10-27 15:04:10,902 INFO: 127.0.0.1 - - [27/Oct/2024 15:04:10] "GET /static/css/student_login.css HTTP/1.1" 200 -
+2024-10-27 15:04:10,919 INFO: 127.0.0.1 - - [27/Oct/2024 15:04:10] "[33mGET /images/student_background.jpg HTTP/1.1[0m" 404 -
+2024-10-27 15:04:18,339 INFO: 127.0.0.1 - - [27/Oct/2024 15:04:18] "GET / HTTP/1.1" 200 -
+2024-10-27 15:04:18,371 INFO: 127.0.0.1 - - [27/Oct/2024 15:04:18] "GET /static/css/index.css HTTP/1.1" 200 -
+2024-10-27 15:04:19,754 INFO: 127.0.0.1 - - [27/Oct/2024 15:04:19] "GET /teacher/login HTTP/1.1" 200 -
+2024-10-27 15:04:19,803 INFO: 127.0.0.1 - - [27/Oct/2024 15:04:19] "GET /static/css/teacher_login.css HTTP/1.1" 200 -
+2024-10-27 15:04:19,820 INFO: 127.0.0.1 - - [27/Oct/2024 15:04:19] "[33mGET /images/teacher_background.jpg HTTP/1.1[0m" 404 -
+2024-10-27 15:04:21,407 INFO: 127.0.0.1 - - [27/Oct/2024 15:04:21] "GET / HTTP/1.1" 200 -
+2024-10-27 15:04:21,436 INFO: 127.0.0.1 - - [27/Oct/2024 15:04:21] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+2024-10-27 15:04:22,363 INFO: 127.0.0.1 - - [27/Oct/2024 15:04:22] "GET /teacher/register HTTP/1.1" 200 -
+2024-10-27 15:04:22,392 INFO: 127.0.0.1 - - [27/Oct/2024 15:04:22] "GET /static/css/teacher_register.css HTTP/1.1" 200 -
+2024-10-27 15:04:22,413 INFO: 127.0.0.1 - - [27/Oct/2024 15:04:22] "[33mGET /images/teacher_background.jpg HTTP/1.1[0m" 404 -
+2024-10-27 15:04:23,721 INFO: 127.0.0.1 - - [27/Oct/2024 15:04:23] "GET / HTTP/1.1" 200 -
+2024-10-27 15:04:23,748 INFO: 127.0.0.1 - - [27/Oct/2024 15:04:23] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+2024-10-27 15:04:24,864 INFO: 127.0.0.1 - - [27/Oct/2024 15:04:24] "GET /admin/login HTTP/1.1" 200 -
+2024-10-27 15:04:24,902 INFO: 127.0.0.1 - - [27/Oct/2024 15:04:24] "GET /static/css/admin_login.css HTTP/1.1" 200 -
+2024-10-27 15:04:24,924 INFO: 127.0.0.1 - - [27/Oct/2024 15:04:24] "[33mGET /images/admin_background.jpg HTTP/1.1[0m" 404 -
+2024-10-27 15:04:26,311 INFO: 127.0.0.1 - - [27/Oct/2024 15:04:26] "GET / HTTP/1.1" 200 -
+2024-10-27 15:04:26,332 INFO: 127.0.0.1 - - [27/Oct/2024 15:04:26] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+2024-10-27 15:05:13,217 INFO: 127.0.0.1 - - [27/Oct/2024 15:05:13] "GET /student/login HTTP/1.1" 200 -
+2024-10-27 15:05:13,253 INFO: 127.0.0.1 - - [27/Oct/2024 15:05:13] "[36mGET /static/css/student_login.css HTTP/1.1[0m" 304 -
+2024-10-27 15:05:13,281 INFO: 127.0.0.1 - - [27/Oct/2024 15:05:13] "[33mGET /images/student_background.jpg HTTP/1.1[0m" 404 -
+2024-10-27 15:05:18,714 INFO: 127.0.0.1 - - [27/Oct/2024 15:05:18] "GET /student/register HTTP/1.1" 200 -
+2024-10-27 15:05:18,759 INFO: 127.0.0.1 - - [27/Oct/2024 15:05:18] "GET /static/css/student_register.css HTTP/1.1" 200 -
+2024-10-27 15:05:18,774 INFO: 127.0.0.1 - - [27/Oct/2024 15:05:18] "[33mGET /images/student_background.jpg HTTP/1.1[0m" 404 -
+2024-10-27 15:05:19,829 INFO: 127.0.0.1 - - [27/Oct/2024 15:05:19] "GET / HTTP/1.1" 200 -
+2024-10-27 15:05:20,652 INFO: 127.0.0.1 - - [27/Oct/2024 15:05:20] "GET /teacher/login HTTP/1.1" 200 -
+2024-10-27 15:05:20,675 INFO: 127.0.0.1 - - [27/Oct/2024 15:05:20] "[36mGET /static/css/teacher_login.css HTTP/1.1[0m" 304 -
+2024-10-27 15:05:20,699 INFO: 127.0.0.1 - - [27/Oct/2024 15:05:20] "[33mGET /images/teacher_background.jpg HTTP/1.1[0m" 404 -
+2024-10-27 15:05:22,764 INFO: 127.0.0.1 - - [27/Oct/2024 15:05:22] "GET /teacher/register HTTP/1.1" 200 -
+2024-10-27 15:05:22,797 INFO: 127.0.0.1 - - [27/Oct/2024 15:05:22] "[36mGET /static/css/teacher_register.css HTTP/1.1[0m" 304 -
+2024-10-27 15:05:22,812 INFO: 127.0.0.1 - - [27/Oct/2024 15:05:22] "[33mGET /images/teacher_background.jpg HTTP/1.1[0m" 404 -
+2024-10-27 15:05:24,538 INFO: 127.0.0.1 - - [27/Oct/2024 15:05:24] "GET /admin/login HTTP/1.1" 200 -
+2024-10-27 15:05:24,561 INFO: 127.0.0.1 - - [27/Oct/2024 15:05:24] "[36mGET /static/css/admin_login.css HTTP/1.1[0m" 304 -
+2024-10-27 15:05:24,590 INFO: 127.0.0.1 - - [27/Oct/2024 15:05:24] "[33mGET /images/admin_background.jpg HTTP/1.1[0m" 404 -
+2024-10-27 15:05:27,601 INFO: 127.0.0.1 - - [27/Oct/2024 15:05:27] "GET /student/login HTTP/1.1" 200 -
+2024-10-27 15:05:27,634 INFO: 127.0.0.1 - - [27/Oct/2024 15:05:27] "GET /static/css/student_login.css HTTP/1.1" 200 -
+2024-10-27 15:05:27,664 INFO: 127.0.0.1 - - [27/Oct/2024 15:05:27] "[33mGET /images/student_background.jpg HTTP/1.1[0m" 404 -
+2024-10-27 15:05:32,545 INFO: 127.0.0.1 - - [27/Oct/2024 15:05:32] "GET /teacher/login HTTP/1.1" 200 -
+2024-10-27 15:05:32,575 INFO: 127.0.0.1 - - [27/Oct/2024 15:05:32] "[36mGET /static/css/teacher_login.css HTTP/1.1[0m" 304 -
+2024-10-27 15:05:32,604 INFO: 127.0.0.1 - - [27/Oct/2024 15:05:32] "[33mGET /images/teacher_background.jpg HTTP/1.1[0m" 404 -
+2024-10-27 15:05:34,263 INFO: 127.0.0.1 - - [27/Oct/2024 15:05:34] "GET /teacher/register HTTP/1.1" 200 -
+2024-10-27 15:05:34,289 INFO: 127.0.0.1 - - [27/Oct/2024 15:05:34] "[36mGET /static/css/teacher_register.css HTTP/1.1[0m" 304 -
+2024-10-27 15:05:34,311 INFO: 127.0.0.1 - - [27/Oct/2024 15:05:34] "[33mGET /images/teacher_background.jpg HTTP/1.1[0m" 404 -
+2024-10-27 15:05:55,718 INFO: 127.0.0.1 - - [27/Oct/2024 15:05:55] "GET /student/login HTTP/1.1" 200 -
+2024-10-27 15:05:55,742 INFO: 127.0.0.1 - - [27/Oct/2024 15:05:55] "[36mGET /static/css/student_login.css HTTP/1.1[0m" 304 -
+2024-10-27 15:05:55,773 INFO: 127.0.0.1 - - [27/Oct/2024 15:05:55] "[33mGET /images/student_background.jpg HTTP/1.1[0m" 404 -
+2024-10-27 15:09:04,109 INFO: 127.0.0.1 - - [27/Oct/2024 15:09:04] "GET / HTTP/1.1" 200 -
+2024-10-27 15:09:04,140 INFO: 127.0.0.1 - - [27/Oct/2024 15:09:04] "GET /static/css/index.css HTTP/1.1" 200 -
+2024-10-27 15:09:05,496 INFO: 127.0.0.1 - - [27/Oct/2024 15:09:05] "GET /student/login HTTP/1.1" 200 -
+2024-10-27 15:09:05,531 INFO: 127.0.0.1 - - [27/Oct/2024 15:09:05] "GET /static/css/student_login.css HTTP/1.1" 200 -
+2024-10-27 15:09:05,553 INFO: 127.0.0.1 - - [27/Oct/2024 15:09:05] "[33mGET /images/student_background.jpg HTTP/1.1[0m" 404 -
+2024-10-27 15:09:05,556 INFO: 127.0.0.1 - - [27/Oct/2024 15:09:05] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-10-27 15:10:34,590 INFO: 127.0.0.1 - - [27/Oct/2024 15:10:34] "GET /student/login HTTP/1.1" 200 -
+2024-10-27 15:10:34,623 INFO: 127.0.0.1 - - [27/Oct/2024 15:10:34] "GET /static/css/student_login.css HTTP/1.1" 200 -
+2024-10-27 15:10:34,653 INFO: 127.0.0.1 - - [27/Oct/2024 15:10:34] "[33mGET /images/student_background.jpg HTTP/1.1[0m" 404 -
+2024-10-27 15:10:34,656 INFO: 127.0.0.1 - - [27/Oct/2024 15:10:34] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-10-27 15:10:36,327 INFO: 127.0.0.1 - - [27/Oct/2024 15:10:36] "GET / HTTP/1.1" 200 -
+2024-10-27 15:10:36,353 INFO: 127.0.0.1 - - [27/Oct/2024 15:10:36] "GET /static/css/index.css HTTP/1.1" 200 -
+2024-10-27 15:10:38,032 INFO: 127.0.0.1 - - [27/Oct/2024 15:10:38] "GET /student/login HTTP/1.1" 200 -
+2024-10-27 15:10:38,057 INFO: 127.0.0.1 - - [27/Oct/2024 15:10:38] "GET /static/css/student_login.css HTTP/1.1" 200 -
+2024-10-27 15:10:38,087 INFO: 127.0.0.1 - - [27/Oct/2024 15:10:38] "[33mGET /images/student_background.jpg HTTP/1.1[0m" 404 -
+2024-10-27 15:11:17,402 INFO: 127.0.0.1 - - [27/Oct/2024 15:11:17] "GET / HTTP/1.1" 200 -
+2024-10-27 15:11:17,436 INFO: 127.0.0.1 - - [27/Oct/2024 15:11:17] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+2024-10-27 15:11:18,396 INFO: 127.0.0.1 - - [27/Oct/2024 15:11:18] "GET /student/login HTTP/1.1" 200 -
+2024-10-27 15:11:18,437 INFO: 127.0.0.1 - - [27/Oct/2024 15:11:18] "GET /static/css/student_login.css HTTP/1.1" 200 -
+2024-10-27 15:11:18,443 INFO: 127.0.0.1 - - [27/Oct/2024 15:11:18] "[33mGET /images/student_background.jpg HTTP/1.1[0m" 404 -
+2024-10-27 15:11:18,445 INFO: 127.0.0.1 - - [27/Oct/2024 15:11:18] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-10-27 15:11:20,217 INFO: 127.0.0.1 - - [27/Oct/2024 15:11:20] "GET /student/register HTTP/1.1" 200 -
+2024-10-27 15:11:20,247 INFO: 127.0.0.1 - - [27/Oct/2024 15:11:20] "GET /static/css/student_register.css HTTP/1.1" 200 -
+2024-10-27 15:11:20,267 INFO: 127.0.0.1 - - [27/Oct/2024 15:11:20] "[33mGET /images/student_background.jpg HTTP/1.1[0m" 404 -
+2024-10-27 15:11:22,256 INFO: 127.0.0.1 - - [27/Oct/2024 15:11:22] "GET /teacher/login HTTP/1.1" 200 -
+2024-10-27 15:11:22,295 INFO: 127.0.0.1 - - [27/Oct/2024 15:11:22] "GET /static/css/teacher_login.css HTTP/1.1" 200 -
+2024-10-27 15:11:22,314 INFO: 127.0.0.1 - - [27/Oct/2024 15:11:22] "[33mGET /images/teacher_background.jpg HTTP/1.1[0m" 404 -
+2024-10-27 15:11:24,452 INFO: 127.0.0.1 - - [27/Oct/2024 15:11:24] "GET /teacher/register HTTP/1.1" 200 -
+2024-10-27 15:11:24,490 INFO: 127.0.0.1 - - [27/Oct/2024 15:11:24] "GET /static/css/teacher_register.css HTTP/1.1" 200 -
+2024-10-27 15:11:24,515 INFO: 127.0.0.1 - - [27/Oct/2024 15:11:24] "[33mGET /images/teacher_background.jpg HTTP/1.1[0m" 404 -
+2024-10-27 15:11:26,275 INFO: 127.0.0.1 - - [27/Oct/2024 15:11:26] "GET /admin/login HTTP/1.1" 200 -
+2024-10-27 15:11:26,309 INFO: 127.0.0.1 - - [27/Oct/2024 15:11:26] "GET /static/css/admin_login.css HTTP/1.1" 200 -
+2024-10-27 15:11:26,328 INFO: 127.0.0.1 - - [27/Oct/2024 15:11:26] "[33mGET /images/admin_background.jpg HTTP/1.1[0m" 404 -
+2024-10-27 15:11:28,509 INFO: 127.0.0.1 - - [27/Oct/2024 15:11:28] "GET / HTTP/1.1" 200 -
+2024-10-27 15:11:28,542 INFO: 127.0.0.1 - - [27/Oct/2024 15:11:28] "GET /static/css/index.css HTTP/1.1" 200 -
+2024-10-27 15:11:29,568 INFO: 127.0.0.1 - - [27/Oct/2024 15:11:29] "GET /student/login HTTP/1.1" 200 -
+2024-10-27 15:11:29,591 INFO: 127.0.0.1 - - [27/Oct/2024 15:11:29] "GET /static/css/student_login.css HTTP/1.1" 200 -
+2024-10-27 15:11:29,617 INFO: 127.0.0.1 - - [27/Oct/2024 15:11:29] "[33mGET /images/student_background.jpg HTTP/1.1[0m" 404 -
+2024-10-27 15:11:35,445 INFO: Student 202409103 logged in successfully
+2024-10-27 15:11:35,447 INFO: 127.0.0.1 - - [27/Oct/2024 15:11:35] "[32mPOST /student/login HTTP/1.1[0m" 302 -
+2024-10-27 15:11:35,467 INFO: 127.0.0.1 - - [27/Oct/2024 15:11:35] "GET /student/exam_list HTTP/1.1" 200 -
+2024-10-27 15:11:35,489 INFO: 127.0.0.1 - - [27/Oct/2024 15:11:35] "[33mGET /css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 15:11:38,869 INFO: 127.0.0.1 - - [27/Oct/2024 15:11:38] "GET /student/login HTTP/1.1" 200 -
+2024-10-27 15:17:11,732 INFO: Student 202409103 logged in successfully
+2024-10-27 15:17:11,733 INFO: 127.0.0.1 - - [27/Oct/2024 15:17:11] "[32mPOST /student/login HTTP/1.1[0m" 302 -
+2024-10-27 15:17:11,745 INFO: 127.0.0.1 - - [27/Oct/2024 15:17:11] "GET /student/exam_list HTTP/1.1" 200 -
+2024-10-27 15:17:11,777 INFO: 127.0.0.1 - - [27/Oct/2024 15:17:11] "[33mGET /css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 15:17:14,209 INFO: 127.0.0.1 - - [27/Oct/2024 15:17:14] "GET /student/exam_list HTTP/1.1" 200 -
+2024-10-27 15:17:14,228 INFO: 127.0.0.1 - - [27/Oct/2024 15:17:14] "[33mGET /css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 15:17:15,834 INFO: 127.0.0.1 - - [27/Oct/2024 15:17:15] "GET /student/login HTTP/1.1" 200 -
+2024-10-27 15:17:22,957 INFO: 127.0.0.1 - - [27/Oct/2024 15:17:22] "GET / HTTP/1.1" 200 -
+2024-10-27 15:17:22,975 INFO: 127.0.0.1 - - [27/Oct/2024 15:17:22] "GET /static/css/index.css HTTP/1.1" 200 -
+2024-10-27 15:17:24,431 INFO: 127.0.0.1 - - [27/Oct/2024 15:17:24] "GET /teacher/login HTTP/1.1" 200 -
+2024-10-27 15:17:24,466 INFO: 127.0.0.1 - - [27/Oct/2024 15:17:24] "GET /static/css/teacher_login.css HTTP/1.1" 200 -
+2024-10-27 15:17:24,520 INFO: 127.0.0.1 - - [27/Oct/2024 15:17:24] "[33mGET /images/teacher_background.jpg HTTP/1.1[0m" 404 -
+2024-10-27 15:17:24,523 INFO: 127.0.0.1 - - [27/Oct/2024 15:17:24] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-10-27 15:17:27,949 INFO: Teacher 20121241 logged in successfully
+2024-10-27 15:17:27,949 INFO: 127.0.0.1 - - [27/Oct/2024 15:17:27] "[32mPOST /teacher/login HTTP/1.1[0m" 302 -
+2024-10-27 15:17:27,958 INFO: 127.0.0.1 - - [27/Oct/2024 15:17:27] "GET /teacher/dashboard HTTP/1.1" 200 -
+2024-10-27 15:17:27,994 INFO: 127.0.0.1 - - [27/Oct/2024 15:17:27] "GET /static/css/teacher_dashboard.css HTTP/1.1" 200 -
+2024-10-27 15:17:28,001 INFO: 127.0.0.1 - - [27/Oct/2024 15:17:28] "[33mGET /images/teacher_dashboard_bg.jpg HTTP/1.1[0m" 404 -
+2024-10-27 15:17:33,312 INFO: Teacher logged out
+2024-10-27 15:17:33,313 INFO: 127.0.0.1 - - [27/Oct/2024 15:17:33] "GET /teacher/logout HTTP/1.1" 200 -
+2024-10-27 15:17:33,335 INFO: 127.0.0.1 - - [27/Oct/2024 15:17:33] "GET /static/css/index.css HTTP/1.1" 200 -
+2024-10-27 15:17:34,238 INFO: 127.0.0.1 - - [27/Oct/2024 15:17:34] "GET /admin/login HTTP/1.1" 200 -
+2024-10-27 15:17:34,258 INFO: 127.0.0.1 - - [27/Oct/2024 15:17:34] "GET /static/css/admin_login.css HTTP/1.1" 200 -
+2024-10-27 15:17:34,285 INFO: 127.0.0.1 - - [27/Oct/2024 15:17:34] "[33mGET /images/admin_background.jpg HTTP/1.1[0m" 404 -
+2024-10-27 15:17:36,597 INFO: Admin admin001 logged in successfully
+2024-10-27 15:17:36,597 INFO: 127.0.0.1 - - [27/Oct/2024 15:17:36] "[32mPOST /admin/login HTTP/1.1[0m" 302 -
+2024-10-27 15:17:36,620 INFO: 127.0.0.1 - - [27/Oct/2024 15:17:36] "GET /admin/dashboard HTTP/1.1" 200 -
+2024-10-27 15:17:36,651 INFO: 127.0.0.1 - - [27/Oct/2024 15:17:36] "GET /static/css/admin_dashboard.css HTTP/1.1" 200 -
+2024-10-27 15:17:36,672 INFO: 127.0.0.1 - - [27/Oct/2024 15:17:36] "[33mGET /images/admin_dashboard_bg.jpg HTTP/1.1[0m" 404 -
+2024-10-27 15:17:36,676 INFO: 127.0.0.1 - - [27/Oct/2024 15:17:36] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-10-27 15:17:37,946 INFO: 127.0.0.1 - - [27/Oct/2024 15:17:37] "GET /admin/manage_teachers HTTP/1.1" 200 -
+2024-10-27 15:17:37,965 INFO: 127.0.0.1 - - [27/Oct/2024 15:17:37] "[33mGET /css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 15:17:39,887 INFO: 127.0.0.1 - - [27/Oct/2024 15:17:39] "GET /admin/manage_students HTTP/1.1" 200 -
+2024-10-27 15:17:39,909 INFO: 127.0.0.1 - - [27/Oct/2024 15:17:39] "[33mGET /css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 15:17:41,501 INFO: 127.0.0.1 - - [27/Oct/2024 15:17:41] "GET /admin/view_logs HTTP/1.1" 200 -
+2024-10-27 15:17:41,521 INFO: 127.0.0.1 - - [27/Oct/2024 15:17:41] "[33mGET /css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 15:17:42,591 INFO: 127.0.0.1 - - [27/Oct/2024 15:17:42] "GET /admin/login HTTP/1.1" 200 -
+2024-10-27 15:17:45,033 INFO: 127.0.0.1 - - [27/Oct/2024 15:17:45] "GET / HTTP/1.1" 200 -
+2024-10-27 15:17:45,054 INFO: 127.0.0.1 - - [27/Oct/2024 15:17:45] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+2024-10-27 15:17:46,909 INFO: 127.0.0.1 - - [27/Oct/2024 15:17:46] "GET /student/login HTTP/1.1" 200 -
+2024-10-27 15:17:46,934 INFO: 127.0.0.1 - - [27/Oct/2024 15:17:46] "[36mGET /static/css/student_login.css HTTP/1.1[0m" 304 -
+2024-10-27 15:17:46,955 INFO: 127.0.0.1 - - [27/Oct/2024 15:17:46] "[33mGET /images/student_background.jpg HTTP/1.1[0m" 404 -
+2024-10-27 15:17:49,363 INFO: Student 202409103 logged in successfully
+2024-10-27 15:17:49,365 INFO: 127.0.0.1 - - [27/Oct/2024 15:17:49] "[32mPOST /student/login HTTP/1.1[0m" 302 -
+2024-10-27 15:17:49,376 INFO: 127.0.0.1 - - [27/Oct/2024 15:17:49] "GET /student/exam_list HTTP/1.1" 200 -
+2024-10-27 15:17:49,394 INFO: 127.0.0.1 - - [27/Oct/2024 15:17:49] "[33mGET /css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 15:17:51,771 INFO: 127.0.0.1 - - [27/Oct/2024 15:17:51] "GET /student/exam/9 HTTP/1.1" 200 -
+2024-10-27 15:17:54,694 INFO: 127.0.0.1 - - [27/Oct/2024 15:17:54] "GET /student/login HTTP/1.1" 200 -
+2024-10-27 15:23:25,698 INFO: 127.0.0.1 - - [27/Oct/2024 15:23:25] "GET / HTTP/1.1" 200 -
+2024-10-27 15:23:25,733 INFO: 127.0.0.1 - - [27/Oct/2024 15:23:25] "GET /static/css/index.css HTTP/1.1" 200 -
+2024-10-27 15:23:26,967 INFO: 127.0.0.1 - - [27/Oct/2024 15:23:26] "GET /admin/login HTTP/1.1" 200 -
+2024-10-27 15:23:26,992 INFO: 127.0.0.1 - - [27/Oct/2024 15:23:26] "GET /static/css/admin_login.css HTTP/1.1" 200 -
+2024-10-27 15:23:27,023 INFO: 127.0.0.1 - - [27/Oct/2024 15:23:27] "[33mGET /images/admin_background.jpg HTTP/1.1[0m" 404 -
+2024-10-27 15:23:29,406 INFO: Admin admin001 logged in successfully
+2024-10-27 15:23:29,406 INFO: 127.0.0.1 - - [27/Oct/2024 15:23:29] "[32mPOST /admin/login HTTP/1.1[0m" 302 -
+2024-10-27 15:23:29,413 INFO: 127.0.0.1 - - [27/Oct/2024 15:23:29] "GET /admin/dashboard HTTP/1.1" 200 -
+2024-10-27 15:23:29,437 INFO: 127.0.0.1 - - [27/Oct/2024 15:23:29] "[36mGET /static/css/admin_dashboard.css HTTP/1.1[0m" 304 -
+2024-10-27 15:23:29,453 INFO: 127.0.0.1 - - [27/Oct/2024 15:23:29] "[33mGET /images/admin_dashboard_bg.jpg HTTP/1.1[0m" 404 -
+2024-10-27 15:23:30,385 INFO: 127.0.0.1 - - [27/Oct/2024 15:23:30] "GET /admin/manage_teachers HTTP/1.1" 200 -
+2024-10-27 15:23:30,419 INFO: 127.0.0.1 - - [27/Oct/2024 15:23:30] "GET /static/css/admin_manage_teachers.css HTTP/1.1" 200 -
+2024-10-27 15:23:30,432 INFO: 127.0.0.1 - - [27/Oct/2024 15:23:30] "[33mGET /images/admin_manage_teachers_bg.jpg HTTP/1.1[0m" 404 -
+2024-10-27 15:23:38,997 INFO: 127.0.0.1 - - [27/Oct/2024 15:23:38] "POST /admin/search_teacher HTTP/1.1" 200 -
+2024-10-27 15:23:39,018 INFO: 127.0.0.1 - - [27/Oct/2024 15:23:39] "[36mGET /static/css/admin_manage_teachers.css HTTP/1.1[0m" 304 -
+2024-10-27 15:23:39,049 INFO: 127.0.0.1 - - [27/Oct/2024 15:23:39] "[33mGET /images/admin_manage_teachers_bg.jpg HTTP/1.1[0m" 404 -
+2024-10-27 15:23:45,016 INFO: 127.0.0.1 - - [27/Oct/2024 15:23:45] "GET /admin/dashboard HTTP/1.1" 200 -
+2024-10-27 15:23:45,038 INFO: 127.0.0.1 - - [27/Oct/2024 15:23:45] "GET /static/css/admin_dashboard.css HTTP/1.1" 200 -
+2024-10-27 15:23:45,053 INFO: 127.0.0.1 - - [27/Oct/2024 15:23:45] "[33mGET /images/admin_dashboard_bg.jpg HTTP/1.1[0m" 404 -
+2024-10-27 15:23:45,055 INFO: 127.0.0.1 - - [27/Oct/2024 15:23:45] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-10-27 15:23:45,924 INFO: 127.0.0.1 - - [27/Oct/2024 15:23:45] "GET /admin/view_logs HTTP/1.1" 200 -
+2024-10-27 15:23:45,957 INFO: 127.0.0.1 - - [27/Oct/2024 15:23:45] "GET /static/css/admin_view_logs.css HTTP/1.1" 200 -
+2024-10-27 15:23:45,971 INFO: 127.0.0.1 - - [27/Oct/2024 15:23:45] "[33mGET /images/admin_view_logs_bg.jpg HTTP/1.1[0m" 404 -
+2024-10-27 15:23:52,368 INFO: 127.0.0.1 - - [27/Oct/2024 15:23:52] "GET /admin/dashboard HTTP/1.1" 200 -
+2024-10-27 15:23:52,397 INFO: 127.0.0.1 - - [27/Oct/2024 15:23:52] "[36mGET /static/css/admin_dashboard.css HTTP/1.1[0m" 304 -
+2024-10-27 15:23:52,423 INFO: 127.0.0.1 - - [27/Oct/2024 15:23:52] "[33mGET /images/admin_dashboard_bg.jpg HTTP/1.1[0m" 404 -
+2024-10-27 15:24:03,402 INFO: Admin logged out
+2024-10-27 15:24:03,403 INFO: 127.0.0.1 - - [27/Oct/2024 15:24:03] "GET /admin/logout HTTP/1.1" 200 -
+2024-10-27 15:24:03,432 INFO: 127.0.0.1 - - [27/Oct/2024 15:24:03] "GET /static/css/index.css HTTP/1.1" 200 -
+2024-10-27 15:24:03,448 INFO: 127.0.0.1 - - [27/Oct/2024 15:24:03] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-10-27 15:24:05,817 INFO: 127.0.0.1 - - [27/Oct/2024 15:24:05] "GET /admin/login HTTP/1.1" 200 -
+2024-10-27 15:24:05,846 INFO: 127.0.0.1 - - [27/Oct/2024 15:24:05] "[36mGET /static/css/admin_login.css HTTP/1.1[0m" 304 -
+2024-10-27 15:24:05,872 INFO: 127.0.0.1 - - [27/Oct/2024 15:24:05] "[33mGET /images/admin_background.jpg HTTP/1.1[0m" 404 -
+2024-10-27 15:24:08,413 INFO: Admin admin001 logged in successfully
+2024-10-27 15:24:08,413 INFO: 127.0.0.1 - - [27/Oct/2024 15:24:08] "[32mPOST /admin/login HTTP/1.1[0m" 302 -
+2024-10-27 15:24:08,422 INFO: 127.0.0.1 - - [27/Oct/2024 15:24:08] "GET /admin/dashboard HTTP/1.1" 200 -
+2024-10-27 15:24:08,461 INFO: 127.0.0.1 - - [27/Oct/2024 15:24:08] "[36mGET /static/css/admin_dashboard.css HTTP/1.1[0m" 304 -
+2024-10-27 15:24:08,483 INFO: 127.0.0.1 - - [27/Oct/2024 15:24:08] "[33mGET /images/admin_dashboard_bg.jpg HTTP/1.1[0m" 404 -
+2024-10-27 15:24:09,163 INFO: 127.0.0.1 - - [27/Oct/2024 15:24:09] "GET /admin/manage_teachers HTTP/1.1" 200 -
+2024-10-27 15:24:09,188 INFO: 127.0.0.1 - - [27/Oct/2024 15:24:09] "GET /static/css/admin_manage_teachers.css HTTP/1.1" 200 -
+2024-10-27 15:24:09,216 INFO: 127.0.0.1 - - [27/Oct/2024 15:24:09] "[33mGET /images/admin_manage_teachers_bg.jpg HTTP/1.1[0m" 404 -
+2024-10-27 15:24:11,587 INFO: 127.0.0.1 - - [27/Oct/2024 15:24:11] "GET /admin/admin_add_teacher HTTP/1.1" 200 -
+2024-10-27 15:24:11,616 INFO: 127.0.0.1 - - [27/Oct/2024 15:24:11] "GET /static/css/admin_add_teacher.css HTTP/1.1" 200 -
+2024-10-27 15:24:11,635 INFO: 127.0.0.1 - - [27/Oct/2024 15:24:11] "[33mGET /images/admin_add_teacher_bg.jpg HTTP/1.1[0m" 404 -
+2024-10-27 15:24:13,884 INFO: 127.0.0.1 - - [27/Oct/2024 15:24:13] "GET /admin/manage_teachers HTTP/1.1" 200 -
+2024-10-27 15:24:13,908 INFO: 127.0.0.1 - - [27/Oct/2024 15:24:13] "[36mGET /static/css/admin_manage_teachers.css HTTP/1.1[0m" 304 -
+2024-10-27 15:24:13,927 INFO: 127.0.0.1 - - [27/Oct/2024 15:24:13] "[33mGET /images/admin_manage_teachers_bg.jpg HTTP/1.1[0m" 404 -
+2024-10-27 15:24:16,372 INFO: 127.0.0.1 - - [27/Oct/2024 15:24:16] "GET /admin/dashboard HTTP/1.1" 200 -
+2024-10-27 15:24:16,392 INFO: 127.0.0.1 - - [27/Oct/2024 15:24:16] "GET /static/css/admin_dashboard.css HTTP/1.1" 200 -
+2024-10-27 15:24:16,416 INFO: 127.0.0.1 - - [27/Oct/2024 15:24:16] "[33mGET /images/admin_dashboard_bg.jpg HTTP/1.1[0m" 404 -
+2024-10-27 15:24:16,418 INFO: 127.0.0.1 - - [27/Oct/2024 15:24:16] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-10-27 15:24:17,216 INFO: 127.0.0.1 - - [27/Oct/2024 15:24:17] "GET /admin/manage_students HTTP/1.1" 200 -
+2024-10-27 15:24:17,241 INFO: 127.0.0.1 - - [27/Oct/2024 15:24:17] "GET /static/css/admin_manage_students.css HTTP/1.1" 200 -
+2024-10-27 15:24:17,264 INFO: 127.0.0.1 - - [27/Oct/2024 15:24:17] "[33mGET /images/admin_manage_students_bg.jpg HTTP/1.1[0m" 404 -
+2024-10-27 15:24:17,869 INFO: 127.0.0.1 - - [27/Oct/2024 15:24:17] "GET /admin/dashboard HTTP/1.1" 200 -
+2024-10-27 15:24:17,892 INFO: 127.0.0.1 - - [27/Oct/2024 15:24:17] "[36mGET /static/css/admin_dashboard.css HTTP/1.1[0m" 304 -
+2024-10-27 15:24:17,988 INFO: 127.0.0.1 - - [27/Oct/2024 15:24:17] "[33mGET /images/admin_dashboard_bg.jpg HTTP/1.1[0m" 404 -
+2024-10-27 15:24:18,867 INFO: 127.0.0.1 - - [27/Oct/2024 15:24:18] "GET /admin/manage_students HTTP/1.1" 200 -
+2024-10-27 15:24:18,886 INFO: 127.0.0.1 - - [27/Oct/2024 15:24:18] "[36mGET /static/css/admin_manage_students.css HTTP/1.1[0m" 304 -
+2024-10-27 15:24:18,991 INFO: 127.0.0.1 - - [27/Oct/2024 15:24:18] "[33mGET /images/admin_manage_students_bg.jpg HTTP/1.1[0m" 404 -
+2024-10-27 15:24:20,397 INFO: 127.0.0.1 - - [27/Oct/2024 15:24:20] "GET /admin/admin_add_student HTTP/1.1" 200 -
+2024-10-27 15:24:20,428 INFO: 127.0.0.1 - - [27/Oct/2024 15:24:20] "GET /static/css/admin_add_student.css HTTP/1.1" 200 -
+2024-10-27 15:24:20,447 INFO: 127.0.0.1 - - [27/Oct/2024 15:24:20] "[33mGET /images/admin_add_student_bg.jpg HTTP/1.1[0m" 404 -
+2024-10-27 15:24:20,450 INFO: 127.0.0.1 - - [27/Oct/2024 15:24:20] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-10-27 15:24:26,831 INFO: 127.0.0.1 - - [27/Oct/2024 15:24:26] "GET /admin/manage_students HTTP/1.1" 200 -
+2024-10-27 15:24:26,853 INFO: 127.0.0.1 - - [27/Oct/2024 15:24:26] "GET /static/css/admin_manage_students.css HTTP/1.1" 200 -
+2024-10-27 15:24:26,875 INFO: 127.0.0.1 - - [27/Oct/2024 15:24:26] "[33mGET /images/admin_manage_students_bg.jpg HTTP/1.1[0m" 404 -
+2024-10-27 15:24:27,866 INFO: Admin logged out
+2024-10-27 15:24:27,867 INFO: 127.0.0.1 - - [27/Oct/2024 15:24:27] "GET /admin/logout HTTP/1.1" 200 -
+2024-10-27 15:24:27,889 INFO: 127.0.0.1 - - [27/Oct/2024 15:24:27] "GET /static/css/index.css HTTP/1.1" 200 -
+2024-10-27 15:24:32,952 INFO: 127.0.0.1 - - [27/Oct/2024 15:24:32] "GET /student/login HTTP/1.1" 200 -
+2024-10-27 15:24:32,975 INFO: 127.0.0.1 - - [27/Oct/2024 15:24:32] "GET /static/css/student_login.css HTTP/1.1" 200 -
+2024-10-27 15:24:32,997 INFO: 127.0.0.1 - - [27/Oct/2024 15:24:32] "[33mGET /images/student_background.jpg HTTP/1.1[0m" 404 -
+2024-10-27 15:24:36,642 INFO: Student 202409103 logged in successfully
+2024-10-27 15:24:36,643 INFO: 127.0.0.1 - - [27/Oct/2024 15:24:36] "[32mPOST /student/login HTTP/1.1[0m" 302 -
+2024-10-27 15:24:36,674 INFO: 127.0.0.1 - - [27/Oct/2024 15:24:36] "GET /student/exam_list HTTP/1.1" 200 -
+2024-10-27 15:24:36,692 INFO: 127.0.0.1 - - [27/Oct/2024 15:24:36] "[33mGET /css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 15:26:50,625 INFO: 127.0.0.1 - - [27/Oct/2024 15:26:50] "GET /student/exam_list HTTP/1.1" 200 -
+2024-10-27 15:26:50,653 INFO: 127.0.0.1 - - [27/Oct/2024 15:26:50] "GET /static/css/student_exam_list.css HTTP/1.1" 200 -
+2024-10-27 15:26:50,671 INFO: 127.0.0.1 - - [27/Oct/2024 15:26:50] "[33mGET /images/student_exam_list_bg.jpg HTTP/1.1[0m" 404 -
+2024-10-27 15:26:50,674 INFO: 127.0.0.1 - - [27/Oct/2024 15:26:50] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-10-27 15:27:00,362 INFO: 127.0.0.1 - - [27/Oct/2024 15:27:00] "[35m[1mGET /student/exam/9 HTTP/1.1[0m" 500 -
+2024-10-27 15:27:00,385 INFO: 127.0.0.1 - - [27/Oct/2024 15:27:00] "GET /student/exam/9?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2024-10-27 15:27:00,385 INFO: 127.0.0.1 - - [27/Oct/2024 15:27:00] "GET /student/exam/9?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2024-10-27 15:27:00,424 INFO: 127.0.0.1 - - [27/Oct/2024 15:27:00] "GET /student/exam/9?__debugger__=yes&cmd=resource&f=console.png&s=0y456P4nTq4F5S14FMs7 HTTP/1.1" 200 -
+2024-10-27 15:27:00,427 INFO: 127.0.0.1 - - [27/Oct/2024 15:27:00] "GET /student/exam/9?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2024-10-27 15:28:01,462 INFO: 127.0.0.1 - - [27/Oct/2024 15:28:01] "[35m[1mGET /student/exam/9 HTTP/1.1[0m" 500 -
+2024-10-27 15:28:01,486 INFO: 127.0.0.1 - - [27/Oct/2024 15:28:01] "[36mGET /student/exam/9?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-10-27 15:28:01,486 INFO: 127.0.0.1 - - [27/Oct/2024 15:28:01] "GET /student/exam/9?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2024-10-27 15:28:01,507 INFO: 127.0.0.1 - - [27/Oct/2024 15:28:01] "GET /student/exam/9?__debugger__=yes&cmd=resource&f=console.png&s=0y456P4nTq4F5S14FMs7 HTTP/1.1" 200 -
+2024-10-27 15:28:27,127 INFO: 127.0.0.1 - - [27/Oct/2024 15:28:27] "GET /static/css/student_exam_list.css HTTP/1.1" 200 -
+2024-10-27 15:28:28,037 INFO: 127.0.0.1 - - [27/Oct/2024 15:28:28] "GET /student/exam/9 HTTP/1.1" 200 -
+2024-10-27 15:29:11,633 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-27 15:29:11,633 INFO: [33mPress CTRL+C to quit[0m
+2024-10-27 15:29:11,635 INFO:  * Restarting with stat
+2024-10-27 15:29:13,958 WARNING:  * Debugger is active!
+2024-10-27 15:29:13,961 INFO:  * Debugger PIN: 669-458-967
+2024-10-27 15:29:14,019 INFO: 127.0.0.1 - - [27/Oct/2024 15:29:14] "GET /student/exam/9 HTTP/1.1" 200 -
+2024-10-27 15:29:16,207 INFO: 127.0.0.1 - - [27/Oct/2024 15:29:16] "GET /student/exam/9 HTTP/1.1" 200 -
+2024-10-27 15:29:32,296 INFO: 127.0.0.1 - - [27/Oct/2024 15:29:32] "GET /student/exam_list HTTP/1.1" 200 -
+2024-10-27 15:29:33,276 INFO: 127.0.0.1 - - [27/Oct/2024 15:29:33] "[35m[1mGET /student/exam/9 HTTP/1.1[0m" 500 -
+2024-10-27 15:29:33,349 INFO: 127.0.0.1 - - [27/Oct/2024 15:29:33] "[36mGET /student/exam/9?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-10-27 15:29:33,349 INFO: 127.0.0.1 - - [27/Oct/2024 15:29:33] "[36mGET /student/exam/9?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-10-27 15:29:33,361 INFO: 127.0.0.1 - - [27/Oct/2024 15:29:33] "GET /student/exam/9?__debugger__=yes&cmd=resource&f=console.png&s=n9HRYsWdJBqjzgiyItDD HTTP/1.1" 200 -
+2024-10-27 15:31:29,375 INFO: 127.0.0.1 - - [27/Oct/2024 15:31:29] "GET /student/exam/9 HTTP/1.1" 200 -
+2024-10-27 15:31:29,411 INFO: 127.0.0.1 - - [27/Oct/2024 15:31:29] "GET /static/css/student_take_exam.css HTTP/1.1" 200 -
+2024-10-27 15:31:29,424 INFO: 127.0.0.1 - - [27/Oct/2024 15:31:29] "[33mGET /images/student_take_exam_bg.jpg HTTP/1.1[0m" 404 -
+2024-10-27 15:31:29,427 INFO: 127.0.0.1 - - [27/Oct/2024 15:31:29] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-10-27 15:31:35,516 INFO: 127.0.0.1 - - [27/Oct/2024 15:31:35] "[33mGET /student/exams HTTP/1.1[0m" 404 -
+2024-10-27 15:32:18,007 INFO: 127.0.0.1 - - [27/Oct/2024 15:32:18] "GET /student/exam/9 HTTP/1.1" 200 -
+2024-10-27 15:32:19,317 INFO: 127.0.0.1 - - [27/Oct/2024 15:32:19] "[33mGET /student/exams HTTP/1.1[0m" 404 -
+2024-10-27 15:32:56,611 INFO: 127.0.0.1 - - [27/Oct/2024 15:32:56] "GET / HTTP/1.1" 200 -
+2024-10-27 15:32:56,631 INFO: 127.0.0.1 - - [27/Oct/2024 15:32:56] "GET /static/css/index.css HTTP/1.1" 200 -
+2024-10-27 15:32:57,956 INFO: 127.0.0.1 - - [27/Oct/2024 15:32:57] "GET /student/login HTTP/1.1" 200 -
+2024-10-27 15:32:57,975 INFO: 127.0.0.1 - - [27/Oct/2024 15:32:57] "[36mGET /static/css/student_login.css HTTP/1.1[0m" 304 -
+2024-10-27 15:32:58,004 INFO: 127.0.0.1 - - [27/Oct/2024 15:32:58] "[33mGET /images/student_background.jpg HTTP/1.1[0m" 404 -
+2024-10-27 15:33:00,371 INFO: Student 202409103 logged in successfully
+2024-10-27 15:33:00,372 INFO: 127.0.0.1 - - [27/Oct/2024 15:33:00] "[32mPOST /student/login HTTP/1.1[0m" 302 -
+2024-10-27 15:33:00,404 INFO: 127.0.0.1 - - [27/Oct/2024 15:33:00] "GET /student/exam_list HTTP/1.1" 200 -
+2024-10-27 15:33:00,422 INFO: 127.0.0.1 - - [27/Oct/2024 15:33:00] "[36mGET /static/css/student_exam_list.css HTTP/1.1[0m" 304 -
+2024-10-27 15:33:00,452 INFO: 127.0.0.1 - - [27/Oct/2024 15:33:00] "[33mGET /images/student_exam_list_bg.jpg HTTP/1.1[0m" 404 -
+2024-10-27 15:33:01,504 INFO: 127.0.0.1 - - [27/Oct/2024 15:33:01] "GET /student/exam/9 HTTP/1.1" 200 -
+2024-10-27 15:33:01,530 INFO: 127.0.0.1 - - [27/Oct/2024 15:33:01] "GET /static/css/student_take_exam.css HTTP/1.1" 200 -
+2024-10-27 15:33:01,558 INFO: 127.0.0.1 - - [27/Oct/2024 15:33:01] "[33mGET /images/student_take_exam_bg.jpg HTTP/1.1[0m" 404 -
+2024-10-27 15:33:02,464 INFO: 127.0.0.1 - - [27/Oct/2024 15:33:02] "GET /student/exam_list HTTP/1.1" 200 -
+2024-10-27 15:33:02,489 INFO: 127.0.0.1 - - [27/Oct/2024 15:33:02] "GET /static/css/student_exam_list.css HTTP/1.1" 200 -
+2024-10-27 15:33:02,506 INFO: 127.0.0.1 - - [27/Oct/2024 15:33:02] "[33mGET /images/student_exam_list_bg.jpg HTTP/1.1[0m" 404 -
+2024-10-27 15:33:05,248 INFO: 127.0.0.1 - - [27/Oct/2024 15:33:05] "GET /student/exam/9 HTTP/1.1" 200 -
+2024-10-27 15:33:05,271 INFO: 127.0.0.1 - - [27/Oct/2024 15:33:05] "GET /static/css/student_take_exam.css HTTP/1.1" 200 -
+2024-10-27 15:33:05,293 INFO: 127.0.0.1 - - [27/Oct/2024 15:33:05] "[33mGET /images/student_take_exam_bg.jpg HTTP/1.1[0m" 404 -
+2024-10-27 15:33:05,982 INFO: 127.0.0.1 - - [27/Oct/2024 15:33:05] "GET /student/exam_list HTTP/1.1" 200 -
+2024-10-27 15:33:06,004 INFO: 127.0.0.1 - - [27/Oct/2024 15:33:06] "[36mGET /static/css/student_exam_list.css HTTP/1.1[0m" 304 -
+2024-10-27 15:33:06,017 INFO: 127.0.0.1 - - [27/Oct/2024 15:33:06] "[33mGET /images/student_exam_list_bg.jpg HTTP/1.1[0m" 404 -
+2024-10-27 15:33:06,898 INFO: Student logged out
+2024-10-27 15:33:06,899 INFO: 127.0.0.1 - - [27/Oct/2024 15:33:06] "GET /student/logout HTTP/1.1" 200 -
+2024-10-27 15:33:06,924 INFO: 127.0.0.1 - - [27/Oct/2024 15:33:06] "GET /static/css/index.css HTTP/1.1" 200 -
+2024-10-27 15:33:11,919 INFO: 127.0.0.1 - - [27/Oct/2024 15:33:11] "GET /teacher/login HTTP/1.1" 200 -
+2024-10-27 15:33:11,947 INFO: 127.0.0.1 - - [27/Oct/2024 15:33:11] "[36mGET /static/css/teacher_login.css HTTP/1.1[0m" 304 -
+2024-10-27 15:33:11,980 INFO: 127.0.0.1 - - [27/Oct/2024 15:33:11] "[33mGET /images/teacher_background.jpg HTTP/1.1[0m" 404 -
+2024-10-27 15:33:16,114 INFO: Teacher 20121241 logged in successfully
+2024-10-27 15:33:16,114 INFO: 127.0.0.1 - - [27/Oct/2024 15:33:16] "[32mPOST /teacher/login HTTP/1.1[0m" 302 -
+2024-10-27 15:33:16,123 INFO: 127.0.0.1 - - [27/Oct/2024 15:33:16] "GET /teacher/dashboard HTTP/1.1" 200 -
+2024-10-27 15:33:16,143 INFO: 127.0.0.1 - - [27/Oct/2024 15:33:16] "[36mGET /static/css/teacher_dashboard.css HTTP/1.1[0m" 304 -
+2024-10-27 15:33:16,163 INFO: 127.0.0.1 - - [27/Oct/2024 15:33:16] "[33mGET /images/teacher_dashboard_bg.jpg HTTP/1.1[0m" 404 -
+2024-10-27 15:33:17,293 INFO: 127.0.0.1 - - [27/Oct/2024 15:33:17] "GET /teacher/manage_question_banks HTTP/1.1" 200 -
+2024-10-27 15:33:17,310 INFO: 127.0.0.1 - - [27/Oct/2024 15:33:17] "[33mGET /css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 15:33:17,333 INFO: 127.0.0.1 - - [27/Oct/2024 15:33:17] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-10-27 15:33:18,320 INFO: 127.0.0.1 - - [27/Oct/2024 15:33:18] "GET /static/css/teacher_dashboard.css HTTP/1.1" 200 -
+2024-10-27 15:33:19,049 INFO: 127.0.0.1 - - [27/Oct/2024 15:33:19] "GET /teacher/manage_exams HTTP/1.1" 200 -
+2024-10-27 15:33:19,074 INFO: 127.0.0.1 - - [27/Oct/2024 15:33:19] "[33mGET /css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 15:44:01,495 INFO: 127.0.0.1 - - [27/Oct/2024 15:44:01] "GET /teacher/dashboard HTTP/1.1" 200 -
+2024-10-27 15:44:01,529 INFO: 127.0.0.1 - - [27/Oct/2024 15:44:01] "GET /static/css/teacher_dashboard.css HTTP/1.1" 200 -
+2024-10-27 15:44:01,564 INFO: 127.0.0.1 - - [27/Oct/2024 15:44:01] "[33mGET /images/teacher_dashboard_bg.jpg HTTP/1.1[0m" 404 -
+2024-10-27 15:44:01,565 INFO: 127.0.0.1 - - [27/Oct/2024 15:44:01] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-10-27 15:44:02,378 INFO: 127.0.0.1 - - [27/Oct/2024 15:44:02] "GET /teacher/manage_question_banks HTTP/1.1" 200 -
+2024-10-27 15:44:02,411 INFO: 127.0.0.1 - - [27/Oct/2024 15:44:02] "GET /static/css/teacher_manage_question_banks.css HTTP/1.1" 200 -
+2024-10-27 15:44:02,426 INFO: 127.0.0.1 - - [27/Oct/2024 15:44:02] "[33mGET /images/teacher_manage_question_banks_bg.jpg HTTP/1.1[0m" 404 -
+2024-10-27 15:44:08,741 INFO: 127.0.0.1 - - [27/Oct/2024 15:44:08] "GET /teacher/dashboard HTTP/1.1" 200 -
+2024-10-27 15:44:08,766 INFO: 127.0.0.1 - - [27/Oct/2024 15:44:08] "GET /static/css/teacher_dashboard.css HTTP/1.1" 200 -
+2024-10-27 15:44:08,791 INFO: 127.0.0.1 - - [27/Oct/2024 15:44:08] "[33mGET /images/teacher_dashboard_bg.jpg HTTP/1.1[0m" 404 -
+2024-10-27 15:44:08,794 INFO: 127.0.0.1 - - [27/Oct/2024 15:44:08] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-10-27 15:44:09,582 INFO: 127.0.0.1 - - [27/Oct/2024 15:44:09] "GET /teacher/manage_exams HTTP/1.1" 200 -
+2024-10-27 15:44:09,620 INFO: 127.0.0.1 - - [27/Oct/2024 15:44:09] "GET /static/css/teacher_manage_exams.css HTTP/1.1" 200 -
+2024-10-27 15:44:09,632 INFO: 127.0.0.1 - - [27/Oct/2024 15:44:09] "[33mGET /images/teacher_manage_exams_bg.jpg HTTP/1.1[0m" 404 -
+2024-10-27 15:44:13,286 INFO: Exam ID '8' auto graded successfully
+2024-10-27 15:44:13,286 INFO: 127.0.0.1 - - [27/Oct/2024 15:44:13] "[32mPOST /teacher/auto_grade_exam/8 HTTP/1.1[0m" 302 -
+2024-10-27 15:44:13,310 INFO: 127.0.0.1 - - [27/Oct/2024 15:44:13] "GET /teacher/manage_exams HTTP/1.1" 200 -
+2024-10-27 15:44:13,327 INFO: 127.0.0.1 - - [27/Oct/2024 15:44:13] "[36mGET /static/css/teacher_manage_exams.css HTTP/1.1[0m" 304 -
+2024-10-27 15:44:13,351 INFO: 127.0.0.1 - - [27/Oct/2024 15:44:13] "[33mGET /images/teacher_manage_exams_bg.jpg HTTP/1.1[0m" 404 -
+2024-10-27 15:44:15,046 INFO: 127.0.0.1 - - [27/Oct/2024 15:44:15] "GET /teacher/grade_exam/8 HTTP/1.1" 200 -
+2024-10-27 15:44:15,075 INFO: 127.0.0.1 - - [27/Oct/2024 15:44:15] "GET /static/css/teacher_grade_exam.css HTTP/1.1" 200 -
+2024-10-27 15:44:15,091 INFO: 127.0.0.1 - - [27/Oct/2024 15:44:15] "[33mGET /images/teacher_grade_exam_bg.jpg HTTP/1.1[0m" 404 -
+2024-10-27 15:44:17,992 INFO: 127.0.0.1 - - [27/Oct/2024 15:44:17] "GET /teacher/manage_exams HTTP/1.1" 200 -
+2024-10-27 15:44:18,011 INFO: 127.0.0.1 - - [27/Oct/2024 15:44:18] "GET /static/css/teacher_manage_exams.css HTTP/1.1" 200 -
+2024-10-27 15:44:18,092 INFO: 127.0.0.1 - - [27/Oct/2024 15:44:18] "[33mGET /images/teacher_manage_exams_bg.jpg HTTP/1.1[0m" 404 -
+2024-10-27 15:44:19,230 INFO: Grades retrieved for exam ID '8'
+2024-10-27 15:44:19,243 INFO: 127.0.0.1 - - [27/Oct/2024 15:44:19] "GET /teacher/view_grades/8 HTTP/1.1" 200 -
+2024-10-27 15:44:19,273 INFO: 127.0.0.1 - - [27/Oct/2024 15:44:19] "GET /static/css/teacher_view_grades.css HTTP/1.1" 200 -
+2024-10-27 15:44:19,283 INFO: 127.0.0.1 - - [27/Oct/2024 15:44:19] "[33mGET /images/teacher_view_grades_bg.jpg HTTP/1.1[0m" 404 -
+2024-10-27 15:44:22,291 INFO: 127.0.0.1 - - [27/Oct/2024 15:44:22] "GET /teacher/manage_exams HTTP/1.1" 200 -
+2024-10-27 15:44:22,319 INFO: 127.0.0.1 - - [27/Oct/2024 15:44:22] "GET /static/css/teacher_manage_exams.css HTTP/1.1" 200 -
+2024-10-27 15:44:22,337 INFO: 127.0.0.1 - - [27/Oct/2024 15:44:22] "[33mGET /images/teacher_manage_exams_bg.jpg HTTP/1.1[0m" 404 -
+2024-10-27 15:44:23,136 INFO: Exam report generated for exam ID '8'
+2024-10-27 15:44:23,150 INFO: 127.0.0.1 - - [27/Oct/2024 15:44:23] "[35m[1mGET /teacher/exam_report/8 HTTP/1.1[0m" 500 -
+2024-10-27 15:44:23,178 INFO: 127.0.0.1 - - [27/Oct/2024 15:44:23] "GET /teacher/exam_report/8?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2024-10-27 15:44:23,180 INFO: 127.0.0.1 - - [27/Oct/2024 15:44:23] "GET /teacher/exam_report/8?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2024-10-27 15:44:23,200 INFO: 127.0.0.1 - - [27/Oct/2024 15:44:23] "GET /teacher/exam_report/8?__debugger__=yes&cmd=resource&f=console.png&s=n9HRYsWdJBqjzgiyItDD HTTP/1.1" 200 -
+2024-10-27 15:44:29,958 INFO: 127.0.0.1 - - [27/Oct/2024 15:44:29] "GET /teacher/manage_exams HTTP/1.1" 200 -
+2024-10-27 15:44:33,195 INFO: Exam report generated for exam ID '8'
+2024-10-27 15:44:33,199 INFO: 127.0.0.1 - - [27/Oct/2024 15:44:33] "[35m[1mGET /teacher/exam_report/8 HTTP/1.1[0m" 500 -
+2024-10-27 15:44:33,228 INFO: 127.0.0.1 - - [27/Oct/2024 15:44:33] "[36mGET /teacher/exam_report/8?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-10-27 15:44:33,228 INFO: 127.0.0.1 - - [27/Oct/2024 15:44:33] "[36mGET /teacher/exam_report/8?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-10-27 15:44:33,250 INFO: 127.0.0.1 - - [27/Oct/2024 15:44:33] "[36mGET /teacher/exam_report/8?__debugger__=yes&cmd=resource&f=console.png&s=n9HRYsWdJBqjzgiyItDD HTTP/1.1[0m" 304 -
+2024-10-27 15:44:59,384 INFO: 127.0.0.1 - - [27/Oct/2024 15:44:59] "GET /teacher/manage_exams HTTP/1.1" 200 -
+2024-10-27 15:44:59,406 INFO: 127.0.0.1 - - [27/Oct/2024 15:44:59] "GET /static/css/teacher_manage_exams.css HTTP/1.1" 200 -
+2024-10-27 15:44:59,430 INFO: 127.0.0.1 - - [27/Oct/2024 15:44:59] "[33mGET /images/teacher_manage_exams_bg.jpg HTTP/1.1[0m" 404 -
+2024-10-27 15:45:00,500 INFO: Exam report generated for exam ID '8'
+2024-10-27 15:45:00,509 INFO: 127.0.0.1 - - [27/Oct/2024 15:45:00] "GET /teacher/exam_report/8 HTTP/1.1" 200 -
+2024-10-27 15:45:00,543 INFO: 127.0.0.1 - - [27/Oct/2024 15:45:00] "GET /static/css/teacher_exam_report.css HTTP/1.1" 200 -
+2024-10-27 15:45:00,550 INFO: 127.0.0.1 - - [27/Oct/2024 15:45:00] "[33mGET /images/teacher_exam_report_bg.jpg HTTP/1.1[0m" 404 -
+2024-10-27 15:45:03,583 INFO: 127.0.0.1 - - [27/Oct/2024 15:45:03] "GET /teacher/manage_exams HTTP/1.1" 200 -
+2024-10-27 15:45:03,607 INFO: 127.0.0.1 - - [27/Oct/2024 15:45:03] "[36mGET /static/css/teacher_manage_exams.css HTTP/1.1[0m" 304 -
+2024-10-27 15:45:03,633 INFO: 127.0.0.1 - - [27/Oct/2024 15:45:03] "[33mGET /images/teacher_manage_exams_bg.jpg HTTP/1.1[0m" 404 -
+2024-10-27 15:45:04,589 INFO: Exam report generated for exam ID '9'
+2024-10-27 15:45:04,590 INFO: 127.0.0.1 - - [27/Oct/2024 15:45:04] "GET /teacher/exam_report/9 HTTP/1.1" 200 -
+2024-10-27 15:45:04,615 INFO: 127.0.0.1 - - [27/Oct/2024 15:45:04] "GET /static/css/teacher_exam_report.css HTTP/1.1" 200 -
+2024-10-27 15:45:04,653 INFO: 127.0.0.1 - - [27/Oct/2024 15:45:04] "[33mGET /images/teacher_exam_report_bg.jpg HTTP/1.1[0m" 404 -
+2024-10-27 15:45:04,656 INFO: 127.0.0.1 - - [27/Oct/2024 15:45:04] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-10-27 15:45:05,241 INFO: 127.0.0.1 - - [27/Oct/2024 15:45:05] "GET /teacher/manage_exams HTTP/1.1" 200 -
+2024-10-27 15:45:05,265 INFO: 127.0.0.1 - - [27/Oct/2024 15:45:05] "GET /static/css/teacher_manage_exams.css HTTP/1.1" 200 -
+2024-10-27 15:45:05,307 INFO: 127.0.0.1 - - [27/Oct/2024 15:45:05] "[33mGET /images/teacher_manage_exams_bg.jpg HTTP/1.1[0m" 404 -
+2024-10-27 15:45:08,711 INFO: 127.0.0.1 - - [27/Oct/2024 15:45:08] "GET /teacher/edit_exam/8 HTTP/1.1" 200 -
+2024-10-27 15:45:08,753 INFO: 127.0.0.1 - - [27/Oct/2024 15:45:08] "GET /static/css/teacher_edit_exam.css HTTP/1.1" 200 -
+2024-10-27 15:45:08,783 INFO: 127.0.0.1 - - [27/Oct/2024 15:45:08] "[33mGET /images/teacher_edit_exam_bg.jpg HTTP/1.1[0m" 404 -
+2024-10-27 15:45:13,983 INFO: 127.0.0.1 - - [27/Oct/2024 15:45:13] "GET /teacher/manage_exams HTTP/1.1" 200 -
+2024-10-27 15:45:14,009 INFO: 127.0.0.1 - - [27/Oct/2024 15:45:14] "GET /static/css/teacher_manage_exams.css HTTP/1.1" 200 -
+2024-10-27 15:45:14,032 INFO: 127.0.0.1 - - [27/Oct/2024 15:45:14] "[33mGET /images/teacher_manage_exams_bg.jpg HTTP/1.1[0m" 404 -
+2024-10-27 15:45:14,036 INFO: 127.0.0.1 - - [27/Oct/2024 15:45:14] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-10-27 15:45:14,854 INFO: 127.0.0.1 - - [27/Oct/2024 15:45:14] "GET /teacher/dashboard HTTP/1.1" 200 -
+2024-10-27 15:45:14,874 INFO: 127.0.0.1 - - [27/Oct/2024 15:45:14] "GET /static/css/teacher_dashboard.css HTTP/1.1" 200 -
+2024-10-27 15:45:14,900 INFO: 127.0.0.1 - - [27/Oct/2024 15:45:14] "[33mGET /images/teacher_dashboard_bg.jpg HTTP/1.1[0m" 404 -
+2024-10-27 15:45:16,715 INFO: Teacher logged out
+2024-10-27 15:45:16,716 INFO: 127.0.0.1 - - [27/Oct/2024 15:45:16] "GET /teacher/logout HTTP/1.1" 200 -
+2024-10-27 15:45:16,737 INFO: 127.0.0.1 - - [27/Oct/2024 15:45:16] "GET /static/css/index.css HTTP/1.1" 200 -
+2024-10-27 15:54:42,775 INFO: 127.0.0.1 - - [27/Oct/2024 15:54:42] "GET /teacher/login HTTP/1.1" 200 -
+2024-10-27 15:54:42,827 INFO: 127.0.0.1 - - [27/Oct/2024 15:54:42] "GET /static/css/teacher_login.css HTTP/1.1" 200 -
+2024-10-27 15:54:42,855 INFO: 127.0.0.1 - - [27/Oct/2024 15:54:42] "[33mGET /images/teacher_background.jpg HTTP/1.1[0m" 404 -
+2024-10-27 15:54:47,041 INFO: Teacher 20121241 logged in successfully
+2024-10-27 15:54:47,041 INFO: 127.0.0.1 - - [27/Oct/2024 15:54:47] "[32mPOST /teacher/login HTTP/1.1[0m" 302 -
+2024-10-27 15:54:47,051 INFO: 127.0.0.1 - - [27/Oct/2024 15:54:47] "GET /teacher/dashboard HTTP/1.1" 200 -
+2024-10-27 15:54:47,075 INFO: 127.0.0.1 - - [27/Oct/2024 15:54:47] "[36mGET /static/css/teacher_dashboard.css HTTP/1.1[0m" 304 -
+2024-10-27 15:54:47,101 INFO: 127.0.0.1 - - [27/Oct/2024 15:54:47] "[33mGET /images/teacher_dashboard_bg.jpg HTTP/1.1[0m" 404 -
+2024-10-27 15:54:48,303 INFO: 127.0.0.1 - - [27/Oct/2024 15:54:48] "GET /teacher/manage_question_banks HTTP/1.1" 200 -
+2024-10-27 15:54:48,337 INFO: 127.0.0.1 - - [27/Oct/2024 15:54:48] "GET /static/css/teacher_manage_question_banks.css HTTP/1.1" 200 -
+2024-10-27 15:54:48,375 INFO: 127.0.0.1 - - [27/Oct/2024 15:54:48] "[33mGET /images/teacher_manage_question_banks_bg.jpg HTTP/1.1[0m" 404 -
+2024-10-27 15:54:48,380 INFO: 127.0.0.1 - - [27/Oct/2024 15:54:48] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-10-27 15:54:50,583 INFO: 127.0.0.1 - - [27/Oct/2024 15:54:50] "GET /teacher/question_bank/2 HTTP/1.1" 200 -
+2024-10-27 15:54:50,610 INFO: 127.0.0.1 - - [27/Oct/2024 15:54:50] "[33mGET /css/style.css HTTP/1.1[0m" 404 -
+2024-10-27 15:56:15,863 INFO: 127.0.0.1 - - [27/Oct/2024 15:56:15] "GET /teacher/manage_question_banks HTTP/1.1" 200 -
+2024-10-27 15:56:16,806 INFO: 127.0.0.1 - - [27/Oct/2024 15:56:16] "GET /teacher/manage_question_banks HTTP/1.1" 200 -
+2024-10-27 15:56:16,833 INFO: 127.0.0.1 - - [27/Oct/2024 15:56:16] "[36mGET /static/css/teacher_manage_question_banks.css HTTP/1.1[0m" 304 -
+2024-10-27 15:56:16,848 INFO: 127.0.0.1 - - [27/Oct/2024 15:56:16] "[33mGET /images/teacher_manage_question_banks_bg.jpg HTTP/1.1[0m" 404 -
+2024-10-27 15:56:17,956 INFO: 127.0.0.1 - - [27/Oct/2024 15:56:17] "GET /teacher/question_bank/2 HTTP/1.1" 200 -
+2024-10-27 15:56:18,001 INFO: 127.0.0.1 - - [27/Oct/2024 15:56:18] "GET /static/css/question_bank_details.css HTTP/1.1" 200 -
+2024-10-27 15:56:18,038 INFO: 127.0.0.1 - - [27/Oct/2024 15:56:18] "[33mGET /images/question_bank_details_bg.jpg HTTP/1.1[0m" 404 -
+2024-10-27 15:56:24,954 INFO: 127.0.0.1 - - [27/Oct/2024 15:56:24] "[35m[1mPOST /teacher/question_bank/2 HTTP/1.1[0m" 500 -
+2024-10-27 15:56:24,975 INFO: 127.0.0.1 - - [27/Oct/2024 15:56:24] "GET /teacher/question_bank/2?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2024-10-27 15:56:24,976 INFO: 127.0.0.1 - - [27/Oct/2024 15:56:24] "GET /teacher/question_bank/2?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2024-10-27 15:56:25,018 INFO: 127.0.0.1 - - [27/Oct/2024 15:56:25] "GET /teacher/question_bank/2?__debugger__=yes&cmd=resource&f=console.png&s=n9HRYsWdJBqjzgiyItDD HTTP/1.1" 200 -
+2024-10-27 15:56:25,021 INFO: 127.0.0.1 - - [27/Oct/2024 15:56:25] "GET /teacher/question_bank/2?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2024-10-27 15:56:26,881 INFO: 127.0.0.1 - - [27/Oct/2024 15:56:26] "GET /teacher/question_bank/2 HTTP/1.1" 200 -
+2024-10-27 15:56:28,350 INFO: 127.0.0.1 - - [27/Oct/2024 15:56:28] "[35m[1mPOST /teacher/question_bank/2 HTTP/1.1[0m" 500 -
+2024-10-27 15:56:28,375 INFO: 127.0.0.1 - - [27/Oct/2024 15:56:28] "[36mGET /teacher/question_bank/2?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-10-27 15:56:28,376 INFO: 127.0.0.1 - - [27/Oct/2024 15:56:28] "[36mGET /teacher/question_bank/2?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-10-27 15:56:28,416 INFO: 127.0.0.1 - - [27/Oct/2024 15:56:28] "[36mGET /teacher/question_bank/2?__debugger__=yes&cmd=resource&f=console.png&s=n9HRYsWdJBqjzgiyItDD HTTP/1.1[0m" 304 -
+2024-10-27 15:56:32,882 INFO: 127.0.0.1 - - [27/Oct/2024 15:56:32] "GET /teacher/question_bank/2 HTTP/1.1" 200 -
+2024-10-27 15:56:34,930 INFO: 127.0.0.1 - - [27/Oct/2024 15:56:34] "GET /teacher/manage_question_banks HTTP/1.1" 200 -
+2024-10-27 15:56:34,953 INFO: 127.0.0.1 - - [27/Oct/2024 15:56:34] "[36mGET /static/css/teacher_manage_question_banks.css HTTP/1.1[0m" 304 -
+2024-10-27 15:56:34,974 INFO: 127.0.0.1 - - [27/Oct/2024 15:56:34] "[33mGET /images/teacher_manage_question_banks_bg.jpg HTTP/1.1[0m" 404 -
+2024-10-27 16:09:10,407 INFO: 127.0.0.1 - - [27/Oct/2024 16:09:10] "GET /teacher/question_bank/2 HTTP/1.1" 200 -
+2024-10-27 16:09:10,447 INFO: 127.0.0.1 - - [27/Oct/2024 16:09:10] "GET /static/css/question_bank_details.css HTTP/1.1" 200 -
+2024-10-27 16:09:10,466 INFO: 127.0.0.1 - - [27/Oct/2024 16:09:10] "[33mGET /images/question_bank_details_bg.jpg HTTP/1.1[0m" 404 -
+2024-10-27 16:09:54,073 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-27 16:09:54,073 INFO: [33mPress CTRL+C to quit[0m
+2024-10-27 16:09:54,074 INFO:  * Restarting with stat
+2024-10-27 16:09:56,209 WARNING:  * Debugger is active!
+2024-10-27 16:09:56,211 INFO:  * Debugger PIN: 669-458-967
+2024-10-27 16:11:36,013 INFO:  * Detected change in 'd:\\CodeProject\\Local\\BS\\api.py', reloading
+2024-10-27 16:11:36,168 INFO:  * Restarting with stat
+2024-10-27 16:11:38,208 WARNING:  * Debugger is active!
+2024-10-27 16:11:38,209 INFO:  * Debugger PIN: 669-458-967
+2024-10-27 16:12:58,199 INFO:  * Detected change in 'd:\\CodeProject\\Local\\BS\\api.py', reloading
+2024-10-27 16:12:58,348 INFO:  * Restarting with stat
+2024-10-27 16:13:00,513 WARNING:  * Debugger is active!
+2024-10-27 16:13:00,514 INFO:  * Debugger PIN: 669-458-967
+2024-10-27 16:13:01,615 INFO:  * Detected change in 'd:\\CodeProject\\Local\\BS\\api.py', reloading
+2024-10-27 16:13:01,778 INFO:  * Restarting with stat
+2024-10-27 16:13:03,960 WARNING:  * Debugger is active!
+2024-10-27 16:13:03,961 INFO:  * Debugger PIN: 669-458-967
+2024-10-27 16:15:39,732 INFO: 127.0.0.1 - - [27/Oct/2024 16:15:39] "[35m[1mPOST /teacher/question_bank/2 HTTP/1.1[0m" 500 -
+2024-10-27 16:15:39,819 INFO: 127.0.0.1 - - [27/Oct/2024 16:15:39] "[36mGET /teacher/question_bank/2?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-10-27 16:15:39,821 INFO: 127.0.0.1 - - [27/Oct/2024 16:15:39] "[36mGET /teacher/question_bank/2?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-10-27 16:15:39,831 INFO: 127.0.0.1 - - [27/Oct/2024 16:15:39] "GET /teacher/question_bank/2?__debugger__=yes&cmd=resource&f=console.png&s=bdWhfjVN62Ccxztqzt1b HTTP/1.1" 200 -
+2024-10-27 16:16:05,602 INFO: 127.0.0.1 - - [27/Oct/2024 16:16:05] "GET /teacher/question_bank/2 HTTP/1.1" 200 -
+2024-10-27 16:22:03,669 INFO:  * Detected change in 'd:\\CodeProject\\Local\\BS\\methods.py', reloading
+2024-10-27 16:22:03,818 INFO:  * Restarting with stat
+2024-10-27 16:22:05,965 WARNING:  * Debugger is active!
+2024-10-27 16:22:05,967 INFO:  * Debugger PIN: 669-458-967
+2024-10-27 16:22:09,157 INFO:  * Detected change in 'd:\\CodeProject\\Local\\BS\\methods.py', reloading
+2024-10-27 16:22:09,313 INFO:  * Restarting with stat
+2024-10-27 16:22:11,690 WARNING:  * Debugger is active!
+2024-10-27 16:22:11,692 INFO:  * Debugger PIN: 669-458-967
+2024-10-27 16:23:13,415 INFO:  * Detected change in 'd:\\CodeProject\\Local\\BS\\api.py', reloading
+2024-10-27 16:23:13,563 INFO:  * Restarting with stat
+2024-10-27 16:23:15,798 WARNING:  * Debugger is active!
+2024-10-27 16:23:15,800 INFO:  * Debugger PIN: 669-458-967
+2024-10-27 16:26:17,212 INFO: 127.0.0.1 - - [27/Oct/2024 16:26:17] "GET /teacher/question_bank/2 HTTP/1.1" 200 -
+2024-10-27 16:26:17,273 INFO: 127.0.0.1 - - [27/Oct/2024 16:26:17] "[36mGET /static/css/question_bank_details.css HTTP/1.1[0m" 304 -
+2024-10-27 16:26:17,278 INFO: 127.0.0.1 - - [27/Oct/2024 16:26:17] "[33mGET /images/question_bank_details_bg.jpg HTTP/1.1[0m" 404 -
+2024-10-27 16:26:20,074 INFO: 127.0.0.1 - - [27/Oct/2024 16:26:20] "GET /teacher/question_bank/2/edit_question/40 HTTP/1.1" 200 -
+2024-10-27 16:26:20,102 INFO: 127.0.0.1 - - [27/Oct/2024 16:26:20] "[33mGET /static/css/edit_question.css HTTP/1.1[0m" 404 -
+2024-10-27 16:26:31,143 INFO: 127.0.0.1 - - [27/Oct/2024 16:26:31] "GET /teacher/question_bank/2 HTTP/1.1" 200 -
+2024-10-27 16:26:31,170 INFO: 127.0.0.1 - - [27/Oct/2024 16:26:31] "GET /static/css/question_bank_details.css HTTP/1.1" 200 -
+2024-10-27 16:26:31,183 INFO: 127.0.0.1 - - [27/Oct/2024 16:26:31] "[33mGET /images/question_bank_details_bg.jpg HTTP/1.1[0m" 404 -
+2024-10-27 16:27:16,136 INFO: 127.0.0.1 - - [27/Oct/2024 16:27:16] "GET /teacher/question_bank/2/edit_question/46 HTTP/1.1" 200 -
+2024-10-27 16:27:16,171 INFO: 127.0.0.1 - - [27/Oct/2024 16:27:16] "GET /static/css/edit_question.css HTTP/1.1" 200 -
+2024-10-27 16:27:16,183 INFO: 127.0.0.1 - - [27/Oct/2024 16:27:16] "[33mGET /images/edit_question_bg.jpg HTTP/1.1[0m" 404 -
+2024-10-27 16:27:21,504 INFO: 127.0.0.1 - - [27/Oct/2024 16:27:21] "GET /teacher/question_bank/2 HTTP/1.1" 200 -
+2024-10-27 16:27:21,527 INFO: 127.0.0.1 - - [27/Oct/2024 16:27:21] "GET /static/css/question_bank_details.css HTTP/1.1" 200 -
+2024-10-27 16:27:21,540 INFO: 127.0.0.1 - - [27/Oct/2024 16:27:21] "[33mGET /images/question_bank_details_bg.jpg HTTP/1.1[0m" 404 -
+2024-10-27 16:27:22,904 INFO: 127.0.0.1 - - [27/Oct/2024 16:27:22] "GET /teacher/manage_question_banks HTTP/1.1" 200 -
+2024-10-27 16:27:22,927 INFO: 127.0.0.1 - - [27/Oct/2024 16:27:22] "GET /static/css/teacher_manage_question_banks.css HTTP/1.1" 200 -
+2024-10-27 16:27:22,945 INFO: 127.0.0.1 - - [27/Oct/2024 16:27:22] "[33mGET /images/teacher_manage_question_banks_bg.jpg HTTP/1.1[0m" 404 -
+2024-10-27 16:27:22,948 INFO: 127.0.0.1 - - [27/Oct/2024 16:27:22] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-10-27 16:27:24,242 INFO: 127.0.0.1 - - [27/Oct/2024 16:27:24] "GET /teacher/dashboard HTTP/1.1" 200 -
+2024-10-27 16:27:24,267 INFO: 127.0.0.1 - - [27/Oct/2024 16:27:24] "GET /static/css/teacher_dashboard.css HTTP/1.1" 200 -
+2024-10-27 16:27:24,284 INFO: 127.0.0.1 - - [27/Oct/2024 16:27:24] "[33mGET /images/teacher_dashboard_bg.jpg HTTP/1.1[0m" 404 -
+2024-10-27 16:34:51,249 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-27 16:34:51,249 INFO: [33mPress CTRL+C to quit[0m
+2024-10-27 16:34:51,251 INFO:  * Restarting with stat
+2024-10-27 16:34:53,458 WARNING:  * Debugger is active!
+2024-10-27 16:34:53,460 INFO:  * Debugger PIN: 669-458-967
+2024-10-27 16:34:58,128 INFO: 127.0.0.1 - - [27/Oct/2024 16:34:58] "GET / HTTP/1.1" 200 -
+2024-10-27 16:34:58,190 INFO: 127.0.0.1 - - [27/Oct/2024 16:34:58] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+2024-10-27 16:37:34,991 INFO: 127.0.0.1 - - [27/Oct/2024 16:37:34] "GET /student/login HTTP/1.1" 200 -
+2024-10-27 16:37:35,054 INFO: 127.0.0.1 - - [27/Oct/2024 16:37:35] "[36mGET /static/css/student_login.css HTTP/1.1[0m" 304 -
+2024-10-27 16:37:35,099 INFO: 127.0.0.1 - - [27/Oct/2024 16:37:35] "[33mGET /images/student_background.jpg HTTP/1.1[0m" 404 -
+2024-10-27 16:37:41,360 INFO: 127.0.0.1 - - [27/Oct/2024 16:37:41] "GET /student/register HTTP/1.1" 200 -
+2024-10-27 16:37:41,389 INFO: 127.0.0.1 - - [27/Oct/2024 16:37:41] "[36mGET /static/css/student_register.css HTTP/1.1[0m" 304 -
+2024-10-27 16:37:41,433 INFO: 127.0.0.1 - - [27/Oct/2024 16:37:41] "[33mGET /images/student_background.jpg HTTP/1.1[0m" 404 -
+2024-10-27 16:37:48,618 INFO: 127.0.0.1 - - [27/Oct/2024 16:37:48] "GET /student/login HTTP/1.1" 200 -
+2024-10-27 16:37:48,644 INFO: 127.0.0.1 - - [27/Oct/2024 16:37:48] "[36mGET /static/css/student_login.css HTTP/1.1[0m" 304 -
+2024-10-27 16:37:48,668 INFO: 127.0.0.1 - - [27/Oct/2024 16:37:48] "[33mGET /images/student_background.jpg HTTP/1.1[0m" 404 -
+2024-10-27 16:37:50,361 INFO: 127.0.0.1 - - [27/Oct/2024 16:37:50] "GET / HTTP/1.1" 200 -
+2024-10-27 16:37:50,380 INFO: 127.0.0.1 - - [27/Oct/2024 16:37:50] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+2024-10-27 16:37:51,462 INFO: 127.0.0.1 - - [27/Oct/2024 16:37:51] "GET /teacher/login HTTP/1.1" 200 -
+2024-10-27 16:37:51,486 INFO: 127.0.0.1 - - [27/Oct/2024 16:37:51] "[36mGET /static/css/teacher_login.css HTTP/1.1[0m" 304 -
+2024-10-27 16:37:51,509 INFO: 127.0.0.1 - - [27/Oct/2024 16:37:51] "[33mGET /images/teacher_background.jpg HTTP/1.1[0m" 404 -
+2024-10-27 16:37:54,375 INFO: 127.0.0.1 - - [27/Oct/2024 16:37:54] "GET /teacher/register HTTP/1.1" 200 -
+2024-10-27 16:37:54,397 INFO: 127.0.0.1 - - [27/Oct/2024 16:37:54] "GET /static/css/teacher_register.css HTTP/1.1" 200 -
+2024-10-27 16:37:54,434 INFO: 127.0.0.1 - - [27/Oct/2024 16:37:54] "[33mGET /images/teacher_background.jpg HTTP/1.1[0m" 404 -
+2024-10-27 16:37:56,545 INFO: 127.0.0.1 - - [27/Oct/2024 16:37:56] "GET /teacher/login HTTP/1.1" 200 -
+2024-10-27 16:37:56,569 INFO: 127.0.0.1 - - [27/Oct/2024 16:37:56] "[36mGET /static/css/teacher_login.css HTTP/1.1[0m" 304 -
+2024-10-27 16:37:56,601 INFO: 127.0.0.1 - - [27/Oct/2024 16:37:56] "[33mGET /images/teacher_background.jpg HTTP/1.1[0m" 404 -
+2024-10-27 16:37:57,476 INFO: 127.0.0.1 - - [27/Oct/2024 16:37:57] "GET / HTTP/1.1" 200 -
+2024-10-27 16:37:57,497 INFO: 127.0.0.1 - - [27/Oct/2024 16:37:57] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+2024-10-27 16:37:58,616 INFO: 127.0.0.1 - - [27/Oct/2024 16:37:58] "GET /admin/login HTTP/1.1" 200 -
+2024-10-27 16:37:58,638 INFO: 127.0.0.1 - - [27/Oct/2024 16:37:58] "[36mGET /static/css/admin_login.css HTTP/1.1[0m" 304 -
+2024-10-27 16:37:58,676 INFO: 127.0.0.1 - - [27/Oct/2024 16:37:58] "[33mGET /images/admin_background.jpg HTTP/1.1[0m" 404 -
+2024-10-27 16:38:02,685 INFO: Admin admin001 logged in successfully
+2024-10-27 16:38:02,686 INFO: 127.0.0.1 - - [27/Oct/2024 16:38:02] "[32mPOST /admin/login HTTP/1.1[0m" 302 -
+2024-10-27 16:38:02,696 INFO: 127.0.0.1 - - [27/Oct/2024 16:38:02] "GET /admin/dashboard HTTP/1.1" 200 -
+2024-10-27 16:38:02,731 INFO: 127.0.0.1 - - [27/Oct/2024 16:38:02] "GET /static/css/admin_dashboard.css HTTP/1.1" 200 -
+2024-10-27 16:38:02,752 INFO: 127.0.0.1 - - [27/Oct/2024 16:38:02] "[33mGET /images/admin_dashboard_bg.jpg HTTP/1.1[0m" 404 -
+2024-10-27 16:38:03,631 INFO: 127.0.0.1 - - [27/Oct/2024 16:38:03] "GET /admin/manage_teachers HTTP/1.1" 200 -
+2024-10-27 16:38:03,657 INFO: 127.0.0.1 - - [27/Oct/2024 16:38:03] "GET /static/css/admin_manage_teachers.css HTTP/1.1" 200 -
+2024-10-27 16:38:03,684 INFO: 127.0.0.1 - - [27/Oct/2024 16:38:03] "[33mGET /images/admin_manage_teachers_bg.jpg HTTP/1.1[0m" 404 -
+2024-10-27 16:38:05,671 INFO: 127.0.0.1 - - [27/Oct/2024 16:38:05] "POST /admin/search_teacher HTTP/1.1" 200 -
+2024-10-27 16:38:05,693 INFO: 127.0.0.1 - - [27/Oct/2024 16:38:05] "[36mGET /static/css/admin_manage_teachers.css HTTP/1.1[0m" 304 -
+2024-10-27 16:38:05,724 INFO: 127.0.0.1 - - [27/Oct/2024 16:38:05] "[33mGET /images/admin_manage_teachers_bg.jpg HTTP/1.1[0m" 404 -
+2024-10-27 16:38:15,168 INFO: 127.0.0.1 - - [27/Oct/2024 16:38:15] "GET /admin/dashboard HTTP/1.1" 200 -
+2024-10-27 16:38:15,193 INFO: 127.0.0.1 - - [27/Oct/2024 16:38:15] "[36mGET /static/css/admin_dashboard.css HTTP/1.1[0m" 304 -
+2024-10-27 16:38:15,211 INFO: 127.0.0.1 - - [27/Oct/2024 16:38:15] "[33mGET /images/admin_dashboard_bg.jpg HTTP/1.1[0m" 404 -
+2024-10-27 16:38:16,372 INFO: 127.0.0.1 - - [27/Oct/2024 16:38:16] "GET /admin/manage_students HTTP/1.1" 200 -
+2024-10-27 16:38:16,398 INFO: 127.0.0.1 - - [27/Oct/2024 16:38:16] "GET /static/css/admin_manage_students.css HTTP/1.1" 200 -
+2024-10-27 16:38:16,427 INFO: 127.0.0.1 - - [27/Oct/2024 16:38:16] "[33mGET /images/admin_manage_students_bg.jpg HTTP/1.1[0m" 404 -
+2024-10-27 16:38:18,056 INFO: 127.0.0.1 - - [27/Oct/2024 16:38:18] "POST /admin/search_student HTTP/1.1" 200 -
+2024-10-27 16:38:18,077 INFO: 127.0.0.1 - - [27/Oct/2024 16:38:18] "[36mGET /static/css/admin_manage_students.css HTTP/1.1[0m" 304 -
+2024-10-27 16:38:18,102 INFO: 127.0.0.1 - - [27/Oct/2024 16:38:18] "[33mGET /images/admin_manage_students_bg.jpg HTTP/1.1[0m" 404 -
+2024-10-27 16:38:30,249 INFO: 127.0.0.1 - - [27/Oct/2024 16:38:30] "GET /admin/admin_add_student HTTP/1.1" 200 -
+2024-10-27 16:38:30,277 INFO: 127.0.0.1 - - [27/Oct/2024 16:38:30] "GET /static/css/admin_add_student.css HTTP/1.1" 200 -
+2024-10-27 16:38:30,305 INFO: 127.0.0.1 - - [27/Oct/2024 16:38:30] "[33mGET /images/admin_add_student_bg.jpg HTTP/1.1[0m" 404 -
+2024-10-27 16:38:40,761 INFO: 127.0.0.1 - - [27/Oct/2024 16:38:40] "GET /admin/manage_students HTTP/1.1" 200 -
+2024-10-27 16:38:40,783 INFO: 127.0.0.1 - - [27/Oct/2024 16:38:40] "[36mGET /static/css/admin_manage_students.css HTTP/1.1[0m" 304 -
+2024-10-27 16:38:40,810 INFO: 127.0.0.1 - - [27/Oct/2024 16:38:40] "[33mGET /images/admin_manage_students_bg.jpg HTTP/1.1[0m" 404 -
+2024-10-27 16:38:42,249 INFO: 127.0.0.1 - - [27/Oct/2024 16:38:42] "POST /admin/search_student HTTP/1.1" 200 -
+2024-10-27 16:38:42,270 INFO: 127.0.0.1 - - [27/Oct/2024 16:38:42] "[36mGET /static/css/admin_manage_students.css HTTP/1.1[0m" 304 -
+2024-10-27 16:38:42,372 INFO: 127.0.0.1 - - [27/Oct/2024 16:38:42] "[33mGET /images/admin_manage_students_bg.jpg HTTP/1.1[0m" 404 -
+2024-10-27 16:38:48,062 INFO: 127.0.0.1 - - [27/Oct/2024 16:38:48] "GET /admin/admin_add_student HTTP/1.1" 200 -
+2024-10-27 16:38:48,085 INFO: 127.0.0.1 - - [27/Oct/2024 16:38:48] "[36mGET /static/css/admin_add_student.css HTTP/1.1[0m" 304 -
+2024-10-27 16:38:48,135 INFO: 127.0.0.1 - - [27/Oct/2024 16:38:48] "[33mGET /images/admin_add_student_bg.jpg HTTP/1.1[0m" 404 -
+2024-10-27 16:39:10,348 INFO: Student 202409102 added successfully
+2024-10-27 16:39:10,348 INFO: 127.0.0.1 - - [27/Oct/2024 16:39:10] "POST /admin/add_student HTTP/1.1" 200 -
+2024-10-27 16:39:10,414 INFO: 127.0.0.1 - - [27/Oct/2024 16:39:10] "[36mGET /static/css/admin_manage_students.css HTTP/1.1[0m" 304 -
+2024-10-27 16:39:10,437 INFO: 127.0.0.1 - - [27/Oct/2024 16:39:10] "[33mGET /images/admin_manage_students_bg.jpg HTTP/1.1[0m" 404 -
+2024-10-27 16:39:11,834 INFO: 127.0.0.1 - - [27/Oct/2024 16:39:11] "POST /admin/search_student HTTP/1.1" 200 -
+2024-10-27 16:39:11,884 INFO: 127.0.0.1 - - [27/Oct/2024 16:39:11] "[36mGET /static/css/admin_manage_students.css HTTP/1.1[0m" 304 -
+2024-10-27 16:39:11,895 INFO: 127.0.0.1 - - [27/Oct/2024 16:39:11] "[33mGET /images/admin_manage_students_bg.jpg HTTP/1.1[0m" 404 -
+2024-10-27 16:39:49,294 INFO: Student 202409103 updated successfully
+2024-10-27 16:39:49,294 INFO: 127.0.0.1 - - [27/Oct/2024 16:39:49] "POST /admin/update_student/202409103 HTTP/1.1" 200 -
+2024-10-27 16:39:49,317 INFO: 127.0.0.1 - - [27/Oct/2024 16:39:49] "[36mGET /static/css/admin_manage_students.css HTTP/1.1[0m" 304 -
+2024-10-27 16:39:49,343 INFO: 127.0.0.1 - - [27/Oct/2024 16:39:49] "[33mGET /images/admin_manage_students_bg.jpg HTTP/1.1[0m" 404 -
+2024-10-27 16:39:50,928 INFO: 127.0.0.1 - - [27/Oct/2024 16:39:50] "POST /admin/search_student HTTP/1.1" 200 -
+2024-10-27 16:39:50,950 INFO: 127.0.0.1 - - [27/Oct/2024 16:39:50] "[36mGET /static/css/admin_manage_students.css HTTP/1.1[0m" 304 -
+2024-10-27 16:39:50,970 INFO: 127.0.0.1 - - [27/Oct/2024 16:39:50] "[33mGET /images/admin_manage_students_bg.jpg HTTP/1.1[0m" 404 -
+2024-10-27 16:39:58,749 INFO: Student 202409101 updated successfully
+2024-10-27 16:39:58,749 INFO: 127.0.0.1 - - [27/Oct/2024 16:39:58] "POST /admin/update_student/202409101 HTTP/1.1" 200 -
+2024-10-27 16:39:58,773 INFO: 127.0.0.1 - - [27/Oct/2024 16:39:58] "[36mGET /static/css/admin_manage_students.css HTTP/1.1[0m" 304 -
+2024-10-27 16:39:58,801 INFO: 127.0.0.1 - - [27/Oct/2024 16:39:58] "[33mGET /images/admin_manage_students_bg.jpg HTTP/1.1[0m" 404 -
+2024-10-27 16:40:00,199 INFO: 127.0.0.1 - - [27/Oct/2024 16:40:00] "POST /admin/search_student HTTP/1.1" 200 -
+2024-10-27 16:40:00,227 INFO: 127.0.0.1 - - [27/Oct/2024 16:40:00] "[36mGET /static/css/admin_manage_students.css HTTP/1.1[0m" 304 -
+2024-10-27 16:40:00,276 INFO: 127.0.0.1 - - [27/Oct/2024 16:40:00] "[33mGET /images/admin_manage_students_bg.jpg HTTP/1.1[0m" 404 -
+2024-10-27 16:40:06,595 INFO: Student 20249102 deleted successfully
+2024-10-27 16:40:06,595 INFO: 127.0.0.1 - - [27/Oct/2024 16:40:06] "[32mPOST /admin/delete_student/20249102 HTTP/1.1[0m" 302 -
+2024-10-27 16:40:06,602 INFO: 127.0.0.1 - - [27/Oct/2024 16:40:06] "GET /admin/manage_students HTTP/1.1" 200 -
+2024-10-27 16:40:06,628 INFO: 127.0.0.1 - - [27/Oct/2024 16:40:06] "GET /static/css/admin_manage_students.css HTTP/1.1" 200 -
+2024-10-27 16:40:06,652 INFO: 127.0.0.1 - - [27/Oct/2024 16:40:06] "[33mGET /images/admin_manage_students_bg.jpg HTTP/1.1[0m" 404 -
+2024-10-27 16:40:07,994 INFO: 127.0.0.1 - - [27/Oct/2024 16:40:07] "POST /admin/search_student HTTP/1.1" 200 -
+2024-10-27 16:40:08,019 INFO: 127.0.0.1 - - [27/Oct/2024 16:40:08] "[36mGET /static/css/admin_manage_students.css HTTP/1.1[0m" 304 -
+2024-10-27 16:40:08,044 INFO: 127.0.0.1 - - [27/Oct/2024 16:40:08] "[33mGET /images/admin_manage_students_bg.jpg HTTP/1.1[0m" 404 -
+2024-10-27 16:40:16,868 INFO: Student 202409101 updated successfully
+2024-10-27 16:40:16,868 INFO: 127.0.0.1 - - [27/Oct/2024 16:40:16] "POST /admin/update_student/202409101 HTTP/1.1" 200 -
+2024-10-27 16:40:16,903 INFO: 127.0.0.1 - - [27/Oct/2024 16:40:16] "[36mGET /static/css/admin_manage_students.css HTTP/1.1[0m" 304 -
+2024-10-27 16:40:16,933 INFO: 127.0.0.1 - - [27/Oct/2024 16:40:16] "[33mGET /images/admin_manage_students_bg.jpg HTTP/1.1[0m" 404 -
+2024-10-27 16:40:17,919 INFO: 127.0.0.1 - - [27/Oct/2024 16:40:17] "POST /admin/search_student HTTP/1.1" 200 -
+2024-10-27 16:40:17,944 INFO: 127.0.0.1 - - [27/Oct/2024 16:40:17] "[36mGET /static/css/admin_manage_students.css HTTP/1.1[0m" 304 -
+2024-10-27 16:40:17,976 INFO: 127.0.0.1 - - [27/Oct/2024 16:40:17] "[33mGET /images/admin_manage_students_bg.jpg HTTP/1.1[0m" 404 -
+2024-10-27 16:40:23,341 INFO: Student 202409102 updated successfully
+2024-10-27 16:40:23,342 INFO: 127.0.0.1 - - [27/Oct/2024 16:40:23] "POST /admin/update_student/202409102 HTTP/1.1" 200 -
+2024-10-27 16:40:23,362 INFO: 127.0.0.1 - - [27/Oct/2024 16:40:23] "[36mGET /static/css/admin_manage_students.css HTTP/1.1[0m" 304 -
+2024-10-27 16:40:23,388 INFO: 127.0.0.1 - - [27/Oct/2024 16:40:23] "[33mGET /images/admin_manage_students_bg.jpg HTTP/1.1[0m" 404 -
+2024-10-27 16:40:24,713 INFO: 127.0.0.1 - - [27/Oct/2024 16:40:24] "POST /admin/search_student HTTP/1.1" 200 -
+2024-10-27 16:40:24,737 INFO: 127.0.0.1 - - [27/Oct/2024 16:40:24] "[36mGET /static/css/admin_manage_students.css HTTP/1.1[0m" 304 -
+2024-10-27 16:40:24,759 INFO: 127.0.0.1 - - [27/Oct/2024 16:40:24] "[33mGET /images/admin_manage_students_bg.jpg HTTP/1.1[0m" 404 -
+2024-10-27 16:40:28,314 INFO: 127.0.0.1 - - [27/Oct/2024 16:40:28] "GET /admin/dashboard HTTP/1.1" 200 -
+2024-10-27 16:40:28,339 INFO: 127.0.0.1 - - [27/Oct/2024 16:40:28] "GET /static/css/admin_dashboard.css HTTP/1.1" 200 -
+2024-10-27 16:40:28,353 INFO: 127.0.0.1 - - [27/Oct/2024 16:40:28] "[33mGET /images/admin_dashboard_bg.jpg HTTP/1.1[0m" 404 -
+2024-10-27 16:40:29,500 INFO: 127.0.0.1 - - [27/Oct/2024 16:40:29] "GET /admin/manage_teachers HTTP/1.1" 200 -
+2024-10-27 16:40:29,523 INFO: 127.0.0.1 - - [27/Oct/2024 16:40:29] "GET /static/css/admin_manage_teachers.css HTTP/1.1" 200 -
+2024-10-27 16:40:29,542 INFO: 127.0.0.1 - - [27/Oct/2024 16:40:29] "[33mGET /images/admin_manage_teachers_bg.jpg HTTP/1.1[0m" 404 -
+2024-10-27 16:40:31,374 INFO: 127.0.0.1 - - [27/Oct/2024 16:40:31] "POST /admin/search_teacher HTTP/1.1" 200 -
+2024-10-27 16:40:31,395 INFO: 127.0.0.1 - - [27/Oct/2024 16:40:31] "[36mGET /static/css/admin_manage_teachers.css HTTP/1.1[0m" 304 -
+2024-10-27 16:40:31,418 INFO: 127.0.0.1 - - [27/Oct/2024 16:40:31] "[33mGET /images/admin_manage_teachers_bg.jpg HTTP/1.1[0m" 404 -
+2024-10-27 16:40:46,921 INFO: 127.0.0.1 - - [27/Oct/2024 16:40:46] "GET /admin/dashboard HTTP/1.1" 200 -
+2024-10-27 16:40:46,947 INFO: 127.0.0.1 - - [27/Oct/2024 16:40:46] "[36mGET /static/css/admin_dashboard.css HTTP/1.1[0m" 304 -
+2024-10-27 16:40:46,975 INFO: 127.0.0.1 - - [27/Oct/2024 16:40:46] "[33mGET /images/admin_dashboard_bg.jpg HTTP/1.1[0m" 404 -
+2024-10-27 16:40:49,354 INFO: 127.0.0.1 - - [27/Oct/2024 16:40:49] "GET /admin/view_logs HTTP/1.1" 200 -
+2024-10-27 16:40:49,381 INFO: 127.0.0.1 - - [27/Oct/2024 16:40:49] "GET /static/css/admin_view_logs.css HTTP/1.1" 200 -
+2024-10-27 16:40:49,409 INFO: 127.0.0.1 - - [27/Oct/2024 16:40:49] "[33mGET /images/admin_view_logs_bg.jpg HTTP/1.1[0m" 404 -
+2024-10-27 16:40:51,870 INFO: 127.0.0.1 - - [27/Oct/2024 16:40:51] "GET /admin/dashboard HTTP/1.1" 200 -
+2024-10-27 16:40:51,895 INFO: 127.0.0.1 - - [27/Oct/2024 16:40:51] "[36mGET /static/css/admin_dashboard.css HTTP/1.1[0m" 304 -
+2024-10-27 16:40:51,919 INFO: 127.0.0.1 - - [27/Oct/2024 16:40:51] "[33mGET /images/admin_dashboard_bg.jpg HTTP/1.1[0m" 404 -
+2024-10-27 16:40:54,633 INFO: 127.0.0.1 - - [27/Oct/2024 16:40:54] "GET /admin/view_logs HTTP/1.1" 200 -
+2024-10-27 16:40:54,658 INFO: 127.0.0.1 - - [27/Oct/2024 16:40:54] "[36mGET /static/css/admin_view_logs.css HTTP/1.1[0m" 304 -
+2024-10-27 16:40:54,685 INFO: 127.0.0.1 - - [27/Oct/2024 16:40:54] "[33mGET /images/admin_view_logs_bg.jpg HTTP/1.1[0m" 404 -
+2024-10-27 16:40:56,206 INFO: 127.0.0.1 - - [27/Oct/2024 16:40:56] "GET /admin/dashboard HTTP/1.1" 200 -
+2024-10-27 16:40:56,229 INFO: 127.0.0.1 - - [27/Oct/2024 16:40:56] "[36mGET /static/css/admin_dashboard.css HTTP/1.1[0m" 304 -
+2024-10-27 16:40:56,260 INFO: 127.0.0.1 - - [27/Oct/2024 16:40:56] "[33mGET /images/admin_dashboard_bg.jpg HTTP/1.1[0m" 404 -
+2024-10-27 16:40:57,204 INFO: 127.0.0.1 - - [27/Oct/2024 16:40:57] "GET /admin/manage_students HTTP/1.1" 200 -
+2024-10-27 16:40:57,229 INFO: 127.0.0.1 - - [27/Oct/2024 16:40:57] "[36mGET /static/css/admin_manage_students.css HTTP/1.1[0m" 304 -
+2024-10-27 16:40:57,247 INFO: 127.0.0.1 - - [27/Oct/2024 16:40:57] "[33mGET /images/admin_manage_students_bg.jpg HTTP/1.1[0m" 404 -
+2024-10-27 16:40:58,890 INFO: 127.0.0.1 - - [27/Oct/2024 16:40:58] "GET /admin/dashboard HTTP/1.1" 200 -
+2024-10-27 16:40:58,915 INFO: 127.0.0.1 - - [27/Oct/2024 16:40:58] "[36mGET /static/css/admin_dashboard.css HTTP/1.1[0m" 304 -
+2024-10-27 16:40:58,943 INFO: 127.0.0.1 - - [27/Oct/2024 16:40:58] "[33mGET /images/admin_dashboard_bg.jpg HTTP/1.1[0m" 404 -
+2024-10-27 16:41:00,155 INFO: 127.0.0.1 - - [27/Oct/2024 16:41:00] "GET /admin/manage_teachers HTTP/1.1" 200 -
+2024-10-27 16:41:00,179 INFO: 127.0.0.1 - - [27/Oct/2024 16:41:00] "[36mGET /static/css/admin_manage_teachers.css HTTP/1.1[0m" 304 -
+2024-10-27 16:41:00,202 INFO: 127.0.0.1 - - [27/Oct/2024 16:41:00] "[33mGET /images/admin_manage_teachers_bg.jpg HTTP/1.1[0m" 404 -
+2024-10-27 16:41:01,016 INFO: 127.0.0.1 - - [27/Oct/2024 16:41:01] "GET /admin/dashboard HTTP/1.1" 200 -
+2024-10-27 16:41:01,036 INFO: 127.0.0.1 - - [27/Oct/2024 16:41:01] "[36mGET /static/css/admin_dashboard.css HTTP/1.1[0m" 304 -
+2024-10-27 16:41:01,059 INFO: 127.0.0.1 - - [27/Oct/2024 16:41:01] "[33mGET /images/admin_dashboard_bg.jpg HTTP/1.1[0m" 404 -
+2024-10-27 16:41:02,089 INFO: 127.0.0.1 - - [27/Oct/2024 16:41:02] "GET /admin/manage_students HTTP/1.1" 200 -
+2024-10-27 16:41:02,111 INFO: 127.0.0.1 - - [27/Oct/2024 16:41:02] "[36mGET /static/css/admin_manage_students.css HTTP/1.1[0m" 304 -
+2024-10-27 16:41:02,135 INFO: 127.0.0.1 - - [27/Oct/2024 16:41:02] "[33mGET /images/admin_manage_students_bg.jpg HTTP/1.1[0m" 404 -
+2024-10-27 16:41:02,984 INFO: 127.0.0.1 - - [27/Oct/2024 16:41:02] "GET /admin/dashboard HTTP/1.1" 200 -
+2024-10-27 16:41:03,011 INFO: 127.0.0.1 - - [27/Oct/2024 16:41:03] "[36mGET /static/css/admin_dashboard.css HTTP/1.1[0m" 304 -
+2024-10-27 16:41:03,028 INFO: 127.0.0.1 - - [27/Oct/2024 16:41:03] "[33mGET /images/admin_dashboard_bg.jpg HTTP/1.1[0m" 404 -
+2024-10-27 16:41:04,688 INFO: Admin logged out
+2024-10-27 16:41:04,689 INFO: 127.0.0.1 - - [27/Oct/2024 16:41:04] "GET /admin/logout HTTP/1.1" 200 -
+2024-10-27 16:41:04,712 INFO: 127.0.0.1 - - [27/Oct/2024 16:41:04] "GET /static/css/index.css HTTP/1.1" 200 -
+2024-10-27 16:41:05,659 INFO: 127.0.0.1 - - [27/Oct/2024 16:41:05] "GET /teacher/login HTTP/1.1" 200 -
+2024-10-27 16:41:05,683 INFO: 127.0.0.1 - - [27/Oct/2024 16:41:05] "GET /static/css/teacher_login.css HTTP/1.1" 200 -
+2024-10-27 16:41:05,709 INFO: 127.0.0.1 - - [27/Oct/2024 16:41:05] "[33mGET /images/teacher_background.jpg HTTP/1.1[0m" 404 -
+2024-10-27 16:41:08,450 INFO: Teacher 20121241 logged in successfully
+2024-10-27 16:41:08,451 INFO: 127.0.0.1 - - [27/Oct/2024 16:41:08] "[32mPOST /teacher/login HTTP/1.1[0m" 302 -
+2024-10-27 16:41:08,459 INFO: 127.0.0.1 - - [27/Oct/2024 16:41:08] "GET /teacher/dashboard HTTP/1.1" 200 -
+2024-10-27 16:41:08,477 INFO: 127.0.0.1 - - [27/Oct/2024 16:41:08] "[36mGET /static/css/teacher_dashboard.css HTTP/1.1[0m" 304 -
+2024-10-27 16:41:08,509 INFO: 127.0.0.1 - - [27/Oct/2024 16:41:08] "[33mGET /images/teacher_dashboard_bg.jpg HTTP/1.1[0m" 404 -
+2024-10-27 16:41:10,030 INFO: 127.0.0.1 - - [27/Oct/2024 16:41:10] "GET /teacher/manage_question_banks HTTP/1.1" 200 -
+2024-10-27 16:41:10,069 INFO: 127.0.0.1 - - [27/Oct/2024 16:41:10] "GET /static/css/teacher_manage_question_banks.css HTTP/1.1" 200 -
+2024-10-27 16:41:10,078 INFO: 127.0.0.1 - - [27/Oct/2024 16:41:10] "[33mGET /images/teacher_manage_question_banks_bg.jpg HTTP/1.1[0m" 404 -
+2024-10-27 16:41:21,085 INFO: 127.0.0.1 - - [27/Oct/2024 16:41:21] "GET /teacher/dashboard HTTP/1.1" 200 -
+2024-10-27 16:41:21,121 INFO: 127.0.0.1 - - [27/Oct/2024 16:41:21] "[36mGET /static/css/teacher_dashboard.css HTTP/1.1[0m" 304 -
+2024-10-27 16:41:21,143 INFO: 127.0.0.1 - - [27/Oct/2024 16:41:21] "[33mGET /images/teacher_dashboard_bg.jpg HTTP/1.1[0m" 404 -
+2024-10-27 16:41:21,671 INFO: 127.0.0.1 - - [27/Oct/2024 16:41:21] "GET /teacher/manage_exams HTTP/1.1" 200 -
+2024-10-27 16:41:21,697 INFO: 127.0.0.1 - - [27/Oct/2024 16:41:21] "GET /static/css/teacher_manage_exams.css HTTP/1.1" 200 -
+2024-10-27 16:41:21,761 INFO: 127.0.0.1 - - [27/Oct/2024 16:41:21] "[33mGET /images/teacher_manage_exams_bg.jpg HTTP/1.1[0m" 404 -
+2024-10-27 16:41:22,699 INFO: 127.0.0.1 - - [27/Oct/2024 16:41:22] "GET /teacher/dashboard HTTP/1.1" 200 -
+2024-10-27 16:41:22,723 INFO: 127.0.0.1 - - [27/Oct/2024 16:41:22] "[36mGET /static/css/teacher_dashboard.css HTTP/1.1[0m" 304 -
+2024-10-27 16:41:22,744 INFO: 127.0.0.1 - - [27/Oct/2024 16:41:22] "[33mGET /images/teacher_dashboard_bg.jpg HTTP/1.1[0m" 404 -
+2024-10-27 16:41:29,954 INFO:  * Detected change in 'd:\\CodeProject\\Local\\BS\\api.py', reloading

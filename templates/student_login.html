@@ -1,0 +1,33 @@
+<!-- student_login.html -->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>学生登录 - 考试管理系统</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/student_login.css') }}">
+</head>
+<body>
+    <header>
+        <h1>考试管理系统</h1>
+    </header>
+    <div class="container">
+        <a href="/" class="back-btn">返回主页</a>
+        <h2>学生登录</h2>
+        <form action="/student/login" method="post">
+            <div class="input-group">
+                <label for="student_id">学号:</label>
+                <input type="text" name="student_id" required>
+            </div>
+            <div class="input-group">
+                <label for="password">密码:</label>
+                <input type="password" name="password" required>
+            </div>
+            <input type="submit" value="登录" class="btn">
+        </form>
+        <p>没有账号？<a href="/student/register">去注册</a></p>
+    </div>
+    <footer>
+        <p>&copy; 2024 考试管理系统</p>
+    </footer>
+</body>
+</html>

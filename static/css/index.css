@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #2980b9, #6dd5fa, #ffffff);
+    color: #333;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    color: #fff;
+    margin: 0;
+}
+
+.hero {
+    padding: 60px 0;
+    text-align: center;
+    color: #fff;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.roles {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 40px 0;
+}
+
+.role {
+    background-color: #fff;
+    width: 300px;
+    margin: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.role .icon {
+    font-size: 80px;
+    color: #2980b9;
+    margin-top: -40px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    padding: 20px;
+    position: relative;
+    top: -40px;
+}
+
+.role h3 {
+    margin-top: -20px;
+    font-size: 24px;
+    color: #2980b9;
+}
+
+.role .buttons {
+    margin: 20px 0 40px;
+}
+
+.role .btn {
+    display: inline-block;
+    background-color: #2980b9;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.role .btn:hover {
+    background-color: #1f6391;
+}
+
+footer {
+    background-color: #2980b9;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+@media (max-width: 768px) {
+    .roles {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .role {
+        width: 80%;
+    }
+}

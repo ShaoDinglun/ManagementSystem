@@ -1,0 +1,67 @@
+<!-- student_take_exam.html -->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ exam.name }} - 参加考试</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/student_take_exam.css') }}">
+</head>
+<body>
+    <header>
+        <h1>考试管理系统</h1>
+    </header>
+    <div class="container">
+        <div class="top-nav">
+            <a href="/student/exam_list" class="back-btn">返回考试列表</a>
+            <a href="/student/logout" class="logout-btn">注销</a>
+        </div>
+        <h2>{{ exam.name }}</h2>
+        {% if error %}
+        <p class="error">{{ error }}</p>
+        {% endif %}
+        <form action="/student/exam/{{ exam.id }}" method="POST">
+            {% for question in questions %}
+            <div class="question">
+                <p><strong>{{ loop.index }}. {{ question.content }}</strong></p>
+                {% if question.question_type == '单选题' %}
+                    {% for option in question.options %}
+                    <label>
+                        <input type="radio" name="question_{{ question.id }}" value="{{ option.id }}"
+                        {% if student_answers.get(question.id) == option.id %}checked{% endif %}>
+                        {{ option.option_text }}
+                    </label><br>
+                    {% endfor %}
+                {% elif question.question_type == '多选题' %}
+                    {% set student_answer = student_answers.get(question.id, []) %}
+                    {% if student_answer is string or student_answer is number %}
+                        {% set student_answer = [student_answer] %}
+                    {% endif %}
+                    {% for option in question.options %}
+                    <label>
+                        <input type="checkbox" name="question_{{ question.id }}" value="{{ option.id }}"
+                        {% if option.id|string in student_answer %}checked{% endif %}>
+                        {{ option.option_text }}
+                    </label><br>
+                    {% endfor %}
+                {% elif question.question_type == '判断题' %}
+                    {% for option in question.options %}
+                    <label>
+                        <input type="radio" name="question_{{ question.id }}" value="{{ option.id }}"
+                        {% if student_answers.get(question.id) == option.id %}checked{% endif %}>
+                        {{ option.option_text }}
+                    </label><br>
+                    {% endfor %}
+                {% else %}
+                    <textarea name="question_{{ question.id }}_text" rows="4" cols="50">{{ student_answers.get(question.id, '') }}</textarea>
+                {% endif %}
+            </div>
+            <hr>
+            {% endfor %}
+            <button type="submit" class="submit-btn">提交答案</button>
+        </form>
+    </div>
+    <footer>
+        <p>&copy; 2024 考试管理系统</p>
+    </footer>
+</body>
+</html>

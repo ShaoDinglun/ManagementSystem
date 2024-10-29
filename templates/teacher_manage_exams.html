@@ -1,0 +1,61 @@
+<!-- teacher_manage_exams.html -->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>考试管理 - 考试管理系统</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/teacher_manage_exams.css') }}">
+</head>
+<body>
+    <header>
+        <h1>考试管理系统</h1>
+    </header>
+    <div class="container">
+        <div class="top-nav">
+            <a href="/teacher/dashboard" class="back-btn">返回仪表盘</a>
+            <a href="/teacher/logout" class="logout-btn">注销</a>
+        </div>
+        <h2>考试管理</h2>
+        <div class="add-exam">
+            <a href="/teacher/create_exam" class="btn">创建考试</a>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>考试ID</th>
+                    <th>考试名称</th>
+                    <th>开始时间</th>
+                    <th>结束时间</th>
+                    <th>操作</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for exam in exams %}
+                <tr>
+                    <td>{{ exam.id }}</td>
+                    <td>{{ exam.name }}</td>
+                    <td>{{ exam.start_time }}</td>
+                    <td>{{ exam.end_time }}</td>
+                    <td class="operation-buttons">
+                        <a href="/teacher/edit_exam/{{ exam.id }}" class="btn-small">编辑</a>
+                        <form action="/teacher/delete_exam/{{ exam.id }}" method="POST" style="display:inline;">
+                            <button type="submit" class="btn-small delete-btn" onclick="return confirm('确认删除此考试？');">删除</button>
+                        </form>
+                        <form action="/teacher/auto_grade_exam/{{ exam.id }}" method="POST" style="display:inline;">
+                            <button type="submit" class="btn-small">自动批改客观题</button>
+                        </form>
+                        <a href="/teacher/grade_exam/{{ exam.id }}" class="btn-small">阅卷</a>
+                        <a href="/teacher/view_grades/{{ exam.id }}" class="btn-small">成绩查询</a>
+                        <a href="/teacher/exam_report/{{ exam.id }}" class="btn-small">考试报表</a>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    <footer>
+        <p>&copy; 2024 考试管理系统</p>
+    </footer>
+</body>
+</html>
+

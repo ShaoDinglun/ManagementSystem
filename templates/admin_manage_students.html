@@ -1,0 +1,86 @@
+<!-- admin_manage_students.html -->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>学生账户管理 - 考试管理系统</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/admin_manage_students.css') }}">
+</head>
+<body>
+    <header>
+        <h1>考试管理系统</h1>
+    </header>
+
+    <div class="container">
+        <div class="top-nav">
+            <a href="/admin/dashboard" class="back-btn">返回仪表盘</a>
+            <a href="/admin/logout" class="logout-btn">注销</a>
+        </div>
+
+        <h2>学生账户管理</h2>
+
+        <!-- 查询学生账户 -->
+        <form action="/admin/search_student" method="POST" class="search-form">
+            <div class="input-group">
+                <label for="student_id">学号:</label>
+                <input type="text" name="student_id">
+            </div>
+            <div class="input-group">
+                <label for="name">姓名:</label>
+                <input type="text" name="name">
+            </div>
+            <input type="submit" value="查询学生账户" class="btn">
+        </form>
+
+        <div class="add-student">
+            <a href="/admin/admin_add_student" class="btn">新增学生账户</a>
+        </div>
+
+        <!-- 查询结果显示 -->
+        {% if students %}
+            <h2>查询结果</h2>
+            <table>
+                <tr>
+                    <th>学号</th>
+                    <th>姓名</th>
+                    <th>性别</th>
+                    <th>手机号</th>
+                    <th>密码</th>
+                    <th>操作</th>
+                </tr>
+                {% for student in students %}
+                <tr>
+                    <form action="/admin/update_student/{{ student.student_id }}" method="POST">
+                        <td><input type="text" name="student_id" value="{{ student.student_id }}" readonly></td>
+                        <td><input type="text" name="name" value="{{ student.name }}"></td>
+                        <td>
+                            <select name="gender">
+                                <option value="男" {% if student.gender == "男" %}selected{% endif %}>男</option>
+                                <option value="女" {% if student.gender == "女" %}selected{% endif %}>女</option>
+                            </select>
+                        </td>
+                        <td><input type="text" name="phone_number" value="{{ student.phone_number }}"></td>
+                        <td><input type="text" name="password" value="{{ student.password }}"></td>
+                        <td>
+                            <input type="submit" value="更新" class="btn-small">
+                        </td>
+                    </form>
+                    <form action="/admin/delete_student/{{ student.student_id }}" method="POST">
+                        <td>
+                            <input type="submit" value="删除" class="btn-small delete-btn">
+                        </td>
+                    </form>
+                </tr>
+                {% endfor %}
+            </table>
+        {% else %}
+            <p class="no-result">未找到符合条件的学生账户。</p>
+        {% endif %}
+    </div>
+
+    <footer>
+        <p>&copy; 2024 考试管理系统</p>
+    </footer>
+</body>
+</html>
+

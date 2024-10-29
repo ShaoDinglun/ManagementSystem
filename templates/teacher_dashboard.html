@@ -1,0 +1,26 @@
+<!-- teacher_dashboard.html -->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>教师仪表盘 - 考试管理系统</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/teacher_dashboard.css') }}">
+</head>
+<body>
+    <header>
+        <h1>考试管理系统</h1>
+    </header>
+    <div class="container">
+        <a href="/teacher/logout" class="logout-btn">注销</a>
+        <h2>欢迎, 教师 {{ teacher_id }}</h2>
+        <div class="nav-links">
+            <a href="/teacher/manage_question_banks" class="btn">管理题库</a>
+            <a href="/teacher/manage_exams" class="btn">管理考试</a>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 考试管理系统</p>
+    </footer>
+</body>
+</html>
+

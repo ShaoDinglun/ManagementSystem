@@ -1,0 +1,77 @@
+<!-- teacher_edit_exam.html -->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>编辑考试 - {{ exam.name }} - 考试管理系统</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/teacher_edit_exam.css') }}">
+</head>
+<body>
+    <header>
+        <h1>考试管理系统</h1>
+    </header>
+    <div class="container">
+        <div class="top-nav">
+            <a href="/teacher/manage_exams" class="back-btn">返回考试管理</a>
+            <a href="/teacher/logout" class="logout-btn">注销</a>
+        </div>
+        <h2>编辑考试 - {{ exam.name }}</h2>
+        {% if error %}
+        <p class="error">{{ error }}</p>
+        {% endif %}
+        <form action="/teacher/edit_exam/{{ exam.id }}" method="POST" class="exam-form">
+            <input type="hidden" name="action" value="update_exam">
+            <div class="input-group">
+                <label>考试名称：</label>
+                <input type="text" name="exam_name" value="{{ exam.name }}" required>
+            </div>
+            <div class="input-group">
+                <label for="start_time">开始时间：</label>
+                <input type="datetime-local" name="start_time" value="{{ exam.start_time.strftime('%Y-%m-%dT%H:%M') }}" required>
+            </div>
+            <div class="input-group">
+                <label for="end_time">结束时间：</label>
+                <input type="datetime-local" name="end_time" value="{{ exam.end_time.strftime('%Y-%m-%dT%H:%M') }}" required>
+            </div>
+            <button type="submit" class="btn">更新考试信息</button>
+        </form>
+        <hr>
+        <h3>试题选择与分数设置</h3>
+        <form action="/teacher/edit_exam/{{ exam.id }}" method="POST">
+            <input type="hidden" name="action" value="assign_questions">
+            <table>
+                <thead>
+                    <tr>
+                        <th>选择</th>
+                        <th>题目ID</th>
+                        <th>题目内容</th>
+                        <th>题目类型</th>
+                        <th>分数</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for question in questions %}
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="question_ids" value="{{ question.id }}"
+                            {% if question.id in assigned_question_ids %} checked {% endif %}>
+                        </td>
+                        <td>{{ question.id }}</td>
+                        <td>{{ question.content }}</td>
+                        <td>{{ question.question_type }}</td>
+                        <td>
+                            <input type="number" name="question_scores" min="0" value="{% for aq in assigned_questions %}{% if aq.question.id == question.id %}{{ aq.score }}{% endif %}{% endfor %}">
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+            <button type="submit" class="btn">更新试题和分数</button>
+        </form>
+    </div>
+    <footer>
+        <p>&copy; 2024 考试管理系统</p>
+    </footer>
+</body>
+</html>
+

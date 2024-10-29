@@ -1,0 +1,51 @@
+<!-- teacher_create_exam.html -->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>创建考试 - 考试管理系统</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/teacher_create_exam.css') }}">
+</head>
+<body>
+    <header>
+        <h1>考试管理系统</h1>
+    </header>
+    <div class="container">
+        <div class="top-nav">
+            <a href="/teacher/manage_exams" class="back-btn">返回考试管理</a>
+            <a href="/teacher/logout" class="logout-btn">注销</a>
+        </div>
+        <h2>创建考试</h2>
+        {% if error %}
+        <p class="error">{{ error }}</p>
+        {% endif %}
+        <form action="/teacher/create_exam" method="POST">
+            <div class="input-group">
+                <label for="exam_name">考试名称：</label>
+                <input type="text" name="exam_name" required>
+            </div>
+            <div class="input-group">
+                <label for="start_time">开始时间：</label>
+                <input type="datetime-local" name="start_time" required>
+            </div>
+            <div class="input-group">
+                <label for="end_time">结束时间：</label>
+                <input type="datetime-local" name="end_time" required>
+            </div>
+            <div class="input-group">
+                <label for="question_bank_id">选择题库：</label>
+                <select name="question_bank_id">
+                    {% for qb in question_banks %}
+                    <option value="{{ qb.id }}">{{ qb.name }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <button type="submit" class="btn">创建考试</button>
+        </form>
+    </div>
+    <footer>
+        <p>&copy; 2024 考试管理系统</p>
+    </footer>
+</body>
+</html>
+

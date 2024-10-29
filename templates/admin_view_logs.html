@@ -1,0 +1,28 @@
+<!-- admin_view_logs.html -->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>系统日志 - 考试管理系统</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/admin_view_logs.css') }}">
+</head>
+<body>
+    <header>
+        <h1>考试管理系统</h1>
+    </header>
+    <div class="container">
+        <div class="top-nav">
+            <a href="/admin/dashboard" class="back-btn">返回仪表盘</a>
+            <a href="/admin/logout" class="logout-btn">注销</a>
+        </div>
+        <h2>系统日志</h2>
+        <div class="log-container">
+            <pre>{{ logs }}</pre>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 考试管理系统</p>
+    </footer>
+</body>
+</html>
+

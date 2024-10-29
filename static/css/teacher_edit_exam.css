@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+    font-family: '微软雅黑', sans-serif;
+    background: url('/images/teacher_edit_exam_bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+}
+
+header {
+    background-color: #2980b9;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    color: #fff;
+    margin: 0;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 50px auto;
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.back-btn, .logout-btn {
+    color: #fff;
+    text-decoration: none;
+    background-color: #e67e22;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.back-btn:hover, .logout-btn:hover {
+    background-color: #d35400;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #2980b9;
+}
+
+.exam-form {
+    margin-bottom: 40px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.input-group input,
+.input-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+table th {
+    background-color: #2980b9;
+    color: #fff;
+}
+
+.btn {
+    background-color: #27ae60;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #1e8449;
+}
+
+.error {
+    color: red;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #ccc;
+    margin: 40px 0;
+}
+
+footer {
+    background-color: #2980b9;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

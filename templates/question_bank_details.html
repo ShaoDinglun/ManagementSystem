@@ -1,0 +1,166 @@
+<!-- question_bank_details.html -->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ question_bank.name }} - 题库详情 - 考试管理系统</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/question_bank_details.css') }}">
+    <script>
+        function addOption() {
+            const optionContainer = document.getElementById('options-container');
+            const optionCount = optionContainer.children.length + 1;
+            const newOption = document.createElement('div');
+            newOption.className = 'option-group';
+            newOption.innerHTML = `
+                <input type="text" name="options" placeholder="选项内容" required>
+                <label>
+                    <input type="checkbox" name="correct_option" value="${optionCount}">
+                    正确
+                </label>
+                <button type="button" onclick="removeOption(this)" class="btn-small delete-btn">删除</button>
+            `;
+            optionContainer.appendChild(newOption);
+        }
+
+        function removeOption(button) {
+            const option = button.parentElement;
+            option.remove();
+        }
+
+        function toggleFields() {
+            const questionType = document.querySelector('select[name="question_type"]').value;
+            const optionsContainer = document.getElementById('options-container');
+            const addOptionButton = document.getElementById('add-option-button');
+            const answerField = document.getElementById('answer-field');
+
+            if (questionType === '单选题' || questionType === '多选题' || questionType === '判断题') {
+                optionsContainer.style.display = 'block';
+                addOptionButton.style.display = 'inline-block';
+                answerField.style.display = 'none';
+            } else if (questionType === '填空题' || questionType === '主观题') {
+                optionsContainer.style.display = 'none';
+                addOptionButton.style.display = 'none';
+                answerField.style.display = 'block';
+            } else {
+                optionsContainer.style.display = 'none';
+                addOptionButton.style.display = 'none';
+                answerField.style.display = 'none';
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            toggleFields();
+            document.querySelector('select[name="question_type"]').addEventListener('change', toggleFields);
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <h1>考试管理系统</h1>
+    </header>
+    <div class="container">
+        <div class="top-nav">
+            <a href="/teacher/manage_question_banks" class="back-btn">返回题库管理</a>
+            <a href="/teacher/logout" class="logout-btn">注销</a>
+        </div>
+        <h2>{{ question_bank.name }} - 题库详情</h2>
+
+        <!-- 导入题目表单 -->
+        <h3>导入题目</h3>
+        <form action="/teacher/question_bank/{{ question_bank.id }}" method="POST" enctype="multipart/form-data" class="import-form">
+            <input type="hidden" name="action" value="import">
+            <div class="input-group">
+                <label for="file">选择文件 (Word/Excel):</label>
+                <input type="file" name="file" required>
+            </div>
+            <button type="submit" class="btn">上传并导入</button>
+        </form>
+
+        <!-- 添加题目表单 -->
+        <h3>添加题目</h3>
+        <form action="/teacher/question_bank/{{ question_bank.id }}" method="POST" class="add-question-form">
+            <input type="hidden" name="action" value="add_question">
+            <div class="input-group">
+                <label for="question_type">题目类型:</label>
+                <select name="question_type" required>
+                    <option value="单选题">单选题</option>
+                    <option value="多选题">多选题</option>
+                    <option value="填空题">填空题</option>
+                    <option value="主观题">主观题</option>
+                    <option value="判断题">判断题</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="content">题目内容:</label>
+                <textarea name="content" rows="3" required></textarea>
+            </div>
+            <div class="input-group" id="answer-field" style="display: none;">
+                <label for="answer">正确答案:</label>
+                <textarea name="answer" rows="2"></textarea>
+            </div>
+            <div id="options-container" style="display: none;">
+                <!-- 动态添加选项的容器 -->
+            </div>
+            <button type="button" onclick="addOption()" id="add-option-button" class="btn" style="display: none;">添加选项</button>
+            <button type="submit" class="btn">提交题目</button>
+        </form>
+
+        <!-- 显示题库中的题目和选项 -->
+        <h3>现有题目</h3>
+        <div class="question-list">
+            <table>
+                <tr>
+                    <th>题目内容</th>
+                    <th>题目类型</th>
+                    <th>选项</th>
+                    <th>答案</th>
+                    <th>操作</th>
+                </tr>
+                {% for question in question_data %}
+                <tr>
+                    <td>{{ question.question.content }}</td>
+                    <td>{{ question.question.question_type }}</td>
+                    <td>
+                        {% if question.question.question_type in ['单选题', '多选题', '判断题'] %}
+                            <ul>
+                                {% for option in question.options %}
+                                <li>{{ option.option_text }} {% if option.is_correct %}(正确){% endif %}</li>
+                                {% endfor %}
+                            </ul>
+                        {% else %}
+                            无选项
+                        {% endif %}
+                    </td>
+                    <td>
+                        {% if question.question.question_type in ['填空题', '主观题'] %}
+                            {{ question.question.answer }}
+                        {% else %}
+                            {% for option in question.options %}
+                                {% if option.is_correct %}
+                                    {{ option.option_text }}
+                                {% endif %}
+                            {% endfor %}
+                        {% endif %}
+                    </td>
+                    <td class="operation-buttons">
+                        <!-- 修改题目 -->
+                        <a href="{{ url_for('edit_question', question_bank_id=question_bank.id, question_id=question.question.id) }}" class="btn-small">修改</a>
+                        <!-- 删除题目 -->
+                        <form action="/teacher/question_bank/{{ question_bank.id }}" method="POST" style="display:inline;">
+                            <input type="hidden" name="action" value="delete_question">
+                            <input type="hidden" name="question_id" value="{{ question.question.id }}">
+                            <button type="submit" class="btn-small delete-btn" onclick="return confirm('确认删除此题目？');">删除</button>
+                        </form>
+                    </td>
+                </tr>
+                {% endfor %}
+            </table>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 考试管理系统</p>
+    </footer>
+</body>
+</html>
+
+

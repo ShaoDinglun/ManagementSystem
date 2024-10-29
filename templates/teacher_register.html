@@ -1,0 +1,53 @@
+<!-- teacher_register.html -->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>教师注册 - 考试管理系统</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/teacher_register.css') }}">
+</head>
+<body>
+    <header>
+        <h1>考试管理系统</h1>
+    </header>
+    <div class="container">
+        <a href="/" class="back-btn">返回主页</a>
+        <h2>教师注册</h2>
+        <form action="/teacher/register" method="post">
+            <div class="input-group">
+                <label for="teacher_id">教师号:</label>
+                <input type="text" name="teacher_id" required>
+            </div>
+            <div class="input-group">
+                <label for="name">姓名:</label>
+                <input type="text" name="name" required>
+            </div>
+            <div class="input-group">
+                <label for="gender">性别:</label>
+                <select name="gender">
+                    <option value="男">男</option>
+                    <option value="女">女</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="phone_number">手机号:</label>
+                <input type="text" name="phone_number" required>
+            </div>
+            <div class="input-group">
+                <label for="password">密码:</label>
+                <input type="password" name="password" required>
+            </div>
+            <div class="input-group">
+                <label for="confirm_password">确认密码:</label>
+                <input type="password" name="confirm_password" required>
+            </div>
+            <input type="submit" value="注册" class="btn">
+        </form>
+        <p>已有账号？<a href="/teacher/login">去登录</a></p>
+    </div>
+    <footer>
+        <p>&copy; 2024 考试管理系统</p>
+    </footer>
+</body>
+</html>
+

@@ -1,0 +1,57 @@
+<!-- teacher_manage_question_banks.html -->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>题库管理 - 考试管理系统</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/teacher_manage_question_banks.css') }}">
+</head>
+<body>
+    <header>
+        <h1>考试管理系统</h1>
+    </header>
+    <div class="container">
+        <div class="top-nav">
+            <a href="/teacher/dashboard" class="back-btn">返回仪表盘</a>
+            <a href="/teacher/logout" class="logout-btn">注销</a>
+        </div>
+        <h2>题库管理</h2>
+        <!-- 添加题库 -->
+        <form action="/teacher/manage_question_banks" method="POST" class="add-form">
+            <input type="hidden" name="action" value="add">
+            <div class="input-group">
+                <label for="question_bank_name">题库名称:</label>
+                <input type="text" name="question_bank_name" placeholder="题库名称" required>
+            </div>
+            <button type="submit" class="btn">添加题库</button>
+        </form>
+        <!-- 题库列表 -->
+        <h3>现有题库</h3>
+        <table>
+            <tr>
+                <th>题库名称</th>
+                <th>操作</th>
+            </tr>
+            {% for question_bank in question_banks %}
+            <tr>
+                <td>{{ question_bank.name }}</td>
+                <td class="operation-buttons">
+                    <!-- 进入题库 -->
+                    <a href="{{ url_for('question_bank_details', question_bank_id=question_bank.id) }}" class="btn-small">进入题库</a>
+                    <!-- 删除题库 -->
+                    <form action="/teacher/manage_question_banks" method="POST" style="display:inline;">
+                        <input type="hidden" name="action" value="delete">
+                        <input type="hidden" name="question_bank_id" value="{{ question_bank.id }}">
+                        <button type="submit" class="btn-small delete-btn" onclick="return confirm('确认删除此题库？');">删除</button>
+                    </form>
+                </td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+    <footer>
+        <p>&copy; 2024 考试管理系统</p>
+    </footer>
+</body>
+</html>
+

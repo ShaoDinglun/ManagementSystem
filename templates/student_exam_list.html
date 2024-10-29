@@ -1,0 +1,38 @@
+<!-- student_exam_list.html -->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>参加考试 - 考试管理系统</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/student_exam_list.css') }}">
+</head>
+<body>
+    <header>
+        <h1>考试管理系统</h1>
+    </header>
+    <div class="container">
+        <a href="/student/logout" class="logout-btn">注销</a>
+        <h2>当前可参加的考试</h2>
+        <ul class="exam-list">
+            {% for exam in exams %}
+            <li>
+                <div class="exam-item">
+                    <div class="exam-info">
+                        <h3>{{ exam.name }}</h3>
+                        <p>开始时间: {{ exam.start_time }}</p>
+                        <p>结束时间: {{ exam.end_time }}</p>
+                    </div>
+                    <div class="exam-action">
+                        <a href="/student/exam/{{ exam.id }}" class="btn">进入考试</a>
+                    </div>
+                </div>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+    <footer>
+        <p>&copy; 2024 考试管理系统</p>
+    </footer>
+</body>
+</html>
+

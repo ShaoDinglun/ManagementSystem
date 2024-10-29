@@ -1,0 +1,59 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>考试管理系统</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/index.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>考试管理系统</h1>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>欢迎使用考试管理系统</h2>
+                <p>请选择您的身份以继续</p>
+            </div>
+        </section>
+        <section class="roles">
+            <div class="role student">
+                <div class="icon">
+                    <i class="fas fa-user-graduate"></i>
+                </div>
+                <h3>学生</h3>
+                <div class="buttons">
+                    <a href="/student/login" class="btn">学生登录</a>
+                    <a href="/student/register" class="btn">学生注册</a>
+                </div>
+            </div>
+            <div class="role teacher">
+                <div class="icon">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                </div>
+                <h3>教师</h3>
+                <div class="buttons">
+                    <a href="/teacher/login" class="btn">教师登录</a>
+                    <a href="/teacher/register" class="btn">教师注册</a>
+                </div>
+            </div>
+            <div class="role admin">
+                <div class="icon">
+                    <i class="fas fa-user-shield"></i>
+                </div>
+                <h3>管理员</h3>
+                <div class="buttons">
+                    <a href="/admin/login" class="btn">管理员登录</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 考试管理系统</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!-- admin_manage_teachers.html -->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>教师账户管理 - 考试管理系统</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/admin_manage_teachers.css') }}">
+</head>
+<body>
+    <header>
+        <h1>考试管理系统</h1>
+    </header>
+
+    <div class="container">
+        <div class="top-nav">
+            <a href="/admin/dashboard" class="back-btn">返回仪表盘</a>
+            <a href="/admin/logout" class="logout-btn">注销</a>
+        </div>
+
+        <h2>教师账户管理</h2>
+
+        <!-- 查询教师账户 -->
+        <form action="/admin/search_teacher" method="POST" class="search-form">
+            <div class="input-group">
+                <label for="teacher_id">教师号:</label>
+                <input type="text" name="teacher_id">
+            </div>
+            <div class="input-group">
+                <label for="name">姓名:</label>
+                <input type="text" name="name">
+            </div>
+            <input type="submit" value="查询教师账户" class="btn">
+        </form>
+
+        <div class="add-teacher">
+            <a href="/admin/admin_add_teacher" class="btn">新增教师账户</a>
+        </div>
+
+        <!-- 查询结果显示 -->
+        {% if teachers %}
+            <h2>查询结果</h2>
+            <table>
+                <tr>
+                    <th>教师号</th>
+                    <th>姓名</th>
+                    <th>性别</th>
+                    <th>手机号</th>
+                    <th>密码</th>
+                    <th>操作</th>
+                </tr>
+                {% for teacher in teachers %}
+                <tr>
+                    <form action="/admin/update_teacher/{{ teacher.teacher_id }}" method="POST">
+                        <td><input type="text" name="teacher_id" value="{{ teacher.teacher_id }}" readonly></td>
+                        <td><input type="text" name="name" value="{{ teacher.name }}"></td>
+                        <td>
+                            <select name="gender">
+                                <option value="男" {% if teacher.gender == "男" %}selected{% endif %}>男</option>
+                                <option value="女" {% if teacher.gender == "女" %}selected{% endif %}>女</option>
+                            </select>
+                        </td>
+                        <td><input type="text" name="phone_number" value="{{ teacher.phone_number }}"></td>
+                        <td><input type="text" name="password" value="{{ teacher.password }}"></td>
+                        <td>
+                            <input type="submit" value="更新" class="btn-small">
+                        </td>
+                    </form>
+                    <form action="/admin/delete_teacher/{{ teacher.teacher_id }}" method="POST">
+                        <td>
+                            <input type="submit" value="删除" class="btn-small delete-btn">
+                        </td>
+                    </form>
+                </tr>
+                {% endfor %}
+            </table>
+        {% else %}
+            <p class="no-result">未找到符合条件的教师账户。</p>
+        {% endif %}
+    </div>
+
+    <footer>
+        <p>&copy; 2024 考试管理系统</p>
+    </footer>
+</body>
+</html>
+

@@ -1,0 +1,27 @@
+<!-- admin_dashboard.html -->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>管理员仪表盘 - 考试管理系统</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/admin_dashboard.css') }}">
+</head>
+<body>
+    <header>
+        <h1>考试管理系统</h1>
+    </header>
+    <div class="container">
+        <a href="/admin/logout" class="logout-btn">注销</a>
+        <h2>欢迎, 管理员 {{ admin_username }}</h2>
+        <div class="nav-links">
+            <a href="/admin/manage_teachers" class="btn">教师账户管理</a>
+            <a href="/admin/manage_students" class="btn">学生账户管理</a>
+            <a href="/admin/view_logs" class="btn">查看系统日志</a>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 考试管理系统</p>
+    </footer>
+</body>
+</html>
+

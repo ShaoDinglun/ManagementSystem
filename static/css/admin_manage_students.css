@@ -1,0 +1,143 @@
+body {
+    margin: 0;
+    font-family: '微软雅黑', sans-serif;
+    background: url('/images/admin_manage_students_bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+}
+
+header {
+    background-color: #2980b9;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    color: #fff;
+    margin: 0;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 50px auto;
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.back-btn, .logout-btn {
+    color: #fff;
+    text-decoration: none;
+    background-color: #e67e22;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.back-btn:hover, .logout-btn:hover {
+    background-color: #d35400;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #2980b9;
+}
+
+.search-form {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group label {
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn {
+    background-color: #27ae60;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #1e8449;
+}
+
+.add-student {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+table th {
+    background-color: #2980b9;
+    color: #fff;
+}
+
+.btn-small {
+    background-color: #3498db;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-small:hover {
+    background-color: #2980b9;
+}
+
+.delete-btn {
+    background-color: #e74c3c;
+}
+
+.delete-btn:hover {
+    background-color: #c0392b;
+}
+
+.no-result {
+    text-align: center;
+    font-size: 18px;
+    color: #e74c3c;
+}
+
+footer {
+    background-color: #2980b9;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

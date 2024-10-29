@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    font-family: '微软雅黑', sans-serif;
+    background: url('/images/teacher_dashboard_bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+}
+
+header {
+    background-color: #2980b9;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    color: #fff;
+    margin: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 100px auto;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.logout-btn {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    color: #fff;
+    text-decoration: none;
+    background-color: #e74c3c;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.logout-btn:hover {
+    background-color: #c0392b;
+}
+
+h2 {
+    margin-bottom: 50px;
+    color: #2980b9;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.nav-links .btn {
+    background-color: #3498db;
+    color: #fff;
+    padding: 20px 40px;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+.nav-links .btn:hover {
+    background-color: #2980b9;
+}
+
+footer {
+    background-color: #2980b9;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

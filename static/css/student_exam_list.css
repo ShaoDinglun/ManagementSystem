@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    font-family: '微软雅黑', sans-serif;
+    background: url('/images/student_exam_list_bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+}
+
+header {
+    background-color: #2980b9;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    color: #fff;
+    margin: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.logout-btn {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    color: #fff;
+    text-decoration: none;
+    background-color: #e74c3c;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.logout-btn:hover {
+    background-color: #c0392b;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #2980b9;
+}
+
+.exam-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.exam-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f4f4f4;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.exam-info h3 {
+    margin: 0 0 10px;
+    color: #2c3e50;
+}
+
+.exam-info p {
+    margin: 5px 0;
+}
+
+.exam-action .btn {
+    background-color: #27ae60;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.exam-action .btn:hover {
+    background-color: #1e8449;
+}
+
+footer {
+    background-color: #2980b9;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
