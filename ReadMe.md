@@ -70,5 +70,10 @@
    https://github.com/ShaoDinglun/ManagementSystem.git
 2. 安装python3.12
 3. 安装pipenv
-4. pipenv -r ./requirements.txt
+4. 安装并进入pipenv虚拟环境
+   pipenv install
+   pipenv shell
+6. 安装依赖项
+   pip install -r ./requirements.txt
+
 
