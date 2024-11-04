@@ -57,12 +57,10 @@
 <body>
     <header>
         <h1>考试管理系统</h1>
+        <button onclick="location.href='/teacher/manage_question_banks'" class="back-btn">返回题库管理</button>
+        <button onclick="location.href='/teacher/logout'" class="logout-btn">注销</button>
     </header>
     <div class="container">
-        <div class="top-nav">
-            <a href="/teacher/manage_question_banks" class="back-btn">返回题库管理</a>
-            <a href="/teacher/logout" class="logout-btn">注销</a>
-        </div>
         <h2>{{ question_bank.name }} - 题库详情</h2>
 
         <!-- 导入题目表单 -->

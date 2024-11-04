@@ -9,9 +9,9 @@
 <body>
     <header>
         <h1>考试管理系统</h1>
+        <button onclick="location.href='/admin/logout'" class="logout-btn">注销</button>
     </header>
     <div class="container">
-        <a href="/admin/logout" class="logout-btn">注销</a>
         <h2>欢迎, 管理员 {{ admin_username }}</h2>
         <div class="nav-links">
             <a href="/admin/manage_teachers" class="btn">教师账户管理</a>
@@ -24,4 +24,3 @@
     </footer>
 </body>
 </html>
-

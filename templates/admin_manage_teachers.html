@@ -9,14 +9,11 @@
 <body>
     <header>
         <h1>考试管理系统</h1>
+        <button onclick="location.href='/admin/dashboard'" class="back-btn">返回仪表盘</button>
+        <button onclick="location.href='/admin/logout'" class="logout-btn">注销</button>
     </header>
 
     <div class="container">
-        <div class="top-nav">
-            <a href="/admin/dashboard" class="back-btn">返回仪表盘</a>
-            <a href="/admin/logout" class="logout-btn">注销</a>
-        </div>
-
         <h2>教师账户管理</h2>
 
         <!-- 查询教师账户 -->
@@ -31,10 +28,6 @@
             </div>
             <input type="submit" value="查询教师账户" class="btn">
         </form>
-
-        <div class="add-teacher">
-            <a href="/admin/admin_add_teacher" class="btn">新增教师账户</a>
-        </div>
 
         <!-- 查询结果显示 -->
         {% if teachers %}
@@ -77,10 +70,11 @@
             <p class="no-result">未找到符合条件的教师账户。</p>
         {% endif %}
     </div>
-
+    <div class="add-teacher">
+        <a href="/admin/admin_add_teacher" class="btn">新增教师账户</a>
+    </div>
     <footer>
         <p>&copy; 2024 考试管理系统</p>
     </footer>
 </body>
 </html>
-

@@ -9,12 +9,10 @@
 <body>
     <header>
         <h1>考试管理系统</h1>
+        <button onclick="location.href='/admin/manage_students'" class="back-btn">返回学生账户管理</button>
+        <button onclick="location.href='/admin/logout'" class="logout-btn">注销</button>
     </header>
     <div class="container">
-        <div class="top-nav">
-            <a href="/admin/manage_students" class="back-btn">返回学生账户管理</a>
-            <a href="/admin/logout" class="logout-btn">注销</a>
-        </div>
         <h2>新增学生账户</h2>
         <form action="/admin/add_student" method="POST">
             <div class="input-group">
@@ -48,4 +46,3 @@
     </footer>
 </body>
 </html>
-

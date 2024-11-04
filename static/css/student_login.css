@@ -8,13 +8,32 @@ body {
 
 header {
     background-color: #2980b9;
-    padding: 20px 0;
+    padding: 20px;
     text-align: center;
+    position: relative;
 }
 
 header h1 {
     color: #fff;
     margin: 0;
+}
+
+.back-btn {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    padding: 8px 16px;
+    background-color: #fff;
+    color: #2980b9;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.back-btn:hover {
+    background-color: #f2f2f2;
 }
 
 .container {
@@ -24,13 +43,6 @@ header h1 {
     padding: 30px;
     border-radius: 10px;
     text-align: center;
-}
-
-.back-btn {
-    display: inline-block;
-    margin-bottom: 20px;
-    color: #2980b9;
-    text-decoration: none;
 }
 
 h2 {

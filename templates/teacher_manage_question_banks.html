@@ -9,12 +9,10 @@
 <body>
     <header>
         <h1>考试管理系统</h1>
+        <button onclick="location.href='/teacher/dashboard'" class="back-btn">返回仪表盘</button>
+        <button onclick="location.href='/teacher/logout'" class="logout-btn">注销</button>
     </header>
     <div class="container">
-        <div class="top-nav">
-            <a href="/teacher/dashboard" class="back-btn">返回仪表盘</a>
-            <a href="/teacher/logout" class="logout-btn">注销</a>
-        </div>
         <h2>题库管理</h2>
         <!-- 添加题库 -->
         <form action="/teacher/manage_question_banks" method="POST" class="add-form">
@@ -54,4 +52,3 @@
     </footer>
 </body>
 </html>
-
