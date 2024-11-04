@@ -71,7 +71,7 @@ class StudentModule:
         try:
             student = Students.get(Students.id == student_id)
             exam = Exams.get(Exams.id == exam_id)
-
+            print(answers)
             # 遍历答案并保存到数据库
             for question_id, answer_data in answers.items():
                 question = Questions.get(Questions.id == question_id)

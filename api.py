@@ -33,6 +33,12 @@ def student_register():
             confirm_password=data['confirm_password']
         )
         if result["status"] == "success":
+            # 如果请求来自小程序
+            if request.headers.get('X-Requested-By') == 'WechatMiniProgram':
+                # 返回 JSON 数据而非重定向
+                return jsonify({
+                    "status": "success",
+                }), 200
             return redirect(url_for('student_login'))
         return jsonify(result), 400
     return render_template('student_register.html')
@@ -41,18 +47,33 @@ def student_register():
 @app.route('/student/login', methods=['GET', 'POST'])
 def student_login():
     if request.method == 'POST':
-        data = request.form
-        result = student_module.login(
-            student_id=data['student_id'],
-            password=data['password']
-        )
+        data = request.form if request.content_type == 'application/x-www-form-urlencoded' else request.json
+        student_id = data.get('student_id')
+        password = data.get('password')
+
+        result = student_module.login(student_id=student_id, password=password)
         if result["status"] == "success":
-            # 登录成功后将学生 ID 存储到 session 中
-            student = Students.get(Students.student_id == data['student_id'])
+            student = Students.get(Students.student_id == student_id)
             session['student_id'] = student.id
-            return redirect(url_for('exam_list'))
-        return jsonify(result), 400
+
+            # 如果请求来自小程序
+            if request.headers.get('X-Requested-By') == 'WechatMiniProgram':
+                # 返回 JSON 数据而非重定向
+                return jsonify({
+                    "status": "success",
+                    "redirect_url": "/pages/examList/examList",
+                    "session_id": session['student_id']  # 将 session_id 返回给小程序
+                }), 200
+            else:
+                # 浏览器请求使用重定向
+                return redirect(url_for('exam_list'))
+        else:
+            return jsonify(result), 400
+
+    # GET 请求返回登录页面
     return render_template('student_login.html')
+
+
 
 # 学生注销
 @app.route('/student/logout', methods=['GET'])
@@ -65,15 +86,31 @@ def student_logout():
 # 参加考试页面
 @app.route('/student/exam_list', methods=['GET'])
 def exam_list():
+    # 检查是否为小程序请求
+    is_miniprogram = request.headers.get('X-Requested-By') == 'WechatMiniProgram'
+
+    # 获取 session_id 并检查登录状态
+    session_id = request.headers.get('Authorization')
+    if session_id:
+        session['student_id'] = session_id
     if 'student_id' not in session:
+        # 小程序请求返回未登录状态
+        if is_miniprogram:
+            return jsonify({"status": "error", "message": "未登录"}), 401
         return redirect(url_for('student_login'))
 
+    # 获取考试列表
     result = student_module.list_exams()
     if result["status"] == "success":
         exams = result["exams"]
-        return render_template('student_exam_list.html', exams=exams)
+        if is_miniprogram:
+            return jsonify({"status": "success", "exams": exams}), 200
+        else:
+            return render_template('student_exam_list.html', exams=exams)
     else:
         return jsonify(result), 400
+
+
 
 # 自定义过滤器，将索引转换为字母 (A, B, C...)
 @app.template_filter('char_from_index')
@@ -83,18 +120,36 @@ def char_from_index(index):
 # 注册过滤器
 app.jinja_env.filters['char_from_index'] = char_from_index
 # 参加特定考试页面
+from flask import jsonify
+
 @app.route('/student/exam/<int:exam_id>', methods=['GET', 'POST'])
 def take_exam(exam_id):
-    if 'student_id' not in session:
-        return redirect(url_for('student_login'))
+    # 检查是否为小程序请求
+    is_miniprogram = request.headers.get('X-Requested-By') == 'WechatMiniProgram'
 
+    # 获取 session_id 并检查登录状态
+    session_id = request.headers.get('Authorization')
+    if session_id:
+        session['student_id'] = session_id
+    if 'student_id' not in session:
+        if is_miniprogram:
+            return jsonify({"status": "fail", "message": "未登录"}), 401
+        else:
+            return redirect(url_for('student_login'))
+
+    # 获取考试信息
     exam = Exams.get_or_none(Exams.id == exam_id)
     if not exam:
-        return "考试不存在", 404
+        if is_miniprogram:
+            return jsonify({"status": "fail", "message": "考试不存在"}), 404
+        else:
+            return "考试不存在", 404
 
+    # 获取试题信息
     exam_questions = ExamQuestions.select().where(ExamQuestions.exam == exam)
     questions = [eq.question for eq in exam_questions]
-
+    
+    # 获取学生的答案
     student_answers = {}
     if 'student_id' in session:
         student_id = session['student_id']
@@ -105,51 +160,93 @@ def take_exam(exam_id):
         for answer in answers:
             student_answers[answer.question.id] = answer.selected_option.id if answer.selected_option else answer.answer_text
 
+    # 处理 POST 请求，即学生提交答案
     if request.method == 'POST':
-        data = request.form
+        data = request.get_json() if is_miniprogram else request.form  # 根据请求来源选择解析方式
         answers = {}
+        if 'answers' in data:
+            answers = data['answers']
         for question in questions:
+            # 构建选项ID到字母映射，例如：{72: "A", 73: "B", ...}
+            option_map = {opt.id: chr(65 + i) for i, opt in enumerate(question.options)}
+
             if question.question_type in ['单选题', '判断题']:
                 selected_value = data.get(f'question_{question.id}')
                 if selected_value:
-                    selected_option_id, selected_option_text = selected_value.split('-')
-                    # 验证选项 ID 是否在数据库中存在
-                    option = QuestionOptions.get_or_none(QuestionOptions.id == selected_option_id)
-                    print(f"Debug: Received option ID = {selected_option_id}, Found in DB = {option}")
+                    option = QuestionOptions.get_or_none(QuestionOptions.id == selected_value)
                     if option:
-                        answers[question.id] = {"selected_option_id": int(selected_option_id), "answer_text": selected_option_text}
+                        # 使用映射将选项ID转换为字母
+                        answer_text = option_map.get(int(selected_value), "")
+                        answers[question.id] = {"selected_option_id": int(selected_value), "answer_text": answer_text}
                     else:
-                        return render_template('student_take_exam.html', exam=exam, questions=questions, student_answers=student_answers, error="选项无效")
+                        error_msg = "选项无效"
+                        if is_miniprogram:
+                            return jsonify({"status": "fail", "message": error_msg})
+                        else:
+                            return render_template('student_take_exam.html', exam=exam, questions=questions, student_answers=student_answers, error=error_msg)
+
             elif question.question_type == '多选题':
-                selected_values = data.getlist(f'question_{question.id}')
+                selected_values = data.getlist(f'question_{question.id}') if not is_miniprogram else data.get(f'question_{question.id}', [])
                 if selected_values:
                     selected_option_ids = []
                     selected_option_texts = []
-                    for value in selected_values:
-                        option_id, option_text = value.split('-')
+                    for option_id in selected_values:
                         option = QuestionOptions.get_or_none(QuestionOptions.id == option_id)
-                        print(f"Debug: Received option ID = {option_id}, Found in DB = {option}")
                         if option:
                             selected_option_ids.append(option_id)
-                            selected_option_texts.append(option_text)
+                            selected_option_texts.append(option_id)
                         else:
-                            return render_template('student_take_exam.html', exam=exam, questions=questions, student_answers=student_answers, error="多选题的选项无效")
+                            error_msg = "多选题的选项无效"
+                            if is_miniprogram:
+                                return jsonify({"status": "fail", "message": error_msg})
+                            else:
+                                return render_template('student_take_exam.html', exam=exam, questions=questions, student_answers=student_answers, error=error_msg)
                     answers[question.id] = {
                         "selected_option_id": ",".join(selected_option_ids),
-                        "answer_text": ",".join(selected_option_texts)
+                        "answer_text": ",".join(selected_option_texts)  # 返回选项字母，以逗号分隔
                     }
             else:
                 answer_text = data.get(f'question_{question.id}_text')
                 if answer_text:
                     answers[question.id] = {"answer_text": answer_text}
-
         result = student_module.submit_exam_answers(session['student_id'], exam_id, answers)
         if result["status"] == "success":
-            return redirect(url_for('exam_list'))
+            if is_miniprogram:
+                return jsonify({"status": "success", "message": "提交成功"})
+            else:
+                return redirect(url_for('exam_list'))
         else:
-            return render_template('student_take_exam.html', exam=exam, questions=questions, student_answers=student_answers, error=result["message"])
+            error_msg = result["message"]
+            if is_miniprogram:
+                return jsonify({"status": "fail", "message": error_msg})
+            else:
+                return render_template('student_take_exam.html', exam=exam, questions=questions, student_answers=student_answers, error=error_msg)
 
-    return render_template('student_take_exam.html', exam=exam, questions=questions, student_answers=student_answers)
+    # GET 请求，返回考试详情
+    if is_miniprogram:
+        question_data = [
+            {
+                "id": question.id,
+                "content": question.content,
+                "question_type": question.question_type,
+                "options": [{"id": opt.id, "text": opt.option_text} for opt in question.options] if question.options else []
+            }
+            for question in questions
+        ]
+
+        return jsonify({
+            "status": "success",
+            "exam": {"id": exam.id, "title": exam.name},
+            "questions": question_data,
+            "student_answers": student_answers
+        })
+    else:
+        return render_template('student_take_exam.html', exam=exam, questions=questions, student_answers=student_answers)
+
+
+
+
+
 
 # 教师模块 API
 # 教师注册
@@ -285,7 +382,6 @@ def question_bank_details(question_bank_id):
             file.save(file_path)
             
             result = teacher_module.import_question_bank(file_path, question_bank_id)
-            
             if os.path.exists(file_path):
                 os.remove(file_path)
 
@@ -600,7 +696,7 @@ def admin_login():
         if result["status"] == "success":
             # 登录成功后将管理员ID存储到session中
             session['admin_id'] = data['username']
-            return redirect(url_for('admin_dashboard'))  # 假设登录后跳转到管理员的仪表盘页面
+            return redirect(url_for('admin_dashboard'))
         return jsonify(result), 400
     return render_template('admin_login.html')
 
