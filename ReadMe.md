@@ -67,5 +67,8 @@
 ### 本地运行步骤
 
 1. 克隆项目仓库：
-   ```bash
-   git clone https://github.com/your-repo/exam-management-system.git
+   https://github.com/ShaoDinglun/ManagementSystem.git
+2. 安装python3.12
+3. 安装pipenv
+4. pipenv -r ./requirements.txt
+
