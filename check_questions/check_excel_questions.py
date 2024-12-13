@@ -4,7 +4,7 @@ import re
 import pandas as pd
 from openai import OpenAI
 
-client = OpenAI(api_key="sk-d876755b98794f45a266e425ec431a70", base_url="https://api.deepseek.com")
+client = OpenAI(api_key="", base_url="https://api.deepseek.com")
 
 class ExcelQuestionImporter:
     def __init__(self):
